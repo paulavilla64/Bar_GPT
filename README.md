@@ -31,4 +31,29 @@ Spoken Dialogue System Project for Bars in Stuttgart
 
 # Dialogue System
 
-TBD
+## Requestables / Informables
+- Can Ask at the beginning if you want to stay home or go out
+- Stay home options
+  - enter ingridents to suggest a recipie
+  - occasion
+    - work
+    - chill
+    - date
+    - party
+  - How many people ?   
+- Outing options
+  - Type of Drink
+  - Special Drink
+  - Food Options
+  - Rating
+  - Ambiance
+    - Event
+    - Music
+    - Cozy
+    - Chill
+    - Quite
+    - Loud
+  - Major attraction
+  - Type of bar
+  - Age Group
+  - Distance from location / region of location - south north center east west
