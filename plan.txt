@@ -1,0 +1,7 @@
+Timeplan for the next six weeks
+
+### TO DO ####
+24.05 meet with Lindsey at her office
+- discuss time plan
+- which output should our dialogue system give (what should it be able to do?)?
+- which other features do we want to extract from bars?
