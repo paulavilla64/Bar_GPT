@@ -32,7 +32,7 @@ Spoken Dialogue System Project for Bars in Stuttgart
 # Dialogue System
 
 ## Requestables / Informables
-- Can Ask at the beginning if you want to stay home or go out
+- Can ask at the beginning if you want to stay home or go out
 - Stay home options
   - enter ingridents to suggest a recipie
   - occasion
@@ -57,3 +57,9 @@ Spoken Dialogue System Project for Bars in Stuttgart
   - Type of bar
   - Age Group
   - Distance from location / region of location - south north center east west
+  - Location
+  - Opening times
+  - Website
+  - Phone number
+  - Rush hour
+  - Reviews
