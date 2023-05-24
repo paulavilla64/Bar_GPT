@@ -66,18 +66,22 @@ Timeplan for the next six weeks
         Intent classification
         Slot filling
 
-    Dialogue Management (Belief state and Policy): [14.6.]
+    Natural Language Generation (NLG): [14.6.]
+        Implement an NLG component to generate human-like responses.
+        Template based approach or machine learning???
+
+    Dialogue Management (Belief state and Policy): [21.6.]
         Design a dialogue management system to handle the flow of the conversation.
         Implement a belief state tracker to keep track of the dialogue context.
         Create dialogue policies to determine the system's responses based on the current dialogue 
         state.
 
-    Natural Language Generation (NLG): [21.6.]
-        Implement an NLG component to generate human-like responses.
-        Template based approach or machine learning???
-
     Testing: [28.6]
         Test the system thoroughly to ensure it handles various user inputs and scenarios effectively.
         Detect errors and remove bugs
 
-  
+  Databank 
+  Ontology
+  Dialogue Flow
+  Github
+  NLU (testing with pass through from exercises)
