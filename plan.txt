@@ -5,3 +5,79 @@ Timeplan for the next six weeks
 - discuss time plan
 - which output should our dialogue system give (what should it be able to do?)?
 - which other features do we want to extract from bars?
+
+    Define the Scope and Requirements: [31.5.]
+        Determine the specific goals and objectives of the dialogue system.
+        Identify the target audience and their needs.
+        Define the features and functionalities you want to include, such as reservation management, 
+        menu recommendations, opening hours, etc.
+        
+        ## Requestables / Informables
+        - Can ask at the beginning if you want to stay home or go out
+        - Stay home options
+        - enter ingridents to suggest a recipie
+        - occasion
+            - work
+            - chill
+            - date
+            - party
+        - How many people ?   
+        - Outing options
+        - Type of Drink
+        - Special Drink
+        - Food Options
+        - Rating
+        - Ambiance
+            - Event
+            - Music
+            - Cozy
+            - Chill
+            - Quite
+            - Loud
+        - Major attraction
+        - Type of bar
+        - Age Group
+        - Distance from location / region of location - south north center east west
+        - Location
+        - Opening times
+        - Website
+        - Phone number
+        - Rush hour
+        - Reviews
+
+    Data Collection: [31.5.]
+        Gather relevant data about bars in Stuttgart, such as their names, locations, opening hours, 
+        contact information, menus, customer reviews, and any other information you want to 
+        incorporate into your system.
+        # DataMiner
+            - Used to scrap data from google maps using Selenium and Chromium Driver
+
+        ## Bars.json
+            - This file contains the output from the mining of data
+
+    Design the Dialogue Flow: [31.5.]
+        Define the structure and flow of the conversation.
+        Determine the possible user intents and corresponding system responses.
+        Identify key dialogue scenarios, such as making a reservation, requesting information, 
+        or suggesting a bar based on preferences.
+
+    Natural Language Understanding (NLU): [7.6.]
+        Implement an NLU module to understand user inputs.
+        Intent classification
+        Slot filling
+
+    Dialogue Management (Belief state and Policy): [14.6.]
+        Design a dialogue management system to handle the flow of the conversation.
+        Implement a belief state tracker to keep track of the dialogue context.
+        Create dialogue policies to determine the system's responses based on the current dialogue 
+        state.
+
+    Natural Language Generation (NLG): [21.6.]
+        Implement an NLG component to generate human-like responses.
+        Template based approach or machine learning???
+
+    Testing: [28.6]
+        Test the system thoroughly to ensure it handles various user inputs and scenarios effectively.
+        Detect errors and remove bugs
+
+  
