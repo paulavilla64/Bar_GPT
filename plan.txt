@@ -83,6 +83,7 @@ Timeplan for the next six weeks
     Testing: [28.6]
         Test the system thoroughly to ensure it handles various user inputs and scenarios effectively.
         Detect errors and remove bugs
+        Add synonyms for every single bar
 
   Databank 
   Ontology
