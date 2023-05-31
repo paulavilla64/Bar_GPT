@@ -14,15 +14,15 @@ Timeplan for the next six weeks
         
         ## Requestables / Informables
         - Can ask at the beginning if you want to stay home or go out
-        - Stay home options
-        - enter ingridents to suggest a recipie
+        - Stay home options - Netflix/ read a book
+        (- enter ingridents to suggest a recipie)
         - occasion
             - work
             - chill
             - date
             - party
-        - How many people ?   
-        - Outing options
+           
+        - Bar options
         - Type of Drink
         - Special Drink
         - Food Options
@@ -36,8 +36,12 @@ Timeplan for the next six weeks
             - Loud
         - Major attraction
         - Type of bar
-        - Age Group
-        - Distance from location / region of location - south north center east west
+        (- Age Group)
+        - Access 
+        - Services
+        - Payment
+        - Reservation possibility
+        - (Distance from location / region of location - south north center east west)
         - Location
         - Opening times
         - Website

@@ -1,0 +1,87 @@
+
+{
+    "states": [
+      {
+        "name": "greeting",
+        "transitions": [
+          {
+            "intent": "greet",
+            "target_state": "request_preferences"
+          }
+        ],
+        "responses": [
+          "Hi there! How can I help you?"
+        ]
+      },
+      {
+        "name": "request_preferences",
+        "transitions": [
+          {
+            "intent": "request_recommendations",
+            "target_state": "provide_recommendations"
+          },
+          {
+            "intent": "query_information",
+            "target_state": "provide_information"
+          },
+          {
+            "intent": "make_reservation",
+            "target_state": "collect_reservation_details"
+          },
+          {
+            "intent": "goodbye",
+            "target_state": "farewell"
+          }
+        ],
+        "responses": [
+          "Sure! Could you please specify any preferences you have, such as ambiance, major highlights or location?"
+        ]
+      },
+      {
+        "name": "provide_recommendations",
+        "transitions": [],
+        "responses": [
+          "Based on your preferences, I recommend the following bars in Stuttgart: Bar X, Bar Y, Bar Z."
+        ]
+      },
+      {
+        "name": "provide_information",
+        "transitions": [],
+        "responses": [
+          "Bar X is open from [opening hours]. Is there anything else you would like to know?"
+        ]
+      },
+      {
+        "name": "collect_reservation_details",
+        "transitions": [
+          {
+            "intent": "provide_reservation_details",
+            "target_state": "confirm_reservation"
+          }
+        ],
+        "responses": [
+          "Sure! How many people would be in your party, and at what time would you like to make the reservation?"
+        ]
+      },
+      {
+        "name": "confirm_reservation",
+        "transitions": [
+          {
+            "intent": "goodbye",
+            "target_state": "farewell"
+          }
+        ],
+        "responses": [
+          "Great! Your reservation for [party size] people at [reservation time] has been confirmed."
+        ]
+      },
+      {
+        "name": "farewell",
+        "transitions": [],
+        "responses": [
+          "Thank you for using our service! If you have any more questions in the future, feel free to reach out. Have a great day!"
+        ]
+      }
+    ]
+  }
+  
