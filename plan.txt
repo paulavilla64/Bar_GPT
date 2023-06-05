@@ -90,3 +90,8 @@ Timeplan for the next six weeks
   Dialogue Flow
   Github
   NLU (testing with pass through from exercises)
+
+
+  07.06 meet Lindsey:
+  Questions:
+  What should we do about the synonyms?
