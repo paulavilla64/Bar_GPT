@@ -2,6 +2,7 @@ import json
 from configparser import SafeConfigParser
 import Constants
 
+
 class Encoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj,dataObject):
