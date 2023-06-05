@@ -29,6 +29,96 @@ rule inform(rating)
     "{synonyms("rating", rating)}{WBG()}"
     "(\\ |^){synonyms("rating", rating)}(\\ (please|and))*"
 
+rule inform(location)
+    # "\\\\b{location}\\\\b"
+    "{rINFORM()} {synonyms("location", location)}"
+    "{synonyms("location", location)}{WBG()}"
+    "(\\ |^){synonyms("location", location)}(\\ (please|and))*"
+
+rule inform(hours)
+    # "\\\\b{hours}\\\\b"
+    "{rINFORM()} {synonyms("hours", hours)}"
+    "{synonyms("hours", hours)}{WBG()}"
+    "(\\ |^){synonyms("hours", hours)}(\\ (please|and))*"
+
+rule inform(website)
+    # "\\\\b{website}\\\\b"
+    "{rINFORM()} {synonyms("website", website)}"
+    "{synonyms("website", website)}{WBG()}"
+    "(\\ |^){synonyms("website", website)}(\\ (please|and))*"
+
+rule inform(phone)
+    # "\\\\b{phone}\\\\b"
+    "{rINFORM()} {synonyms("phone", phone)}"
+    "{synonyms("phone", phone)}{WBG()}"
+    "(\\ |^){synonyms("phone", phone)}(\\ (please|and))*"
+
+rule inform(review)
+    # "\\\\b{review}\\\\b"
+    "{rINFORM()} {synonyms("review", review)}"
+    "{synonyms("review", review)}{WBG()}"
+    "(\\ |^){synonyms("review", review)}(\\ (please|and))*"
+
+rule inform(service options)
+    # "\\\\b{service options}\\\\b"
+    "{rINFORM()} {synonyms("service options", service options)}"
+    "{synonyms("service options", service options)}{WBG()}"
+    "(\\ |^){synonyms("service options", service options)}(\\ (please|and))*"
+
+rule inform(accessibility)
+    # "\\\\b{accessibility}\\\\b"
+    "{rINFORM()} {synonyms("accessibility", accessibility)}"
+    "{synonyms("accessibility", accessibility)}{WBG()}"
+    "(\\ |^){synonyms("accessibility", accessibility)}(\\ (please|and))*"
+
+rule inform(offerings)
+    # "\\\\b{offerings}\\\\b"
+    "{rINFORM()} {synonyms("offerings", offerings)}"
+    "{synonyms("offerings", offerings)}{WBG()}"
+    "(\\ |^){synonyms("offerings", offerings)}(\\ (please|and))*"
+
+rule inform(dining options)
+    # "\\\\b{dining options}\\\\b"
+    "{rINFORM()} {synonyms("dining options", dining options)}"
+    "{synonyms("dining options", dining options)}{WBG()}"
+    "(\\ |^){synonyms("dining options", dining options)}(\\ (please|and))*"
+
+rule inform(amenities)
+    # "\\\\b{amenities}\\\\b"
+    "{rINFORM()} {synonyms("amenities", amenities)}"
+    "{synonyms("amenities", amenities)}{WBG()}"
+    "(\\ |^){synonyms("amenities", amenities)}(\\ (please|and))*"
+
+rule inform(atmosphere)
+    # "\\\\b{atmosphere}\\\\b"
+    "{rINFORM()} {synonyms("atmosphere", atmosphere)}"
+    "{synonyms("atmosphere", atmosphere)}{WBG()}"
+    "(\\ |^){synonyms("atmosphere", atmosphere)}(\\ (please|and))*"
+
+rule inform(crowd)
+    # "\\\\b{crowd}\\\\b"
+    "{rINFORM()} {synonyms("crowd", crowd)}"
+    "{synonyms("crowd", crowd)}{WBG()}"
+    "(\\ |^){synonyms("crowd", crowd)}(\\ (please|and))*"
+
+rule inform(planning)
+    # "\\\\b{planning}\\\\b"
+    "{rINFORM()} {synonyms("planning", planning)}"
+    "{synonyms("planning", planning)}{WBG()}"
+    "(\\ |^){synonyms("planning", planning)}(\\ (please|and))*"
+
+rule inform(payments)
+    # "\\\\b{payments}\\\\b"
+    "{rINFORM()} {synonyms("payments", payments)}"
+    "{synonyms("payments", payments)}{WBG()}"
+    "(\\ |^){synonyms("payments", payments)}(\\ (please|and))*"
+
+rule inform(highlights)
+    # "\\\\b{highlights}\\\\b"
+    "{rINFORM()} {synonyms("highlights", highlights)}"
+    "{synonyms("highlights", highlights)}{WBG()}"
+    "(\\ |^){synonyms("highlights", highlights)}(\\ (please|and))*"
+
 
 # All slots are requestable
 
@@ -56,17 +146,29 @@ rule request(rating)
     "(the )?{slot_synonyms("rating")}"
     "who .*{slot_synonyms("rating")}"
 
-#######################################################################
+rule request(location)
+    "{rREQUEST()} {slot_synonyms("location")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("location")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("location")}"
+    "{WANT()}.*{slot_synonyms("location")}"
+    "(the )?{slot_synonyms("location")}"
+    "who .*{slot_synonyms("location")}"
 
-TO DO:
+rule request(hours)
+    "{rREQUEST()} {slot_synonyms("hours")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("hours")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("hours")}"
+    "{WANT()}.*{slot_synonyms("hours")}"
+    "(the )?{slot_synonyms("hours")}"
+    "who .*{slot_synonyms("hours")}"
 
-rule request(office_hours)
-    "{rREQUEST()} {slot_synonyms("office_hours")}"
-    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("office_hours")}"
-    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("office_hours")}"
-    "{WANT()}.*{slot_synonyms("office_hours")}"
-    "(the )?{slot_synonyms("office_hours")}"
-    "when( .*|$)|at what time {slot_synonyms("office_hours")}"
+rule request(website)
+    "{rREQUEST()} {slot_synonyms("website")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("website")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("website")}"
+    "{WANT()}.*{slot_synonyms("website")}"
+    "(the )?{slot_synonyms("website")}"
+    "who .*{slot_synonyms("website")}"
 
 rule request(phone)
     "{rREQUEST()} {slot_synonyms("phone")}"
@@ -74,22 +176,95 @@ rule request(phone)
     "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("phone")}"
     "{WANT()}.*{slot_synonyms("phone")}"
     "(the )?{slot_synonyms("phone")}"
-    "what .*{slot_synonyms("phone")}"
+    "who .*{slot_synonyms("phone")}"
 
-rule request(position)
-    "{rREQUEST()} {slot_synonyms("position")}"
-    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("position")}"
-    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("position")}"
-    "{WANT()}.*{slot_synonyms("position")}"
-    "(the )?{slot_synonyms("position")}"
+rule request(review)
+    "{rREQUEST()} {slot_synonyms("review")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("review")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("review")}"
+    "{WANT()}.*{slot_synonyms("review")}"
+    "(the )?{slot_synonyms("review")}"
+    "who .*{slot_synonyms("review")}"
 
-rule request(room)
-    "{rREQUEST()} {slot_synonyms("room")}"
-    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("room")}"
-    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("room")}"
-    "{WANT()}.*{slot_synonyms("room")}"
-    "(the )?{slot_synonyms("room")}"
-    "where( is .*|$){slot_synonyms("room")}"
+rule request(service options)
+    "{rREQUEST()} {slot_synonyms("service options")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("service options")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("service options")}"
+    "{WANT()}.*{slot_synonyms("service options")}"
+    "(the )?{slot_synonyms("service options")}"
+    "who .*{slot_synonyms("service options")}"
+
+rule request(accessibility)
+    "{rREQUEST()} {slot_synonyms("accessibility")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("accessibility")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("accessibility")}"
+    "{WANT()}.*{slot_synonyms("accessibility")}"
+    "(the )?{slot_synonyms("accessibility")}"
+    "who .*{slot_synonyms("accessibility")}"
+
+rule request(offerings)
+    "{rREQUEST()} {slot_synonyms("offerings")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("offerings")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("offerings")}"
+    "{WANT()}.*{slot_synonyms("offerings")}"
+    "(the )?{slot_synonyms("offerings")}"
+    "who .*{slot_synonyms("offerings")}"
+
+rule request(dining options)
+    "{rREQUEST()} {slot_synonyms("dining options")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("dining options")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("dining options")}"
+    "{WANT()}.*{slot_synonyms("dining options")}"
+    "(the )?{slot_synonyms("dining options")}"
+    "who .*{slot_synonyms("dining options")}"
+
+rule request(amenities)
+    "{rREQUEST()} {slot_synonyms("amenities")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("amenities")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("amenities")}"
+    "{WANT()}.*{slot_synonyms("amenities")}"
+    "(the )?{slot_synonyms("amenities")}"
+    "who .*{slot_synonyms("amenities")}"
+
+rule request(atmosphere)
+    "{rREQUEST()} {slot_synonyms("atmosphere")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("atmosphere")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("atmosphere")}"
+    "{WANT()}.*{slot_synonyms("atmosphere")}"
+    "(the )?{slot_synonyms("atmosphere")}"
+    "who .*{slot_synonyms("atmosphere")}"
+
+rule request(crowd)
+    "{rREQUEST()} {slot_synonyms("crowd")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("crowd")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("crowd")}"
+    "{WANT()}.*{slot_synonyms("crowd")}"
+    "(the )?{slot_synonyms("crowd")}"
+    "who .*{slot_synonyms("crowd")}"
+
+rule request(planning)
+    "{rREQUEST()} {slot_synonyms("planning")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("planning")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("planning")}"
+    "{WANT()}.*{slot_synonyms("planning")}"
+    "(the )?{slot_synonyms("planning")}"
+    "who .*{slot_synonyms("planning")}"
+
+rule request(payments)
+    "{rREQUEST()} {slot_synonyms("payments")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("payments")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("payments")}"
+    "{WANT()}.*{slot_synonyms("payments")}"
+    "(the )?{slot_synonyms("payments")}"
+    "who .*{slot_synonyms("payments")}"
+
+rule request(highlights)
+    "{rREQUEST()} {slot_synonyms("highlights")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("highlights")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("highlights")}"
+    "{WANT()}.*{slot_synonyms("highlights")}"
+    "(the )?{slot_synonyms("highlights")}"
+    "who .*{slot_synonyms("highlights")}"
 
 
 # synonyms
@@ -115,24 +290,14 @@ function slot_synonyms(slot)
         "*bar(s)?"
         "restaurant(s)?"
         "pub(s)?"
-
-########################################
-    if slot = "office_hours"
-        "(office |consultation )?(hour(s)?)"
-        "Sprechstunde(n)?"
-    if slot = "mail"
-        "email"
-        "mail"
-        "e\-mail"
     if slot = "phone"
         "telephone"
         "phone( number)?$"
         "number"
-    if slot = "room"
-        "room"
-        "(?=.*(room|office))(?=^(?:(?!hours).)*$).*$"
-    if slot = "position"
-        "(administrative )?position"
+    if slot = "service options"
+        "serviceoptions"
+    if slot = "dining options"
+        "diningoptions"
 
 
 # constants
