@@ -1,0 +1,997 @@
+[
+    {
+        "name": "The Corner",
+        "price": "€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Jigger & Spoon",
+        "price": "€€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "DMC Bar",
+        "price": "not available",
+        "rating": "4,6"
+    },
+    {
+        "name": "Elegance Bar",
+        "price": "not available",
+        "rating": "3,8"
+    },
+    {
+        "name": "Paul & George",
+        "price": "€€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Bar Lillet",
+        "price": "not available",
+        "rating": "4,3"
+    },
+    {
+        "name": "Schwarz Wei\u00df Bar",
+        "price": "€€€",
+        "rating": "4,7"
+    },
+    {
+        "name": "Tequila Bar - \"The Club\"",
+        "price": "€€",
+        "rating": "3,7"
+    },
+    {
+        "name": "Holzmaler",
+        "price": "not available",
+        "rating": "4,8"
+    },
+    {
+        "name": "Eduard's Bar Stuttgart",
+        "price": "€€",
+        "rating": "4,2"
+    },
+    {
+        "name": "Pils-Pub Alt Stuttgart Sky Sportsbar",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Le petit Coq",
+        "price": "€€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Torhaus Zwanzig BAR & LOUNGE",
+        "price": "€€€",
+        "rating": "3,8"
+    },
+    {
+        "name": "Wolfram Bar & Terrace",
+        "price": "not available",
+        "rating": "4,4"
+    },
+    {
+        "name": "FOU FOU | Cocktail- und Champagnerbar",
+        "price": "€€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Mike's Urban Pub Stuttgart NeckarPark",
+        "price": "not available",
+        "rating": "2,9"
+    },
+    {
+        "name": "Mike's Urban Pub Stuttgart NeckarPark",
+        "price": "not available",
+        "rating": "2,9"
+    },
+    {
+        "name": "Lennart Bar",
+        "price": "€€",
+        "rating": "4,7"
+    },
+    {
+        "name": "Lennart Bar",
+        "price": "€€",
+        "rating": "4,7"
+    },
+    {
+        "name": "The Greek Taste",
+        "price": "not available",
+        "rating": "4,6"
+    },
+    {
+        "name": "The Greek Taste",
+        "price": "not available",
+        "rating": "4,6"
+    },
+    {
+        "name": "Royal Caf\u00e9 Bar",
+        "price": "not available",
+        "rating": "4,8"
+    },
+    {
+        "name": "Ruby Bar Stuttgart",
+        "price": "not available",
+        "rating": "4,1"
+    },
+    {
+        "name": "Ruby Bar Stuttgart",
+        "price": "not available",
+        "rating": "4,1"
+    },
+    {
+        "name": "Billardsaal",
+        "price": "€€",
+        "rating": "4,2"
+    },
+    {
+        "name": "Billardsaal",
+        "price": "€€",
+        "rating": "4,2"
+    },
+    {
+        "name": "Havana Cafe & Cocktail Stuttgart",
+        "price": "€€",
+        "rating": "3,9"
+    },
+    {
+        "name": "Marshall Matt",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Marshall Matt",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Marshall Matt",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Sportsbar Max & Moritz 1",
+        "price": "not available",
+        "rating": "4,2"
+    },
+    {
+        "name": "Bar & Bistro Sideways",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Biddy Earlys Irish Pub",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Erdgeschoss Bar & B\u00fchne",
+        "price": "not available",
+        "rating": "4,4"
+    },
+    {
+        "name": "Immer Beer Herzen",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Immer Beer Herzen",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Piano Bar",
+        "price": "not available",
+        "rating": "4,6"
+    },
+    {
+        "name": "Yart",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "The G-Rock Pub",
+        "price": "not available",
+        "rating": "4,3"
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "PUF",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Schwarz Wei\u00df Bar",
+        "price": "€€€",
+        "rating": "4,7"
+    },
+    {
+        "name": "Tequila Bar - \"The Club\"",
+        "price": "€€",
+        "rating": "3,7"
+    },
+    {
+        "name": "Tequila Bar - \"The Club\"",
+        "price": "€€",
+        "rating": "3,7"
+    },
+    {
+        "name": "Tequila Bar - \"The Club\"",
+        "price": "€€",
+        "rating": "3,7"
+    },
+    {
+        "name": "Tequila Bar - \"The Club\"",
+        "price": "€€",
+        "rating": "3,7"
+    },
+    {
+        "name": "Eduard's Bar Stuttgart",
+        "price": "€€",
+        "rating": "4,2"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "my emy",
+        "price": "not available",
+        "rating": "4,2"
+    },
+    {
+        "name": "my emy",
+        "price": "not available",
+        "rating": "4,2"
+    },
+    {
+        "name": "BAR",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Erdgeschoss Bar & B\u00fchne",
+        "price": "not available",
+        "rating": "4,4"
+    },
+    {
+        "name": "Erdgeschoss Bar & B\u00fchne",
+        "price": "not available",
+        "rating": "4,4"
+    },
+    {
+        "name": "Mata Hari",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Mata Hari",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Mata Hari",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Mata Hari",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Mata Hari",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Mata Hari",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Mata Hari",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Mata Hari",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Mata Hari",
+        "price": "€€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Paddy's Irish Pub",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Paddy's Irish Pub",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Paddy's Irish Pub",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "",
+        "price": "",
+        "rating": ""
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "4,0"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "4,0"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "4,0"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "4,0"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "4,0"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "4,0"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "4,0"
+    },
+    {
+        "name": "W XYZ Bar",
+        "price": "not available",
+        "rating": "5,0"
+    },
+    {
+        "name": "Mos Eisley",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Mos Eisley",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Detroit Bar",
+        "price": "not available",
+        "rating": "3,9"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "3,9"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "3,9"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "3,9"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "3,9"
+    },
+    {
+        "name": "SAUSALITOS",
+        "price": "€€",
+        "rating": "3,9"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Oblomow",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Royal Caf\u00e9 Bar",
+        "price": "not available",
+        "rating": "4,8"
+    },
+    {
+        "name": "Royal Caf\u00e9 Bar",
+        "price": "not available",
+        "rating": "4,8"
+    },
+    {
+        "name": "my emy",
+        "price": "not available",
+        "rating": "4,2"
+    },
+    {
+        "name": "Sportsbar Max & Moritz 1",
+        "price": "not available",
+        "rating": "4,2"
+    },
+    {
+        "name": "Bar & Bistro Sideways",
+        "price": "not available",
+        "rating": "4,3"
+    },
+    {
+        "name": "The G-Rock Pub",
+        "price": "not available",
+        "rating": "4,3"
+    },
+    {
+        "name": "Los Caminos Caf\u00e9 Bar",
+        "price": "not available",
+        "rating": "4,4"
+    },
+    {
+        "name": "Bar Tabu",
+        "price": "not available",
+        "rating": "3,7"
+    },
+    {
+        "name": "MiLi Cafe Bar",
+        "price": "not available",
+        "rating": "4,7"
+    },
+    {
+        "name": "MiLi Cafe Bar",
+        "price": "not available",
+        "rating": "4,7"
+    },
+    {
+        "name": "Bar Korridor",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Bar Korridor",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Bar Korridor",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Bar Korridor",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Bar Korridor",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Bar Korridor",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Bar Korridor",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Bar Korridor",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Tibi Bar",
+        "price": "not available",
+        "rating": "5,0"
+    },
+    {
+        "name": "W XYZ Bar",
+        "price": "not available",
+        "rating": "5,0"
+    },
+    {
+        "name": "Thirty Nine Bar and Dining",
+        "price": "€",
+        "rating": "4,0"
+    },
+    {
+        "name": "Jakobstube",
+        "price": "€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Jakobstube",
+        "price": "€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Botanical Affairs",
+        "price": "not available",
+        "rating": "4,6"
+    },
+    {
+        "name": "Kraftpaule - Craft Beer in Stuttgart",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Kraftpaule - Craft Beer in Stuttgart",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "High Fidelity",
+        "price": "not available",
+        "rating": "4,5"
+    },
+    {
+        "name": "Bix Jazzclub",
+        "price": "€€",
+        "rating": "4,7"
+    },
+    {
+        "name": "Mabeyn Stuttgart",
+        "price": "not available",
+        "rating": "5,0"
+    },
+    {
+        "name": "Elegance Bar",
+        "price": "not available",
+        "rating": "3,8"
+    },
+    {
+        "name": "The G-Rock Pub",
+        "price": "not available",
+        "rating": "4,3"
+    },
+    {
+        "name": "Los Caminos Caf\u00e9 Bar",
+        "price": "not available",
+        "rating": "4,4"
+    },
+    {
+        "name": "R\u00f6ssle",
+        "price": "€",
+        "rating": "4,2"
+    },
+    {
+        "name": "Caf\u00e9 Bar Albatros",
+        "price": "not available",
+        "rating": "4,9"
+    },
+    {
+        "name": "Gaisburgst\u00fcble",
+        "price": "not available",
+        "rating": "4,2"
+    },
+    {
+        "name": "Weinstube Zur Kiste",
+        "price": "€€",
+        "rating": "4,7"
+    },
+    {
+        "name": "Mirage",
+        "price": "not available",
+        "rating": "4,3"
+    },
+    {
+        "name": "Mirage",
+        "price": "not available",
+        "rating": "4,3"
+    },
+    {
+        "name": "MiLi Cafe Bar",
+        "price": "not available",
+        "rating": "4,7"
+    },
+    {
+        "name": "Alte Schule",
+        "price": "€€",
+        "rating": "4,8"
+    },
+    {
+        "name": "Mon Petit Caf\u00e9",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "HANS IM GL\u00dcCK - STUTTGART Europaviertel",
+        "price": "€€",
+        "rating": "4,2"
+    },
+    {
+        "name": "Schlampazius",
+        "price": "€",
+        "rating": "4,4"
+    },
+    {
+        "name": "Schlampazius",
+        "price": "not available",
+        "rating": "4,4"
+    },
+    {
+        "name": "Boots Western Bar",
+        "price": "not available",
+        "rating": "3,8"
+    },
+    {
+        "name": "Living Shisha Lounge",
+        "price": "€€",
+        "rating": "4,0"
+    },
+    {
+        "name": "Living Shisha Lounge",
+        "price": "€€",
+        "rating": "4,0"
+    },
+    {
+        "name": "Zeppelin St\u00fcble",
+        "price": "not available",
+        "rating": "3,6"
+    },
+    {
+        "name": "Gastst\u00e4tte Karlseck",
+        "price": "€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Buschpilot",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Buschpilot",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Kaleya Caf\u00e9 & Bar",
+        "price": "not available",
+        "rating": "4,5"
+    },
+    {
+        "name": "Kaleya Caf\u00e9 & Bar",
+        "price": "not available",
+        "rating": "4,5"
+    },
+    {
+        "name": "Viertel Restaurant & Weinstube",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Viertel Restaurant & Weinstube",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Skylounge 327",
+        "price": "not available",
+        "rating": "4,1"
+    },
+    {
+        "name": "Funfo's Restaurant",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Funfo's Restaurant",
+        "price": "€€",
+        "rating": "4,6"
+    },
+    {
+        "name": "Carls Brauhaus",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Carls Brauhaus",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Carls Brauhaus",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "HappyHour Stuttgart",
+        "price": "not available",
+        "rating": "3,0"
+    },
+    {
+        "name": "Flora & Fauna",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Flora & Fauna",
+        "price": "€€",
+        "rating": "4,3"
+    },
+    {
+        "name": "Mozart3",
+        "price": "€€",
+        "rating": "4,5"
+    },
+    {
+        "name": "Eduard's Bar Stuttgart",
+        "price": "€€",
+        "rating": "4,2"
+    },
+    {
+        "name": "Eduard's Bar Stuttgart",
+        "price": "€€",
+        "rating": "4,2"
+    }
+]

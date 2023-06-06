@@ -11,8 +11,8 @@ class dataObject:
 	def __init__(self,name) :
 		self.name = name
 		self.price = "not available"
-		self.rating = "not available"
-
+		self.rating = "not available"        
+		self.about = {}        
 	def addPrice(self,price):
 		self.price = price
 	
