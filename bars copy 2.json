@@ -1,0 +1,5591 @@
+[
+    {
+        "name": "Holzmaler",
+        "rating": "4.8",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "148 reviews",
+                "filters": [
+                    "All",
+                    "cocktails",
+                    "prices",
+                    "atmosphere",
+                    "water",
+                    "doorbell",
+                    "nuts",
+                    "reservation",
+                    "whisky"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "FOU FOU | Cocktail- und Champagnerbar",
+        "rating": "4.3",
+        "price": "\u20ac\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy",
+                "Upmarket"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments"
+            ],
+            "reviews": {
+                "number of reviews": "583 reviews",
+                "filters": [
+                    "All",
+                    "prices",
+                    "popcorn",
+                    "evening",
+                    "gin",
+                    "atmosphere",
+                    "red light district",
+                    "audience",
+                    "bouncer"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Paul & George",
+        "rating": "4.4",
+        "price": "\u20ac\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy",
+                "Upmarket"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "598 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    "gin",
+                    "evening",
+                    "whiskey",
+                    "weekend",
+                    "water",
+                    "map",
+                    "red light district"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Bar Tabu",
+        "rating": "3.7",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "28 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Immer Beer Herzen",
+        "rating": "4.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "No delivery",
+                "No takeaway",
+                "No dine-in"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Has dancing",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "237 reviews",
+                "filters": [
+                    "All",
+                    "audience",
+                    "kicker",
+                    "atmosphere",
+                    "price",
+                    "smoking",
+                    ""
+                ],
+                "review text": [
+                    "Nice place with good ambiance. On Saturday there is a DJ mixing live. Only thing to take care of, it is authorized to smoke in",
+                    "Great bar with great selection of drinks",
+                    "Place is nice and price are ok. It gets crowed on Saturday night, so it depends on what you're looking for. It gets cozier after 2am!",
+                    "First time there - decent place with decent people",
+                    "Very cozy bar with nice vibes",
+                    "Nice bar, sadly you are allowed to smoke inside.",
+                    "cool place, nice music and ambiance !",
+                    "Fantastic bar for people over 30",
+                    "Not a bad place to have a beer.",
+                    "Best place in town!"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Bar Korridor",
+        "rating": "4.6",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "76 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Schwarz Wei\u00df Bar",
+        "rating": "4.7",
+        "price": "\u20ac\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance",
+                "No wheelchair-accessible seating",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy",
+                "Upmarket"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "715 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    "wish",
+                    "whiskey",
+                    "smokers",
+                    "map",
+                    "flavors",
+                    "cuban cigars",
+                    "seats"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Botanical Affairs",
+        "rating": "4.6",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "163 reviews",
+                "filters": [
+                    "All",
+                    "gin",
+                    "consultation",
+                    "price",
+                    "atmosphere",
+                    "map",
+                    "popcorn",
+                    "tonic",
+                    "flavor"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Suessholz",
+        "rating": "4.4",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "351 reviews",
+                "filters": [
+                    "All",
+                    "cakes",
+                    "prices",
+                    "evening",
+                    "cocktails",
+                    "atmosphere",
+                    "DJ",
+                    "wine",
+                    "licorice"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "PUF",
+        "rating": "4.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "111 reviews",
+                "filters": [
+                    "All",
+                    "spritzer",
+                    "evening",
+                    "cocktails",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Jakobstube",
+        "rating": "4.4",
+        "price": "\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Offers kerbside pickup",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "114 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    "price",
+                    ""
+                ],
+                "review text": [
+                    "The staff was very friendly to our entire group of Americans. The drinks were excellent. The barkeep was knowledgeable and welcoming. I'm not sure if another guy worked there or just was there a lot, but he was incredibly friendly too and tried to converse with us in English.",
+                    "Very nice neighborhood bar that we happened to stumble upon. The owner was a very nice man who had a lot of info to share with us about the area. We were also very impressed by the pricing.",
+                    "Nice bar & a friendly welcome",
+                    "Live it",
+                    "Alles perfekt, tolles Ambiente, nette Mitarbeiter und ein gro\u00dfartiger Chef.\nJederzeit wieder. Nur zu empfehlen, da auch immer Sommer Au\u00dfensitzgelegenheiten",
+                    "Absolut Kult - gemischtes Publikum - nettes Personal - gem\u00fctliche Atmosphere - immer wieder ein Erlebnis. Bleibt so wie Ihr seit.\ud83d\udc4d \u2026",
+                    "Nette G\u00e4ste immer ein Ohr f\u00fcr mich wenn es mir nicht gut geht ehrlich super Micha geb. Mannheim 10jahreStuttgart jetzt",
+                    "Beste Nachbarschaftskneipe weit und breit mit wirklich buntem Publikum.",
+                    "Urige Bar mit netten Menschen. Super Getr\u00e4nkepreise und ausgezeichneten Schn\u00e4psen.",
+                    "Einfach eine geniale Kneipe, mit dem Wirt Heinrich eine runde Sache."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Thirty Nine Bar and Dining",
+        "rating": "4.0",
+        "price": "\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves coffee",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "32 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "La Concha",
+        "rating": "4.4",
+        "price": "\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "480 reviews",
+                "filters": [
+                    "All",
+                    "mexikaner",
+                    "evening",
+                    "audience",
+                    "summer",
+                    "atmosphere",
+                    "sitting",
+                    "toilet",
+                    "caipirinha"
+                ],
+                "review text": [
+                    "Good experience but there was no smokers room, as a nonsmoker it was a bit annoying.",
+                    "I love this bar, the people are so nice and cool...price is fair and also the staff is very gentle \u263a\ufe0f it is always on our plan when going out :)",
+                    "The bar itself is well situated with an ok Terasse. However the staff is clearly challenged. At peak times I saw 2, meaning it takes far to long to both order and later to pay. Pitty!",
+                    "A nice little hot spot for beers and people watching",
+                    "One of the best local bars around. OG since way back in the day. It's nothing fancy shmancy. It's just good beer with people from all parts of life.",
+                    "Decent Italian food at rather low prices. Pizzas are ok. Nice terrace.",
+                    "multicultural and very pleasant atmosphere. come in and find out.\ud83d\ude09\ud83d\ude0e \u2026",
+                    "Relaxed crowd, good Service and 1\u20ac Shots.",
+                    "leeeecker feeeeein",
+                    "Great location, friendly staff"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "NONNE Shisha Bar Lounge",
+        "rating": "4.0",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "69 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Torhaus Zwanzig BAR & LOUNGE",
+        "rating": "3.8",
+        "price": "\u20ac\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy",
+                "Upmarket"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "412 reviews",
+                "filters": [
+                    "All",
+                    "shisha",
+                    "stars",
+                    "coals",
+                    "smoking",
+                    "purchase order",
+                    "chill out",
+                    "customer",
+                    "plant variety"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Goldener Heinrich",
+        "rating": "4.1",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "12 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Tibi Bar",
+        "rating": "5.0",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "12 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Le petit Coq",
+        "rating": "4.6",
+        "price": "\u20ac\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible car park",
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible seating",
+                "Has wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves cocktails",
+                "Serves happy-hour drinks",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy",
+                "Upmarket"
+            ],
+            "Crowd": [
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "556 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    "guest",
+                    "evening",
+                    "map",
+                    "creative",
+                    "gin",
+                    "reservation",
+                    "degustation"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "reBOOTS",
+        "rating": "4.9",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has karaoke",
+                "Has quiz night"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves happy-hour drinks",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "248 reviews",
+                "filters": [
+                    "All",
+                    "toilets",
+                    "cocktail",
+                    "atmosphere",
+                    "evening",
+                    "price",
+                    "team",
+                    "karaoke",
+                    "mood"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Eduard's Bar Stuttgart",
+        "rating": "4.2",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Offers kerbside pickup",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy",
+                "Upmarket"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "265 reviews",
+                "filters": [
+                    "All",
+                    "cocktails",
+                    "guest",
+                    "price",
+                    "waitress",
+                    "atmosphere",
+                    "evening",
+                    "purchase order",
+                    "disappointment"
+                ],
+                "review text": [
+                    "Best bar in the city! The workers,atmosphere everything is more than perfect\ud83d\ude0a The after work parties in Thursday are big+\nI love u Eduards\u2764\ufe0f \u2026",
+                    "Amazing bar outside of Breuninger. Nice outdoor seating, great interior and friendly staff. All drinks come in stylish glasses and are a real eye catcher.",
+                    "The best bar in town. You can pay with visa,mastercard too\ud83d\ude0e \u2026",
+                    "Perfect place to have a rest after exploring the city. Service was really friendly and the Strawberry Spritzer very refreshing.",
+                    "Terrible service last saturday night, took more than an hour to get a drink. Not worth the wait, it was barely good. Also, my friend ordered something and instead of saying they were out of it, they brought the drink of their choice. Maybe inform customers next time and ask them what would they prefer instead?",
+                    "Service 0.0000.\n1 espresso waiting 40 minutes.\nUnfriendly staff talking with guests like a drunk person!!!! The voice of service makes me go out and never come back again in this \u201c Bar\u201d \ud83d\udc4e\ud83c\udffc\ud83d\udc4e\ud83c\udffc\ud83d\udc4d\ud83c\udffc \u2026",
+                    "One of my favourite place in Stuttgart to have a coffee or a drink on a Saturday morning - very nice service, very good drinks and comfortable to sit, read a book or just to enjoy your time",
+                    "Newly opened bar and cafe in the shiny Dorotheen Quartier. Very chilled inside lounge and outdoor seating. Good selection of cocktails, gins and other spirits. Some food, including breakfast. Friendly staff. The choice of music needs improvement. Overall a great place once all the construction in the area is finished.",
+                    "Lovely place for a drink. Central location. Cool drinks!",
+                    "Worst experience I have since I have been so many times here. It was a raining day and I came inside and waited more than 30 minutes but nobody came\u2026. Was not at busy time"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Nova Bar",
+        "rating": "4.2",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "22 reviews",
+                "filters": [
+                    "All",
+                    "wine",
+                    "concept",
+                    "stools",
+                    "snacks",
+                    "quality",
+                    "price",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Marshall Matt",
+        "rating": "4.3",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "594 reviews",
+                "filters": [
+                    "All",
+                    "smoking",
+                    "cocktails",
+                    "waiter",
+                    "atmosphere",
+                    "audience",
+                    "guest",
+                    "whiskeys",
+                    "evenings"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "W13 Bar & Kitchen",
+        "rating": "4.2",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "232 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Ruby Bar Stuttgart",
+        "rating": "4.1",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible car park",
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible seating"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "96 reviews",
+                "filters": [
+                    "All",
+                    "shisha",
+                    "bouncers",
+                    "atmosphere",
+                    "living room",
+                    "DJ",
+                    "audience",
+                    "weekend",
+                    "evening"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Minibar",
+        "rating": "4.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "133 reviews",
+                "filters": [
+                    "All",
+                    "gin",
+                    "atmosphere",
+                    "saturday",
+                    ""
+                ],
+                "review text": [
+                    "Cozy bar specializing in gin tonic. Unfortunately, they don't make many cocktails (even gin-based), are quite pricey, and the service is a bit rough. Atmosphere is great, though, and makes me coming back.",
+                    "Love this awesome place\n\nYou should really go there and feel the neighborhood vibe",
+                    "One of my favorite places for an after work drink or a late gin tonic! Be aware that Saturday is often booked for \"private reception\"",
+                    "\u2665\ufe0f \ud83d\ude0d \u2665\ufe0f\nGrEaT pLaCe!!\n\ud83c\uddef\ud83c\uddf2 \ud83c\uddef\ud83c\uddf2 \ud83c\uddef\ud83c\uddf2 \u2026",
+                    "Great selection of gin but improvable service",
+                    "Great, off the beaten path, location. Good for groups.",
+                    "Super",
+                    "Nice and cosy place",
+                    "Nice place",
+                    "Die Minibar in Stuttgart die perfekte M\u00f6glichkeit, ein paar Drinks nach Feierabend oder als Abschlu\u00df einer Tour durch Stuttgart, zu genie\u00dfen. Die minibar, die gar nicht so mini ist, befindet sich in der Paulinenstrasse 8 in Stuttgart. Es \u2026"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "White Noise",
+        "rating": "4.0",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "233 reviews",
+                "filters": [
+                    "All",
+                    "price",
+                    "DJ",
+                    "bouncers",
+                    "atmosphere",
+                    "techno",
+                    "location",
+                    "cover charge",
+                    "electronics"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Dilayla",
+        "rating": "3.8",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "536 reviews",
+                "filters": [
+                    "All",
+                    "bouncers",
+                    "club",
+                    "evening",
+                    "party",
+                    "dance",
+                    "carpet",
+                    "audience",
+                    "atmosphere"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Pils-Pub Alt Stuttgart Sky Sportsbar",
+        "rating": "4.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "247 reviews",
+                "filters": [
+                    "All",
+                    "football",
+                    "atmosphere",
+                    "possession",
+                    "price",
+                    ""
+                ],
+                "review text": [
+                    "Fun atmosphere. Nice service.  Staff is very kind and cheerful\n\nOnly negative is that it is Very smoky. You hair and clothing will small of cigarettes within minutes.",
+                    "A waitress was super kind! But i could pay only with cash. Beer was super fresh",
+                    "Great pub,  good service,  always come here when in stutgart",
+                    "Yes, a nice little bar. The staff seem quite nice and patient with our bad German. We were able to order some beers and they brought to the table. They're attentive and will offer more as you finish. \u2026",
+                    "The best little pub in Stuttgart! We come here all the time, the owners are incredible and the waitresses are the best.  Veronica is the sweetest most attentive in the city! We come here every weekend we can.  Seriously the most kind and wonderful staff! Love it here!",
+                    "Excellent little bar with great beer and super friendly owner. Also has giant screen so you can watch football there too( bundesliga only) highly recommended",
+                    "This is my place to go, great beers, great staff, just feels like a home bar LOVE IT",
+                    "Great place to hang out and have a drink. The interior is great and the staff if friendly.",
+                    "Nice place, good beer and big screen to watch matches.",
+                    "Cozy little beer bar. Nice and friendly staff."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Mata Hari",
+        "rating": "4.4",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has great bar food"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "1.676 reviews",
+                "filters": [
+                    "All",
+                    "student",
+                    "toilet",
+                    "weekend",
+                    "audience",
+                    "mood",
+                    "location",
+                    "cheese fondue",
+                    "nightlife"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Bix Jazzclub",
+        "rating": "4.7",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "Has restaurant",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy",
+                "Upmarket"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "703 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    "whiskey",
+                    "cigar",
+                    "evening",
+                    "program",
+                    "bands",
+                    "soul",
+                    "gastronomic"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Billardsaal",
+        "rating": "4.2",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "242 reviews",
+                "filters": [
+                    "All",
+                    "gin",
+                    "whiskey",
+                    "price",
+                    "atmosphere",
+                    "couches",
+                    "tonic",
+                    "belgian beers",
+                    "rum"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Mr.Shisha Bar & Lounge",
+        "rating": "3.7",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "90 reviews",
+                "filters": [
+                    "All",
+                    "price",
+                    ""
+                ],
+                "review text": [
+                    "Good place nice ambience.",
+                    "Tip top",
+                    "Kim wars",
+                    "Great place",
+                    "Kann die negativen Bewertungen nicht nachvollziehen, die Shisha ist top, die Bedingungen immer sehr freundlich und egal wie voll der Laden ist, es wird super schnell bedient",
+                    "Ich kann es hier leider nicht empfehlen Preisleistung/Qualit\u00e4t f\u00fcr das was man bekommt ist nicht rechtfertigend! Einfach nur schlecht nie wieder !!",
+                    "Top Shisha zu einem fairen Preis. Das Personal ist sehr freundlich, bem\u00fcht und schnell. Behaltet es so bei! Auch die Getr\u00e4nke und Cocktails sind gut. Kleiner Minuspunkt, mir gef\u00e4llt die Location nicht so gut, jedoch ist die Atmosph\u00e4re sehr angenehm. Komme wieder!",
+                    "Hatte gestern einen sch\u00f6nen Abend dort, ich hab von den schlechten Bewertungen nichts gemerkt, Ich glaube man hat auch das Herzen genommen und sie arbeiten dran. Weiter so!",
+                    "Super Shisha f\u00fcr einen vergleichsweise g\u00fcnstigen Preis. Das Personal ist super freundlich, die Atmosph\u00e4re allgemein sehr angenehm. Die 5 Sterne sind klar verdient.",
+                    "Gute Shishas, Musik und location! Mitarbeiter sehr freundlich. Tradi 12\u20ac und die war mega, also bitte wer sich \u00fcber den Preis beschwert hat keine Ahnung. \u2026"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Mrs. Jones",
+        "rating": "4.1",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "241 reviews",
+                "filters": [
+                    "All",
+                    "audience",
+                    "price",
+                    "bouncers",
+                    "evening",
+                    "mood",
+                    "dance",
+                    "DJ",
+                    "atmosphere"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Yart",
+        "rating": "4.6",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "96 reviews",
+                "filters": [
+                    "All",
+                    "cocktail",
+                    "price",
+                    "weekend",
+                    ""
+                ],
+                "review text": [
+                    "Saturday evening around 4/5am i expirienced for first time in my life organized stealing. They stole my jacket with my phone and other stuff, wich i later found on onee of the guys(he was wearing 2 jacket, one of them were mine). They were \u2026",
+                    "Small, but very down to earth. Great music, great drinks, a very solid atmosphere. Will definitely go again",
+                    "Not sure if it's only for corona time or if its closed down for good.",
+                    "Space and drink selections arelimited compared to other bars, but the atmospheres is nice, would come back again.",
+                    "Good varied selection.",
+                    "Truly local",
+                    "Cozy-Cocktail Bar",
+                    "Mega symphatischer Barkeeper, kam zu uns als wir uns gesetzt haben und hat uns sehr gute Empfehlungen gegeben. An der Bar kann man auch sehr gut nach etwas Bestimmtem fragen und bekommt dann etwas Passendes damit gemixt. Musik ist auch sehr chillig und der Laden nicht allzu voll, damit volle Empfehlung.",
+                    "Angenehme Kellnerinnen, gute Auswahl an Getr\u00e4nken. Nur sollte f\u00fcr ein Pils auch ein typisches Pilsglas genutzt werden anstelle eines normalen Glases.",
+                    "sehr sympathisches und sch\u00f6nes barpersonal. auch die einrichtung \u00fcberzeugt. die musik abwechselungsreich, die drinks sind solide und die preise angemessen. unter der Woche ruhiger am wochenende kann es auch mal \u201eausarten\u201c. (wer nett wird netter behandelt)"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Paddy's Irish Pub",
+        "rating": "4.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves coffee",
+                "Has dancing",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has counter service",
+                "Outside food allowed",
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "325 reviews",
+                "filters": [
+                    "All",
+                    "guinness",
+                    "whisky",
+                    "price",
+                    "mood",
+                    "audience",
+                    "barrel",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Bernstein - Die Spielebar",
+        "rating": "4.4",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "333 reviews",
+                "filters": [
+                    "All",
+                    "dishes",
+                    "atmosphere",
+                    "board games",
+                    "evening",
+                    "guest",
+                    "concept",
+                    "fun",
+                    "social game"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "BARBADOS Stuttgart",
+        "rating": "4.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only",
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "278 reviews",
+                "filters": [
+                    "All",
+                    "cocktails",
+                    "atmosphere",
+                    "price",
+                    "mexikaner",
+                    "stars",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Biddy Earlys Irish Pub",
+        "rating": "4.4",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has bar games",
+                "Has karaoke",
+                "Has live music",
+                "Has live performances",
+                "Has quiz night",
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance",
+                "No wheelchair-accessible seating"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves coffee",
+                "Has dancing",
+                "Serves food",
+                "Serves food at bar",
+                "Serves happy-hour drinks",
+                "Serves late-night food"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "High chairs available",
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "1.879 reviews",
+                "filters": [
+                    "All",
+                    "karaoke",
+                    "audience",
+                    "mood",
+                    "bands",
+                    "smoking room",
+                    "event",
+                    "reservation",
+                    "open mic"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Oblomow",
+        "rating": "4.3",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "1.463 reviews",
+                "filters": [
+                    "All",
+                    "toilets",
+                    "snacks",
+                    "kicker",
+                    "smoking cigarettes",
+                    "bouncers",
+                    "club",
+                    "weekends",
+                    "chillout"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Detroit Bar",
+        "rating": "3.9",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "reviews": {
+                "number of reviews": "26 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Caff\u00e8-Bar",
+        "rating": "4.7",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "reviews": {
+                "number of reviews": "230 reviews",
+                "filters": [
+                    "All",
+                    "espresso",
+                    "atmosphere",
+                    "cappuccinos",
+                    "DJ",
+                    "evening",
+                    ""
+                ],
+                "review text": [
+                    "Very cute little cafe / bar with great coffee and a decent selection of beers and spirits. In winter the indoor spots are limited but the whole atmosphere makes you want to spend some more time here and just have another drink. I'm smitten.",
+                    "Very chilled coffee bar - good coffee",
+                    "Love this place. And the Aperol Sour is particularly delicious.",
+                    "The absolute best coffee in the city, by a lot! When I'm not in Italy, this is where I go.",
+                    "Nice small bar ... cute and nice coffee aswell ... wlan for free \ud83d\udc4d\ud83d\udc4d \u2026",
+                    "Great place! And a very nice and friendly waiter!",
+                    "This spot is awesome. It's a tiny, hole-in-the-wall type place that can only seat max 10 people. But well worth the stop! Inside feels like a german version of a speakeasy with awesome light fixtures and decor. The bartender was pleasant \u2026",
+                    "Well my friend and myself were suppose to meet here for a quick drink..\nI arrived first and waited outside..\nSaid to myself, my friend did not really scout the place live.. \u2026",
+                    "Beautiful and cozy bar. Great drinks and really friendly staff. 10 people are enough to make it crowded but that's part of its charme",
+                    "Great atmosphere, that only gets better as the bar gets busier. And don't ignore the outside seating, it's cosier than you might think."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Kap Tormentoso",
+        "rating": "4.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "955 reviews",
+                "filters": [
+                    "All",
+                    "basement",
+                    "live music",
+                    "bands",
+                    "location",
+                    "smoking",
+                    "vegan",
+                    "atmosphere",
+                    "djs"
+                ],
+                "review text": [
+                    "Great DJs and nice environment.  The staff is really friendly",
+                    "Awesome small pub near the walking district. Small but friendly service and affordable prices make more than up for it. A good pit stop in between bars.",
+                    "Minus two stars because it is not possible to pay here with card \u2026",
+                    "Awesome place to hangout with friends and meet new people. Downstairs bar opens after 17-18h, and then the fun starts!",
+                    "Nice cozy bar! I usually meet my friends there and the staff are cool and down to earth!",
+                    "Cool place goood music vibes especially hiphop\ud83d\ude4f\u2764\ufe0f\ud83d\udda4 \u2026",
+                    "Great place for after-work beers, heavy smoking downstairs though. Outdoor tables available in summer. Beer is cheaper then Stuttgart's avarage.",
+                    "You have to try their White Russian!",
+                    "If you've spontaniously met at friend of yours, Tormentoso is the very first place to appear in mind. It's always a bit crowdy, has awesome burgers, a smoking area downstairs and is actually the only cozy place in winter.",
+                    "Nice bar, downstairs is the larger room and it's smoking, it gets pretty foggy if you're not used to it you might have trouble."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Havana Cafe & Cocktail Stuttgart",
+        "rating": "3.9",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Offers kerbside pickup",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves happy-hour drinks",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments"
+            ],
+            "reviews": {
+                "number of reviews": "708 reviews",
+                "filters": [
+                    "All",
+                    "latin music",
+                    "dance",
+                    "bouncer",
+                    "evening",
+                    "atmosphere",
+                    "DJ",
+                    "reggaeton",
+                    "audience"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Jigger & Spoon",
+        "rating": "4.6",
+        "price": "\u20ac\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible lift",
+                "Has wheelchair-accessible toilet",
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy",
+                "Upmarket"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "1.591 reviews",
+                "filters": [
+                    "All",
+                    "safe",
+                    "cigar",
+                    "audience",
+                    "bank",
+                    "elevator",
+                    "location",
+                    "doorbell",
+                    "basement"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Jazzclub Kiste",
+        "rating": "4.6",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "372 reviews",
+                "filters": [
+                    "All",
+                    "live music",
+                    "atmosphere",
+                    "bands",
+                    "price",
+                    "evening",
+                    "audience",
+                    "musicians",
+                    "broadcast programming"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Tequila Bar - \"The Club\"",
+        "rating": "3.6",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "254 reviews",
+                "filters": [
+                    "All",
+                    "bouncers",
+                    "dj",
+                    "evening",
+                    "songs",
+                    "woman",
+                    "table",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Hanky Panky",
+        "rating": "4.9",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Offers kerbside pickup",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves happy-hour drinks",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "246 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    "prices",
+                    "water",
+                    "vaulted cellars",
+                    "chips",
+                    "snacks",
+                    "evening",
+                    "service"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Waranga",
+        "rating": "4.4",
+        "price": "\u20ac\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "1.118 reviews",
+                "filters": [
+                    "All",
+                    "cocktails",
+                    "atmosphere",
+                    "summer",
+                    "audience",
+                    "stairs",
+                    "evening",
+                    "visit",
+                    "chill out"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Alt.Stuttgart",
+        "rating": "4.7",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "7 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "1.Stock",
+        "rating": "4.2",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "69 reviews",
+                "filters": [
+                    "All",
+                    "djs",
+                    "toilet",
+                    ""
+                ],
+                "review text": [
+                    "Best techno Party of whole Stuttgart",
+                    "This is one of the new hot places in Stuttgart. The entrance is between a falafel place (which is amazing btw) and a porn cinema. After entering a bouncer will check you and let you in if there's still space. Which might not always be the \u2026",
+                    "Low",
+                    "Cooler Spot",
+                    "Die wahrscheinlich coolste, kleine Bar in Stuttgart \u2013 mit langer Tradition und definitivem Absturzpotential. Schon vor 20 Jahren war der 1. Stock eine Institution, vor allem f\u00fcr die Stuttgarter. Leute, die gerne auf der Theo flanieren oder \u2026",
+                    "Mit viel Liebe zum Detail wurde hier ein sch\u00f6nes, f\u00fcr Stuttgart untypisches Ambiente geschaffen. Man darf kein schickimicki Fan sein (siehe Toilette, die von meinen Leuten gerne als Fotokulisse genutzt wird), aber wird definitiv seinen Spa\u00df & g\u00fcnstige Getr\u00e4nke im 1. Stock finden!",
+                    "Klein, sch\u00e4big und eigentlich nur etwas f\u00fcr saufabende die schon etwas fortgeschritten sind. \u2026",
+                    "Coole Bar mit g\u00fcnstigen Preisen (Shots 2\u20ac) und Musik, zu der h\u00e4ufig getanzt wird. Ist also fast schon ein kleiner Club. Leider sehr klein, weshalb es oft voll ist. Die Toilette (Singular!) geht aber gar nicht...",
+                    "Richtig gute elektronische Musik findet man einfach in den kleinsten Bars. Im Vergleich zum Dresden ist es hier nicht so voll und man kann die Musik noch genie\u00dfen.",
+                    "Getr\u00e4nke sind recht g\u00fcnstig, die Musik ist ok, wenn man den Stil mag. Allerdings ist es hier sehr verraucht und die eine Toilette ist totaler Schrott..."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Vogue Drinks & More",
+        "rating": "4.4",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "27 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Monroe's",
+        "rating": "3.6",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has bar games",
+                "Has karaoke"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "101 reviews",
+                "filters": [
+                    "All",
+                    "karaoke",
+                    "waiter",
+                    "visit",
+                    "guest",
+                    "idea",
+                    "bouncers",
+                    "songs",
+                    "price"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Erdgeschoss Bar & B\u00fchne",
+        "rating": "4.4",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "17 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "o.T. Bar Lounge",
+        "rating": "3.9",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "170 reviews",
+                "filters": [
+                    "All",
+                    "cocktails",
+                    "prices",
+                    "service",
+                    "museum",
+                    "croissant",
+                    "terrace",
+                    "table",
+                    "cake"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "High Fidelity",
+        "rating": "4.5",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible seating",
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "67 reviews",
+                "filters": [
+                    "All",
+                    "wine",
+                    "consultation",
+                    "jazz",
+                    "sandwiches",
+                    "price",
+                    "atmosphere",
+                    "peruvian",
+                    "gastronomy"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "El Teatro - Cocktails \u2022 Cigars \u2022 Tastings",
+        "rating": "4.4",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "30 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    ""
+                ],
+                "review text": [
+                    "Super netter Service! Hammerm\u00e4\u00dfige Cocktails! Sch\u00f6nes Ambiente! Die beste Idee dort seinen Feierabend mit Freunden zu genie\u00dfen. :)",
+                    "Mittlerer Tisch hat eine Tischh\u00f6he f\u00fcr Kinder. Da kriegst die Beine nicht darunter.\nAbstand zum stuhl hinter mir viel zu klein, Leute haben mich st\u00e4ndig beim \u2026",
+                    "Sehr freundliche Mitarbeiter und gute Beratung bei den Cocktails. Die Drinks sind unglaublich lecker, besonders f\u00fcr die entspannten Preise. Ich werde definitv wiederkommen. \u2026",
+                    "Super nettes Personal und sch\u00f6ne Einrichtung",
+                    "Gro\u00dfartige Cocktails und unglaublich nettes Personal :) Der Barchef ist sehr aufmerksam mit seinen G\u00e4sten.\nSch\u00f6nes Ambiente, in lockerer Atmosph\u00e4re im Herzen von Stuttgart.",
+                    "Sehr gute cocktails.\nSch\u00f6ne ruhige und gem\u00fctliche Atmosph\u00e4re mit Gelegenheit zum l\u00e4ngeren verweilen. \u2026",
+                    "Absolut top verdiente 5 Sterne! Tolles Ambiente, toller Barchef und nat\u00fcrlich auch die anderen Mitarbeiter/innen\ud83d\ude0a auf der Karte wird jeder f\u00fcndig \ud83d\ude0a \u2026",
+                    "Nice Cocktails, supernette Mitarbeiter und ein Barchef der jeden Wunsch umsetzt. Wir kommen wieder!",
+                    "The live music event has started. I fell in love with the place. The co \u2026",
+                    "Zuempfehlen, Gute Getr\u00e4nke und Gutes Essen, sehr aufmerksame u. Freundliches Personal."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Ribingurumu",
+        "rating": "4.4",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has bar games",
+                "Has live performances",
+                "Has quiz night"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Outside food allowed",
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly"
+            ],
+            "Planning": [
+                "Reservations required",
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments"
+            ],
+            "reviews": {
+                "number of reviews": "547 reviews",
+                "filters": [
+                    "All",
+                    "foosball table",
+                    "atmosphere",
+                    "smoking",
+                    "board games",
+                    "audience",
+                    "living room",
+                    "hipster",
+                    "students"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Bar Lillet",
+        "rating": "4.3",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "39 reviews",
+                "filters": [
+                    "All",
+                    "cocktails",
+                    "price",
+                    ""
+                ],
+                "review text": [
+                    "The variety and the quality of cocktails is absolutely great, as is the food as well, however, I couldn't give 5 stars because I don't find their service so great so to speak.. they tend to look/act unorganized, confused and a bit odd at \u2026",
+                    "The cocktails are more than fancy and the atmosphere in the bar is next to royal. Prices are of course a bit higher but it's nice to sit down with friends and chat in the big comfy chairs and couches.",
+                    "\u20ac9.00 bottle of water. robbery.",
+                    "Ganz wunderbare Cocktails. Die Barkeeper ber\u00fccksichtigen W\u00fcnsche und Preferenzen. Frische Zutaten finden Verwendung. Die kleine feine Speisekarte bietet leckere Begleiter f\u00fcr jedes Getr\u00e4nk. Immer wieder gerne besuche ich diese Bar, wenn ich wieder in Stuttgart bin.",
+                    "Wir wurden sehr freundlich und herzlich Empfangen zu sp\u00e4ter Stunde. \ud83d\ude09\nEine wundersch\u00f6ne sehr ruhige Atmosph\u00e4re in der sehr sch\u00f6nen Bar mit spannenden G\u00e4sten. Hervorragende Betreuung des Teams, die all unsere W\u00fcnsche erkannten und \u2026",
+                    "Super Service und sehr leckere Cocktails. Leider haben sich hier die M\u00e4use breit gemacht\u2026. Darum gibt es leider nur 3 Sterne.",
+                    "Sch\u00f6ne Bar. Au\u00dfergew\u00f6hnliche Cocktails mit Geschichte in der Karte.\n\nAngenehme Musik. Sehr zu empfehlen",
+                    "Wir wollten uns mittags etwas g\u00f6nnen und w\u00fcnschten zun\u00e4chst einen Cocktail. Leider konnte die Bedienung Null Auskunft zu der kleinen Auswahl erteilen. \"Sie war neu\". \u2026",
+                    "Service ist sehr nett und zuvorkommend. Die Karte sieht zwar \u00fcbersichtlich aus, man kann jedoch auch Standarddrinks bekommen. Whisky-cola kostete beispielsweise 8 EUR mit guter Mischung. Ansonsten nettes Ambiente und ungezwungene Atmosph\u00e4re.",
+                    "Gem\u00fctliche Atmosph\u00e4re mit kleiner BarKarte. Ideal um nach einem Tag in der Stadt den Abend ausklingen zu lassen."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Sky Beach Stuttgart",
+        "rating": "4.0",
+        "price": "\u20ac\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has great bar food",
+                "Has rooftop seating"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible car park",
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible lift"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "1.271 reviews",
+                "filters": [
+                    "All",
+                    "roof",
+                    "sand",
+                    "summer",
+                    "chill out",
+                    "bouncer",
+                    "deck chairs",
+                    "self service",
+                    "elevator"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Mietbar Stuttgart",
+        "rating": "3.5",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "48 reviews",
+                "filters": [
+                    "All",
+                    "soil",
+                    "toilet",
+                    "birthday",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Mos Eisley",
+        "rating": "4.3",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "781 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    "waiter",
+                    "djs",
+                    "name",
+                    "evening",
+                    "star wars",
+                    "audience",
+                    "dance"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "BAR",
+        "rating": "4.6",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Offers kerbside pickup",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "337 reviews",
+                "filters": [
+                    "All",
+                    "cocktails",
+                    "whiskey",
+                    "atmosphere",
+                    "price",
+                    "rum",
+                    "consultation",
+                    "gin",
+                    "quality"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Schirmst\u00fcble",
+        "rating": "4.4",
+        "price": "\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "45 reviews",
+                "filters": [
+                    "All",
+                    "host",
+                    ""
+                ],
+                "review text": [
+                    "Mexicanico 4 live",
+                    "Trinkhalle",
+                    "Alles sehr gut gewesen. Netter wirt und nette G\u00e4ste .Was will man mehr.",
+                    "heute das erste mal da gewesen, der Wirt freundlich und Preislich absolut super. LEIDER ein absolutes NOGO, einer der G\u00e4ste hat sich erlaubt sehr unh\u00f6flich, angreifend und respektlos mit mir zu sprechen, in Begleitung von 2 Frauen, mussten \u2026",
+                    "Ehrliche Raucherkneipe und kaltes Bier!",
+                    "Hallo Janni Beiger,\n\nhervorragende Bar. \u2026",
+                    "Vanessa ist eine super Barkeeperin. Das beste was dem Schirmst\u00fcble passieren konnte. Daumen hoch!",
+                    "Sehr nette freundliche Bedienung und tolle G\u00e4ste. \ud83d\udc4d \u2026",
+                    "Die Schirmbar ohne Schnee! Sehr netter Wirt, solide Gerr\u00e4nke \ud83e\udd29 \u2026",
+                    "Klein und fein. Merkel k\u00e4me hier nicht rein!"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Kottan",
+        "rating": "3.0",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "178 reviews",
+                "filters": [
+                    "All",
+                    "die chefin",
+                    "table",
+                    "insult",
+                    "purchase order",
+                    "waiter",
+                    "stars",
+                    "guest",
+                    "evening"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "huginn lounge & arts",
+        "rating": "4.8",
+        "about": {
+            "Service options": [
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "184 reviews",
+                "filters": [
+                    "All",
+                    "cocktails",
+                    "atmosphere",
+                    "cake",
+                    "espresso",
+                    "tonic",
+                    "martini",
+                    "price",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Piano Bar",
+        "rating": "4.6",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible car park",
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible lift",
+                "Has wheelchair-accessible seating",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy",
+                "Upmarket"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "179 reviews",
+                "filters": [
+                    "All",
+                    "cocktail",
+                    "evening",
+                    "atmosphere",
+                    "prices",
+                    "live music",
+                    "service",
+                    "choice",
+                    "hotel"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Dresden Bar",
+        "rating": "3.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "51 reviews",
+                "filters": [
+                    "All",
+                    "room",
+                    "bouncers",
+                    "djs",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Walther Caf\u00e9 Bar",
+        "rating": "4.1",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "125 reviews",
+                "filters": [
+                    "All",
+                    "prices",
+                    "crying",
+                    "bottle",
+                    "atmosphere",
+                    "kindness",
+                    "consultation",
+                    ""
+                ],
+                "review text": [
+                    "A lovely little bar serving a nice selection of wines and cocktails. We enjoyed a lovely dry and slightly bitter Riesling and a gin and tonic. We sat outside in the day and the atmosphere was very relaxed and perfect for a Sunday afternoon. The staff were also very friendly and helpful.",
+                    "Cozy place but the music inside is too loud!",
+                    "They allow people to smoke indoors. Horrible.\nNote on the menu does not help, should be posted outside, mentioned by the server. This is not 1992..",
+                    "Best winebar for good quality wine, nice atmosphere and perfect centered location.  They have rare wines like OPUS One, Honigvogel, Dom P p2 etc \ud83d\ude4c\ud83c\udffc \u2026",
+                    "Very cozy wine bar and shop. Good selection of mid-range wines. They also offer some food along with the wines (e.g., salami, cheese and olives). Very friendly and helpful staff.",
+                    "Sweet little wine bar, super nice staff, great variety of wines for reasonable prices.",
+                    "A cozy terrace with heaters, so perfect for cooling autumn days",
+                    "Great little spot",
+                    "Ein kleines unscheinbares Restaurant & Caf\u00e9  im Herzen Stuttgarts! Kann man empfehlen - jedoch sind die St\u00fchle nicht f\u00fcr ein langes verweilen gedacht. Man sollte los mehrere Kissen sich besorgen. Preis Leistungsverh\u00e4ltnis ist ok.",
+                    "Lecker Kaffee und auch warme frische Zimtschnecken direkt vom ZeitUndBrot von nebenan. Tip top."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Trude Stuttgart",
+        "rating": "4.7",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live music",
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "73 reviews",
+                "filters": [
+                    "All",
+                    "tacos",
+                    "atmosphere",
+                    "price",
+                    "kneipe",
+                    ""
+                ],
+                "review text": [
+                    "Good tacos for Stuttgart! Barbacoa taco was great, fish taco could have used a bigger piece of fish but was also tasty! Carnitas was a little bit dry but still good! \u2026",
+                    "I am from New Mexico, in the USA, on the border with Mexico, and I came here just to say Trude Stuttgart's tacos are legit! So good. Thank you.",
+                    "Nice Bar. Especially the shape of the bar itself is different.\n\nThe staff is very friendly and attentive. \u2026",
+                    "It\u2019s very cosy and it has great music. Try it nothing to hesitate",
+                    "Trude was fun, crowded but that's how I like it.",
+                    "Super Gin Tonic!",
+                    "Top!",
+                    "\ud83d\udc4d\ud83d\ude01 \u2026",
+                    "Nettes Personal, Super leckere Tacos, l\u00e4ssige Musik, Pepsi Cola lieben wir\ud83e\uddda \u2026",
+                    "Sehr nette Kneipe mit entspannter Atmosph\u00e4re. Wir waren Samstag zur Er\u00f6ffnung da. Am Wochenende wird die Musik zu sp\u00e4ter Stunde laut gedreht. Essen soll es demn\u00e4chst auch geben."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Wolfram Bar & Terrace",
+        "rating": "4.4",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Has rooftop seating"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "122 reviews",
+                "filters": [
+                    "All",
+                    "roof",
+                    "atmosphere",
+                    "prices",
+                    "service",
+                    ""
+                ],
+                "review text": [
+                    "Great place with delicious drinks. It's nice to sit outside, next to growing lavender (which is then put to your drinks :). I went to Wolfram on Saturday and there was a DJ. Loved the view to Public Library at night. Overall I had a lovely evening. Thank you!",
+                    "The members of our Stuttgart Expat Meetups group love our Rooftop Garden Parties at Wolfram Bar & Terrace on top of Jaz in the City",
+                    "First of all, this is a classy place. Having a student-budget, this may not be the right place for you. PS: the drinks are of excellent quality! \u2026",
+                    "Very friendly staff and delicious snacks - I\u2019ll be back!",
+                    "Good drinks, service and ambience is all you need. It's that simple ;)",
+                    "It's 10:50pm and the waitress is like \"sorry kitchen closes at 11pm, nor orders possible anymore.\" Few seconds later, just walking outside to check out terrace - waitress is like: \"sorry terrace is closing now.\" \u2026",
+                    "Very loud music, when we finally found a cosy place to sit, we were asked to move in order to fit a bigger group. We didn't even have the time to finish our drinks when we got driven out be the group. First and last time there.",
+                    "Small but stylish cocktail bar on the roof of The Jazz hotel. A little pricey, but lovely outside terrace with city views.",
+                    "Nice rooftop.(significant part of the terrace was closed)\nHowever, overpriced!!! This is not metropolitan place or Mykonos, bit prices are like it is...",
+                    "The best Cocktails in Stuttgart!"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "ZO'E",
+        "rating": "2.8",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "710 reviews",
+                "filters": [
+                    "All",
+                    "bouncer",
+                    "table",
+                    "smoke",
+                    "sitting",
+                    "square",
+                    "sweat pants",
+                    "purchase order",
+                    "dress code"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Danny\u2019s Bar & Grill",
+        "rating": "5.0",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "2 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Hotel Nachtw\u00e4chter",
+        "rating": "4.0",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "23 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Huqqa Lounge",
+        "rating": "4.0",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards"
+            ],
+            "reviews": {
+                "number of reviews": "251 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    "price",
+                    "mood",
+                    "DJ",
+                    "service",
+                    ""
+                ],
+                "review text": [
+                    "Excellent Chicha, the best in Stuttgart, perfect for locals and tourists (like me), no need to book like many others, recommended",
+                    "Favorite place to smoke at, in Downtown Stuttgart!\nThe staff are really friendly, generous. Shisha flavors are amazing. \u2026",
+                    "Nice place. It's a bit of a weird location but the service was excellent and the staff friendly",
+                    "turgay the best thsnk you",
+                    "This place is very cool feels like private i go there with my friends we are having fun!!\ud83e\udd73\ud83e\udd73\ud83e\udd73 \u2026",
+                    "So nice place!",
+                    "Not the most friendly staff.",
+                    "Crowded but very good",
+                    "nice",
+                    "Top Service top schisha"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Ackermann's pub and bar",
+        "rating": "4.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Has great bar food",
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "344 reviews",
+                "filters": [
+                    "All",
+                    "whiskey",
+                    "dishes",
+                    "atmosphere",
+                    "prices",
+                    "evening",
+                    "flammkuchen",
+                    "wurstsalat",
+                    "currywurst"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Schocken Events",
+        "rating": "3.5",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible seating",
+                "Has wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only",
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "386 reviews",
+                "filters": [
+                    "All",
+                    "bouncers",
+                    "price",
+                    "cover charge",
+                    "DJ",
+                    "party",
+                    "evening",
+                    "atmosphere",
+                    "jacket"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "KAFA Live",
+        "rating": "3.0",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "264 reviews",
+                "filters": [
+                    "All",
+                    "bouncers",
+                    "evening",
+                    "reservation",
+                    "cover charge",
+                    "waitress",
+                    "guest",
+                    "organized",
+                    "fun"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "The Private Room",
+        "rating": "4.3",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "67 reviews",
+                "filters": [
+                    "All",
+                    "club",
+                    "evening",
+                    "kpop",
+                    "atmosphere",
+                    "mood",
+                    "bouncers",
+                    "event",
+                    "DJ"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Fischlabor",
+        "rating": "4.6",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Has great bar food"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "583 reviews",
+                "filters": [
+                    "All",
+                    "burgers",
+                    "biergarten",
+                    "summer",
+                    "square",
+                    "dishes",
+                    "atmosphere",
+                    "fries",
+                    "backyard"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "EAGLE",
+        "rating": "4.6",
+        "about": {
+            "Service options": [
+                "No delivery",
+                "No takeaway",
+                "No dine-in"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "30 reviews",
+                "filters": [
+                    "All",
+                    "leather",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "K29 - Der Zieglerkeller",
+        "rating": "4.4",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has bar games",
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible seating",
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Has dancing",
+                "Serves happy-hour drinks",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "25 reviews",
+                "filters": [
+                    "All",
+                    "party",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Karlsvorstadt",
+        "rating": "4.7",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "71 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "BAR BAR",
+        "rating": "4.4",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "93 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Royal Caf\u00e9 Bar",
+        "rating": "4.8",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has bar games",
+                "Good for watching sport"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves happy-hour drinks",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "13 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    ""
+                ],
+                "review text": [
+                    "\u2764\ufe0fMy Love\u2764\ufe0f",
+                    "Sehr freundliches Personal und super leckere Getr\u00e4nke.\nF\u00fchle mich dort immer herzlichst Willkommen\nDie Cocktails schmecken au\u00dfergew\u00f6hnlich Gut\nEmpfehle ich nur weiter",
+                    "Frisch gepresst S\u00e4fte und Cocktails, super Personal und sehr gute Getr\u00e4nkeauswahl zu fairen Preisen. Gerne wieder!",
+                    "Sehr sch\u00f6nes Lokal und gem\u00fctliche  Atmosph\u00e4re\ud83d\ude0b\ud83e\udd73 die Cocktails sind bombastisch \u2026",
+                    "Genial super nette Bedienung und nicht zu fassen Red Bull schmeckt nach Red Bull",
+                    "Sehr nette Bedienung, gute Atmosph\u00e4re und 1a Musik !",
+                    "Atmosph\u00e4re ist super und Cocktails sind sehr lecker",
+                    "All OK."
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Laternchen",
+        "rating": "4.5",
+        "price": "\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible seating"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves coffee",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "178 reviews",
+                "filters": [
+                    "All",
+                    "prices",
+                    "jukebox",
+                    "audience",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Amber Club Lounge",
+        "rating": "4.8",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "reviews": {
+                "number of reviews": "165 reviews",
+                "filters": [
+                    "All",
+                    "music",
+                    "cocktails",
+                    "party",
+                    "evenings",
+                    "atmosphere",
+                    ""
+                ],
+                "review text": [
+                    "Very cozy atmosphere. Cocktails were tasty. Staff was kind and welcoming.",
+                    "You can chill in the evenings and party at the nights.",
+                    "Nice Location, but the music is a bit too loud.",
+                    "Nice !",
+                    "Top!",
+                    "Komme immer hier her wenn ich eine Shisha rauchen will. Im Innenhof kann man gut sitzen und das Ambiente ist sehr sch\u00f6n. Die Bedingungen sind freundlich. Die Pfeifen schmecken echt gut bisher gabs keine zu bem\u00e4ngeln.",
+                    "DER beste Club in ganz Stuttgart! Tolles Personal, gute Preise und perfekte Musik! \u2026",
+                    "Coole Atmosph\u00e4re, mit gutem und entspannten Service von Tim.",
+                    "Die Musik ist super und das Ambiente ist sehr sch\u00f6n. Shishas sind in ordnung, es gibt eine gro\u00dfe Auswahl an Tabak. Allerdings sind die Getr\u00e4nkepreise unverh\u00e4ltnism\u00e4\u00dfig hoch (4,5 Euro f\u00fcr ein Redbull).",
+                    "Bin immer zum Shisha rauchen dort. Wirklich sehr leckere Shishas und Cocktails. Das Personal ist sehr freundlich und offen. Am Wochenende ist immer sehr viel los, aber man erh\u00e4lt trotz der F\u00fclle immer einen tollen Service. Auch die \u2026"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "TATTI",
+        "rating": "3.8",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Has great tea selection"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible seating",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves coffee",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Serves breakfast",
+                "Serves dessert",
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "Dogs allowed",
+                "Good for kids",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "828 reviews",
+                "filters": [
+                    "All",
+                    "bar",
+                    "bouncer",
+                    "evening",
+                    "table",
+                    "self service",
+                    "audience",
+                    "glass",
+                    "haughtiness"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Speicy23 Bar | Restaurant",
+        "rating": "4.9",
+        "about": {
+            "From the business": [
+                "Identifies as women-owned"
+            ],
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Has karaoke",
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible entrance",
+                "Has wheelchair-accessible seating",
+                "No wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Has dancing",
+                "Serves food",
+                "Serves happy-hour drinks",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "20 reviews",
+                "filters": [
+                    "All",
+                    "karaoke",
+                    "cocktails",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Phoenix Shisha Lounge",
+        "rating": "4.1",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "226 reviews",
+                "filters": [
+                    "All",
+                    "prices",
+                    "head",
+                    "stars",
+                    "smoking pipe",
+                    "parking",
+                    "sweatpants",
+                    "soccer",
+                    "birthday"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "minimalist.",
+        "rating": "4.6",
+        "about": {
+            "Service options": [
+                "Offers delivery",
+                "Offers takeaway",
+                "Serves dine-in"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "54 reviews",
+                "filters": [
+                    "All",
+                    "atmosphere",
+                    "prices",
+                    "birthday",
+                    "value",
+                    ""
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "The Corner",
+        "rating": "4.5",
+        "price": "\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "382 reviews",
+                "filters": [
+                    "All",
+                    "darts",
+                    "kneipe",
+                    "evening",
+                    "price",
+                    "guest",
+                    "vfb stuttgart",
+                    "fun",
+                    "attention"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Zum Dortmunder",
+        "rating": "4.4",
+        "price": "\u20ac",
+        "about": {
+            "From the business": [
+                "Identifies as women-owned"
+            ],
+            "Service options": [
+                "Has outdoor seating",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves coffee",
+                "Serves food",
+                "Serves food at bar",
+                "Serves late-night food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Serves dinner",
+                "Has counter service",
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "reviews": {
+                "number of reviews": "214 reviews",
+                "filters": [
+                    "All",
+                    "football",
+                    "currywurst",
+                    "fan",
+                    "prices",
+                    "atmosphere",
+                    "games",
+                    "mood",
+                    "TV"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "deli",
+        "rating": "4.1",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "781 reviews",
+                "filters": [
+                    "All",
+                    "breakfast",
+                    "dishes",
+                    "evening",
+                    "map",
+                    "guest",
+                    "salad",
+                    "brunch",
+                    "noon"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Palast der Republik",
+        "rating": "4.5",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Accessibility": [
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "504 reviews",
+                "filters": [
+                    "All",
+                    "toilets",
+                    "weather",
+                    "snake",
+                    "student",
+                    "square",
+                    "cult",
+                    "guest",
+                    "kneipe"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Sportcaf\u00e9 Carambolage in Stuttgart am Feuersee",
+        "rating": "4.1",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Has bar games",
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible lift",
+                "Has wheelchair-accessible toilet"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Accepts debit cards",
+                "Accepts NFC mobile payments",
+                "Credit cards"
+            ],
+            "reviews": {
+                "number of reviews": "774 reviews",
+                "filters": [
+                    "All",
+                    "billiard",
+                    "darts",
+                    "foosball",
+                    "canvas",
+                    "map",
+                    "vfb stuttgart",
+                    "electronic visual display",
+                    "baguette"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "HARDY'S FIRE'N'ICE",
+        "rating": "5.0",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Crowd": [
+                "LGBTQ+ friendly",
+                "Transgender safe space"
+            ],
+            "reviews": {
+                "number of reviews": "99 reviews",
+                "filters": [
+                    "All",
+                    "cocktails",
+                    "atmosphere",
+                    "service",
+                    "smoking cigarettes",
+                    "team",
+                    ""
+                ],
+                "review text": [
+                    "Top",
+                    "Optisch einfach sehr sch\u00f6n !\nKeine billige Shisha-Bar! \u2026",
+                    "Wer gem\u00fctlich seinen Abend mit einer Pfeife und einer sehr angenehmen Atmosph\u00e4re verbringen will ist hier genau richtig aufgehoben. Man kommt rein und f\u00fchlt sich ab der ersten Minute einfach wohl, die Jungs die hier heute abend waren sind \u2026",
+                    "Auf jeden Fall mit Abstand die beste Pfeife in Stuttgart. L\u00e4ssige Atmosph\u00e4re und gute Drinks. Immer wieder gerne hier",
+                    "Wow echt Hammer, endlich Mal wieder ein Laden mit Style und Geschmack. Hier gibt's super Service, hei\u00dfe Briketts, coole Drinks und nette Leute. Kann ich nur weiterempfehlen und komme auch gerne wieder. TOP cheers Marc",
+                    "Wir haben einen Geburtstag gefeiert! Es war richtig toll ! Der Chef und das Service team waren richtig freundlich. Absolut empfehlenswert.",
+                    "Wahrscheinlich die beste Shisha-Bar zurzeit in Stuttgart! F\u00fcr jeden ist etwas dabei von der normalen Shisha bis hin zu der besonderen Shisha mit buntem Wasser. Lockere Atmosph\u00e4re, gute Musik, cooler Besitzer.",
+                    "Mega freundliche und vorkommende Mitarbeiter mit sehr guter Empfehlungen bei Ahnungslosigkeit, wo man nicht \u00fcberall bekommt. Sie haben Ahnung, was sie dir anbieten und vor allem, was sie verkaufen. \u2026",
+                    "Sehr leckere Pfeifen, super Ambiente und auch Restaurants in der N\u00e4he",
+                    "Sehr angenehme Shisha-Bar, leckere Getr\u00e4nke- und Shisha Auswahl. Vor allem aber auch sehr freundliches und zuvorkommendes Personal \u2764\ufe0f"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Maulwurf Kneipe und Bar - Stuttgart",
+        "rating": "4.5",
+        "price": "\u20ac\u20ac",
+        "about": {
+            "Service options": [
+                "Has outdoor seating",
+                "Offers takeaway",
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Highlights": [
+                "Has bar games",
+                "Has great bar food",
+                "Has quiz night",
+                "Good for watching sport"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible seating",
+                "No wheelchair-accessible car park",
+                "No wheelchair-accessible entrance"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves food",
+                "Serves food at bar",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Dining options": [
+                "Has seating"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "Transgender safe space"
+            ],
+            "Planning": [
+                "Accepts reservations"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "922 reviews",
+                "filters": [
+                    "All",
+                    "whiskey",
+                    "wurstsalat",
+                    "vfb stuttgart",
+                    "schnitzel",
+                    "audience",
+                    "flammkuchen",
+                    "pinball",
+                    "rock"
+                ],
+                "review text": []
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Caf\u00e9 Faust",
+        "rating": "4.7",
+        "price": "\u20ac",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery",
+                "No takeaway"
+            ],
+            "Highlights": [
+                "Has bar games",
+                "Has live music",
+                "Has live performances"
+            ],
+            "Accessibility": [
+                "Has wheelchair-accessible lift",
+                "Has wheelchair-accessible seating",
+                "Has wheelchair-accessible toilet",
+                "No wheelchair-accessible car park"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Has dancing",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Dogs allowed",
+                "Has toilets",
+                "Has Wi-Fi",
+                "Free Wi-Fi"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups",
+                "Transgender safe space"
+            ],
+            "Payments": [
+                "Cash only"
+            ],
+            "reviews": {
+                "number of reviews": "150 reviews",
+                "filters": [
+                    "All",
+                    "student",
+                    "price",
+                    "foosball",
+                    "atmosphere",
+                    ""
+                ],
+                "review text": [
+                    "One of the most happening campus bars in Stuttgart. A great place for beer and cocktail at the heart of the city!",
+                    "Simply amazing atmosphere! Absolutely one of my favourite places as a student!",
+                    "One of the best student bars in Stuttgart and definitely the best Campus bar out of all the ones in Universit\u00e4t Stuttgart.",
+                    "Nice studentbar, really cheap an1d with a nice atmosphere, sometimes live music. You can play pull and there are plenty of table. Raccomanded if you are a student, but maybe not the best on saturday night! P.S. the opening time are a bit flexible",
+                    "College bar for students. Friendly and chill environment. Cool location and enjoyable patrons. Staff is students but all can speak English. This place is great! There's also Jenga.",
+                    "Best student bar in stutrgart",
+                    "Only open on evenings. Very chill good for students to hangout friendly staff.",
+                    "Great place to drink a beer with friends.",
+                    "Nice student place & Amaru!",
+                    "2 Euro Beers!!"
+                ]
+            }
+        },
+        "review": {}
+    },
+    {
+        "name": "Bistro Golf Bar",
+        "rating": "4.1",
+        "about": {
+            "Service options": [
+                "Serves dine-in",
+                "No delivery"
+            ],
+            "Offerings": [
+                "Serves alcohol",
+                "Serves beer",
+                "Serves cocktails",
+                "Serves coffee",
+                "Serves spirits",
+                "Serves wine"
+            ],
+            "Amenities": [
+                "Has bar on site",
+                "Has toilets"
+            ],
+            "Atmosphere": [
+                "Casual",
+                "Cosy"
+            ],
+            "Crowd": [
+                "Good for groups"
+            ],
+            "reviews": {
+                "number of reviews": "17 reviews",
+                "filters": [],
+                "review text": []
+            }
+        },
+        "review": {}
+    }
+]

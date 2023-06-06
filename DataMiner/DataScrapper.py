@@ -67,7 +67,7 @@ def processInfor(browser,data):
 	description = find_element(By.XPATH,'//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]/div[6]/button/div[2]/div[1]/div[1]',browser)
 #	print(description.accessible_name)
 #	print(description.text)
-	data['about']['description'] = description.text
+	data['HIGHLIGHT'] = description.text
 	moreinfo = []
 	for itrr in range(3,10,1):
 		try:
@@ -77,7 +77,7 @@ def processInfor(browser,data):
 		except:
 #			print('not found')
 			break
-	data['about']['moreInfo'] = moreinfo
+	data['moreInfo'] = moreinfo
 def find_element(how,path,driver):
 	try:
 		return driver.find_element(how,path)
@@ -150,7 +150,7 @@ def extractInformation(browser,config):
 	data['rating']=(rating.text)
 	extractPriceRating(browser,data,config)
 	data['about'] = {}
-	data['review'] = {}
+ 
 	processInfor(browser,data)
 	processAbout(browser,data)
 	processReviews(browser,data)
