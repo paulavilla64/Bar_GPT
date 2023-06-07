@@ -95,3 +95,8 @@ Timeplan for the next six weeks
   07.06 meet Lindsey:
   Questions:
   What should we do about the synonyms?
+  Json to SQLlite data base
+  Test NLU
+  NLG (also start with policy)
+  
+
