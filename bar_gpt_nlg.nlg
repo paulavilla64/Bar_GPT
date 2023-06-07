@@ -1,0 +1,90 @@
+# ---------------NEW RULES - BARGPT MESSAGES-------------------------
+
+template welcomemsg(): "Welcome to BarGPT in Stuttgart! How may I help you?"
+template welcomemsg(help): "Sorry, I cannot understand you. Please tell me again what you are looking for."
+template welcomemsg(more) : "Can I help you with anything else? Maybe a recommendation for a fresh beer in a bar?"
+template bad() : "Sorry, I am a bit confused..please tell me again what you are looking for."
+template closingmsg() : "Thank you, goodbye and cheers!"
+
+# System Requests
+
+template request(name): "What's the name of the bar that you're looking for?"
+template request(price): "How expensive should the bar be that your're looking for? (Amount of dollar signs)"
+template request(rating): "How should the bar you're looking for be rated? (Amount of stars)"
+
+# Rules for System Inform
+
+function info(slot, value, name)
+	if slot = "loyality": "works with the following organisation: \"{value}\""
+	if slot = "description": "has the following description: \"{value}\""
+	if slot = "main_superpower": "uses \"{value}\""
+	if slot = "primary_uniform_color": "wears a uniform with \"{value}\" as main color"
+
+# -------------------------Only Name Slot-----------------------------------#
+
+template inform_byname(name)
+	"There is a bar called {name}. What do you want to know about it?"
+
+	special_case name = "none"
+		"I’m sorry, I could not find this bar."
+
+
+template inform_alternatives(name)
+	"There is another bar called {name}. What do you want to know about it?"
+
+	special_case name = "none"
+		"I'm sorry, I couldn't find another bar."
+
+
+#------------------------ Name Slot + Slots----------------------------------#
+
+template inform_byname(name, *slots)
+	"The bar called {name} {for_entry(slots, "info", ", they ", " and they ", name)}."
+	
+	special_case name = "none"
+		"There is no such bar which {for_entry(slots, "info", ", ", " and ", name)}."
+
+template inform_alternatives(name, *slots)
+	"The bar {name} also {for_entry(slots, "info", ", they ", " and they ", name)}."
+	
+	special_case name = "none"
+		"There is no other bar which also {for_entry(slots, "info", ", ", " and ", name)}."
+
+
+# ----------------------------System Confirm----------------------------------#
+
+template confirm()
+	"Please tell me more about the bar you are looking for."
+template confirm(name, *slots)
+	if name = "none"
+		"Let me confirm, you are looking for a bar which {for_entry(slots, "info", ", ", " and ", name)}, right?"
+template confirm(*slots)
+	"Let me confirm, you are looking for a bar which {for_entry(slots, "info", ", ", " and ", "none")}, right?"
+
+
+# ---------------------------System RequestMore------------------------------#
+
+template reqmore()
+	"Can I help you with anything else?"
+
+template reqmore(name)
+	if name = "dontcare"
+		"Would you like me to look for a random bar in Stuttgart?"
+template reqmore(price)
+	if price = "dontcare"
+		"Would you like me to look for a bar with any price category?"
+template reqmore(rating)
+	if rating = "dontcare"
+		"Would you like me to look for a bar associated with any rating?"
+
+# ---------------------------System Select----------------------------------#
+
+template select(*slot)
+	"Sorry, would you like to have a bar {for_entry(slot, "info_or_dontcare_list", "", "")}?"
+
+function info_or_dontcare_list(slot, value_list)
+	"{for(value_list, "info_or_dontcare", ", ", " or ", slot)}"
+
+function info_or_dontcare(value, slot)
+	"which {info(slot, value, "none")}"
+	special_case value = "dontcare": "you don't care"
