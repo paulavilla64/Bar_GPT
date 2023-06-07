@@ -10,7 +10,7 @@ rule reqalts(): "(\\b|^|\\ )((something|anything)\\ else)|(different(\\ one)*)|(
 rule ack(): "{IMPOSSIBLEREGEX()}"
 rule bad(): "{IMPOSSIBLEREGEX()}"
 
-# user informable slots are name, department and position
+# user informable slots are name, price, rating, location, hours, website, phone, review, serviceOptions, accessibility,offerings,diningOptions,amenities,atmosphere,crowd,planning,payments, highlights
 
 rule inform(name)
     "{rINFORM()} {synonyms("name", name)}"
@@ -59,11 +59,11 @@ rule inform(review)
     "{synonyms("review", review)}{WBG()}"
     "(\\ |^){synonyms("review", review)}(\\ (please|and))*"
 
-rule inform(service options)
-    # "\\\\b{service options}\\\\b"
-    "{rINFORM()} {synonyms("service options", service options)}"
-    "{synonyms("service options", service options)}{WBG()}"
-    "(\\ |^){synonyms("service options", service options)}(\\ (please|and))*"
+rule inform(serviceOptions)
+    # "\\\\b{serviceOptions}\\\\b"
+    "{rINFORM()} {synonyms("service options", serviceOptions)}"
+    "{synonyms("service options", serviceOptions)}{WBG()}"
+    "(\\ |^){synonyms("service options", serviceOptions)}(\\ (please|and))*"
 
 rule inform(accessibility)
     # "\\\\b{accessibility}\\\\b"
@@ -77,11 +77,11 @@ rule inform(offerings)
     "{synonyms("offerings", offerings)}{WBG()}"
     "(\\ |^){synonyms("offerings", offerings)}(\\ (please|and))*"
 
-rule inform(dining options)
-    # "\\\\b{dining options}\\\\b"
-    "{rINFORM()} {synonyms("dining options", dining options)}"
-    "{synonyms("dining options", dining options)}{WBG()}"
-    "(\\ |^){synonyms("dining options", dining options)}(\\ (please|and))*"
+rule inform(diningOptions)
+    # "\\\\b{diningOptions}\\\\b"
+    "{rINFORM()} {synonyms("dining options", diningOptions)}"
+    "{synonyms("dining options", diningOptions)}{WBG()}"
+    "(\\ |^){synonyms("dining options", diningOptions)}(\\ (please|and))*"
 
 rule inform(amenities)
     # "\\\\b{amenities}\\\\b"
