@@ -61,11 +61,11 @@ rule inform(review)
     "{synonyms("review", review)}{WBG()}"
     "(\\ |^){synonyms("review", review)}(\\ (please|and))*"
 
-rule inform(service options)
-    # "\\\\b{service options}\\\\b"
-    "{rINFORM()} {synonyms("service options", service options)}"
-    "{synonyms("service options", service options)}{WBG()}"
-    "(\\ |^){synonyms("service options", service options)}(\\ (please|and))*"
+rule inform(serviceOption)
+    # "\\\\b{serviceOption}\\\\b"
+    "{rINFORM()} {synonyms("serviceOption", serviceOption)}"
+    "{synonyms("serviceOption", serviceOption)}{WBG()}"
+    "(\\ |^){synonyms("serviceOption", serviceOption)}(\\ (please|and))*"
 
 rule inform(accessibility)
     # "\\\\b{accessibility}\\\\b"
@@ -79,11 +79,11 @@ rule inform(offerings)
     "{synonyms("offerings", offerings)}{WBG()}"
     "(\\ |^){synonyms("offerings", offerings)}(\\ (please|and))*"
 
-rule inform(dining options)
-    # "\\\\b{dining options}\\\\b"
-    "{rINFORM()} {synonyms("dining options", dining options)}"
-    "{synonyms("dining options", dining options)}{WBG()}"
-    "(\\ |^){synonyms("dining options", dining options)}(\\ (please|and))*"
+rule inform(diningOptions)
+    # "\\\\b{diningOptions}\\\\b"
+    "{rINFORM()} {synonyms("diningOptions", diningOptions)}"
+    "{synonyms("diningOptions", diningOptions)}{WBG()}"
+    "(\\ |^){synonyms("diningOptions", diningOptions)}(\\ (please|and))*"
 
 rule inform(amenities)
     # "\\\\b{amenities}\\\\b"
@@ -109,17 +109,17 @@ rule inform(planning)
     "{synonyms("planning", planning)}{WBG()}"
     "(\\ |^){synonyms("planning", planning)}(\\ (please|and))*"
 
-rule inform(payments)
-    # "\\\\b{payments}\\\\b"
-    "{rINFORM()} {synonyms("payments", payments)}"
-    "{synonyms("payments", payments)}{WBG()}"
-    "(\\ |^){synonyms("payments", payments)}(\\ (please|and))*"
+rule inform(payment)
+    # "\\\\b{payment}\\\\b"
+    "{rINFORM()} {synonyms("payment", payment)}"
+    "{synonyms("payment", payment)}{WBG()}"
+    "(\\ |^){synonyms("payment", payment)}(\\ (please|and))*"
 
-rule inform(highlights)
-    # "\\\\b{highlights}\\\\b"
-    "{rINFORM()} {synonyms("highlights", highlights)}"
-    "{synonyms("highlights", highlights)}{WBG()}"
-    "(\\ |^){synonyms("highlights", highlights)}(\\ (please|and))*"
+rule inform(highlight)
+    # "\\\\b{highlight}\\\\b"
+    "{rINFORM()} {synonyms("highlight", highlight)}"
+    "{synonyms("highlight", highlight)}{WBG()}"
+    "(\\ |^){synonyms("highlight", highlight)}(\\ (please|and))*"
 
 
 # All slots are requestable (name, price, rating, location, hours, website, phone, review, 
@@ -190,13 +190,13 @@ rule request(review)
     "(the )?{slot_synonyms("review")}"
     "who .*{slot_synonyms("review")}"
 
-rule request(service options)
-    "{rREQUEST()} {slot_synonyms("service options")}"
-    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("service options")}"
-    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("service options")}"
-    "{WANT()}.*{slot_synonyms("service options")}"
-    "(the )?{slot_synonyms("service options")}"
-    "who .*{slot_synonyms("service options")}"
+rule request(serviceOption)
+    "{rREQUEST()} {slot_synonyms("serviceOption")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("serviceOption")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("serviceOption")}"
+    "{WANT()}.*{slot_synonyms("serviceOption")}"
+    "(the )?{slot_synonyms("serviceOption")}"
+    "who .*{slot_synonyms("serviceOption")}"
 
 rule request(accessibility)
     "{rREQUEST()} {slot_synonyms("accessibility")}"
@@ -214,13 +214,13 @@ rule request(offerings)
     "(the )?{slot_synonyms("offerings")}"
     "who .*{slot_synonyms("offerings")}"
 
-rule request(dining options)
-    "{rREQUEST()} {slot_synonyms("dining options")}"
-    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("dining options")}"
-    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("dining options")}"
-    "{WANT()}.*{slot_synonyms("dining options")}"
-    "(the )?{slot_synonyms("dining options")}"
-    "who .*{slot_synonyms("dining options")}"
+rule request(diningOptions)
+    "{rREQUEST()} {slot_synonyms("diningOptions")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("diningOptions")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("diningOptions")}"
+    "{WANT()}.*{slot_synonyms("diningOptions")}"
+    "(the )?{slot_synonyms("diningOptions")}"
+    "who .*{slot_synonyms("diningOptions")}"
 
 rule request(amenities)
     "{rREQUEST()} {slot_synonyms("amenities")}"
@@ -254,21 +254,45 @@ rule request(planning)
     "(the )?{slot_synonyms("planning")}"
     "who .*{slot_synonyms("planning")}"
 
-rule request(payments)
-    "{rREQUEST()} {slot_synonyms("payments")}"
-    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("payments")}"
-    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("payments")}"
-    "{WANT()}.*{slot_synonyms("payments")}"
-    "(the )?{slot_synonyms("payments")}"
-    "who .*{slot_synonyms("payments")}"
+rule request(payment)
+    "{rREQUEST()} {slot_synonyms("payment")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("payment")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("payment")}"
+    "{WANT()}.*{slot_synonyms("payment")}"
+    "(the )?{slot_synonyms("payment")}"
+    "who .*{slot_synonyms("payment")}"
 
-rule request(highlights)
-    "{rREQUEST()} {slot_synonyms("highlights")}"
-    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("highlights")}"
-    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("highlights")}"
-    "{WANT()}.*{slot_synonyms("highlights")}"
-    "(the )?{slot_synonyms("highlights")}"
-    "who .*{slot_synonyms("highlights")}"
+rule request(highlight)
+    "{rREQUEST()} {slot_synonyms("highlight")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("highlight")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("highlight")}"
+    "{WANT()}.*{slot_synonyms("highlight")}"
+    "(the )?{slot_synonyms("highlight")}"
+    "who .*{slot_synonyms("highlight")}"
+
+rule request(description)
+    "{rREQUEST()} {slot_synonyms("description")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("description")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("description")}"
+    "{WANT()}.*{slot_synonyms("description")}"
+    "(the )?{slot_synonyms("description")}"
+    "what .*{slot_synonyms("description")}"
+
+rule request(numberOfReviews)
+    "{rREQUEST()} {slot_synonyms("numberOfReviews")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("numberOfReviews")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("numberOfReviews")}"
+    "{WANT()}.*{slot_synonyms("numberOfReviews")}"
+    "(the )?{slot_synonyms("numberOfReviews")}"
+    "what .*{slot_synonyms("numberOfReviews")}"
+
+rule request(reviewFilter)
+    "{rREQUEST()} {slot_synonyms("reviewFilter")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("reviewFilter")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("reviewFilter")}"
+    "{WANT()}.*{slot_synonyms("reviewFilter")}"
+    "(the )?{slot_synonyms("reviewFilter")}"
+    "what .*{slot_synonyms("reviewFilter")}"
 
 
 # synonyms
@@ -347,7 +371,7 @@ function slot_synonyms(slot)
         "place"
         "site"
         "position"
-        "where"S
+        "where"
     if slot = "phone"
         "(telephone|phone|contact)((\s|\b)number)?"
         "number"
@@ -365,7 +389,7 @@ function slot_synonyms(slot)
         "online( presence)?"
         "internet"
     if slot = "review"
-        "(customer|user|guest('s|s')?)?((feedback|review|rating|opinion|comment|experience|evaluation|critique)(s)?)"
+        "(customer|user|guest('s|s')?)?((feedback|review|opinion|comment|experience|evaluation|critique)(s)?)"
     if slot = "planning"
         "reserve"
         "book"
@@ -374,7 +398,7 @@ function slot_synonyms(slot)
         "arrange"
         "confirm"
         "table"
-    if slot = "payments"
+    if slot = "payment"
         "pay"
         "payment(s)?"
         "transaction(s)?"
@@ -385,8 +409,8 @@ function slot_synonyms(slot)
         "cash"
         "(credit|debit )?card(s)?"
         "paypal"
-    if slot = "highlights"
-        "highlight(s)?"
+    if slot = "highlight"
+        "highlights"
         "standout(s)?"
         "key point(s)?"
         "important aspect(s)?"
@@ -433,7 +457,7 @@ function slot_synonyms(slot)
         "spirit(s)?"
         "drink selection"
         "drink choices"
-    if slot = "dining options"
+    if slot = "diningOptions"
         "dining choice(s)?"
         "food (option(s)?)?"
         "eat"
@@ -452,7 +476,7 @@ function slot_synonyms(slot)
         "restroom(s)"
         "washroom(s)"
         "sanitary"
-    if slot = "service options"
+    if slot = "serviceOption"
         "outdoor( seating)?"
         "dine-in"
         "delivery"
