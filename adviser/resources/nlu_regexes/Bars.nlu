@@ -1,0 +1,497 @@
+# general rules
+
+rule hello(): "(\\b|^|\\ )(hi|hello|howdy|hey)\\b"
+rule bye(): "(\\b|^|\\ )(bye(-)?(bye)?|good(-)?bye|that'?s?\\ (is\\ )*all)(\\s|$|\\ |\\.)"
+rule deny(): "((\\b|^|\\ )(n(o)?|wrong|incorrect|error|nope)|(not\\ (true|correct|right)))(\\s)?$"
+rule affirm(): "((yes|yeah|(\\b|^)ok\\b|(\\b|^)OK|okay|sure|^y$|(\\b|^)yep(\\b|$)|(that('?s| is) )?(?<!not\\ )(?<!no\\ )(right|correct|confirm)))(\\s)?$"
+rule thanks(): "(?=.*(^(\\ )*)(((great|good|awesome|nice|cool)\\ )?((that((')?s|\\ (is|was))\\ (very\\ )?helpful)\\ )?(thank|thank(s|\\ you)(\\ (very|so)\\ much)?)(\\ (that((')?s|\\ (is|was))\\ (very\\ )?helpful))?|((great|good|awesome|nice|cool)\\ )?(that((')?s|\\ (is|was))\\ (very\\ )?helpful)|(great|good|awesome|nice|cool))((\\ )*))(?=^(?:(?!bye).)*$).*$"
+rule repeat(): "(\\b|^|\\ )(repeat((\\ that )|(\\ it))?)|(say((\\ that )|(\\ it))\\ again)|(again)"
+rule reqalts(): "(\\b|^|\\ )((something|anything)\\ else)|(different(\\ one)*)|(another\\ one)|(alternatives*)|(other options*)|((don'*t|do not) (want|like)\\ (that|this)(\\ one)*)"
+rule ack(): "{IMPOSSIBLEREGEX()}"
+rule bad(): "{IMPOSSIBLEREGEX()}"
+
+# user informable slots are name, department and position
+
+rule inform(name)
+    "{rINFORM()} {synonyms("name", name)}"
+    "{synonyms("name", name)}{WBG()}"
+    "(\\ |^){synonyms("name", name)}(\\ (please|and))*"
+
+rule inform(price)
+    # "\\\\b{price}\\\\b"
+    "{rINFORM()} {synonyms("price", price)}"
+    "{synonyms("price", price)}{WBG()}"
+    "(\\ |^){synonyms("price", price)}(\\ (please|and))*"
+
+rule inform(rating)
+    # "\\\\b{rating}\\\\b"
+    "{rINFORM()} {synonyms("rating", rating)}"
+    "{synonyms("rating", rating)}{WBG()}"
+    "(\\ |^){synonyms("rating", rating)}(\\ (please|and))*"
+
+rule inform(location)
+    # "\\\\b{location}\\\\b"
+    "{rINFORM()} {synonyms("location", location)}"
+    "{synonyms("location", location)}{WBG()}"
+    "(\\ |^){synonyms("location", location)}(\\ (please|and))*"
+
+rule inform(hours)
+    # "\\\\b{hours}\\\\b"
+    "{rINFORM()} {synonyms("hours", hours)}"
+    "{synonyms("hours", hours)}{WBG()}"
+    "(\\ |^){synonyms("hours", hours)}(\\ (please|and))*"
+
+rule inform(website)
+    # "\\\\b{website}\\\\b"
+    "{rINFORM()} {synonyms("website", website)}"
+    "{synonyms("website", website)}{WBG()}"
+    "(\\ |^){synonyms("website", website)}(\\ (please|and))*"
+
+rule inform(phone)
+    # "\\\\b{phone}\\\\b"
+    "{rINFORM()} {synonyms("phone", phone)}"
+    "{synonyms("phone", phone)}{WBG()}"
+    "(\\ |^){synonyms("phone", phone)}(\\ (please|and))*"
+
+rule inform(review)
+    # "\\\\b{review}\\\\b"
+    "{rINFORM()} {synonyms("review", review)}"
+    "{synonyms("review", review)}{WBG()}"
+    "(\\ |^){synonyms("review", review)}(\\ (please|and))*"
+
+rule inform(service options)
+    # "\\\\b{service options}\\\\b"
+    "{rINFORM()} {synonyms("service options", service options)}"
+    "{synonyms("service options", service options)}{WBG()}"
+    "(\\ |^){synonyms("service options", service options)}(\\ (please|and))*"
+
+rule inform(accessibility)
+    # "\\\\b{accessibility}\\\\b"
+    "{rINFORM()} {synonyms("accessibility", accessibility)}"
+    "{synonyms("accessibility", accessibility)}{WBG()}"
+    "(\\ |^){synonyms("accessibility", accessibility)}(\\ (please|and))*"
+
+rule inform(offerings)
+    # "\\\\b{offerings}\\\\b"
+    "{rINFORM()} {synonyms("offerings", offerings)}"
+    "{synonyms("offerings", offerings)}{WBG()}"
+    "(\\ |^){synonyms("offerings", offerings)}(\\ (please|and))*"
+
+rule inform(dining options)
+    # "\\\\b{dining options}\\\\b"
+    "{rINFORM()} {synonyms("dining options", dining options)}"
+    "{synonyms("dining options", dining options)}{WBG()}"
+    "(\\ |^){synonyms("dining options", dining options)}(\\ (please|and))*"
+
+rule inform(amenities)
+    # "\\\\b{amenities}\\\\b"
+    "{rINFORM()} {synonyms("amenities", amenities)}"
+    "{synonyms("amenities", amenities)}{WBG()}"
+    "(\\ |^){synonyms("amenities", amenities)}(\\ (please|and))*"
+
+rule inform(atmosphere)
+    # "\\\\b{atmosphere}\\\\b"
+    "{rINFORM()} {synonyms("atmosphere", atmosphere)}"
+    "{synonyms("atmosphere", atmosphere)}{WBG()}"
+    "(\\ |^){synonyms("atmosphere", atmosphere)}(\\ (please|and))*"
+
+rule inform(crowd)
+    # "\\\\b{crowd}\\\\b"
+    "{rINFORM()} {synonyms("crowd", crowd)}"
+    "{synonyms("crowd", crowd)}{WBG()}"
+    "(\\ |^){synonyms("crowd", crowd)}(\\ (please|and))*"
+
+rule inform(planning)
+    # "\\\\b{planning}\\\\b"
+    "{rINFORM()} {synonyms("planning", planning)}"
+    "{synonyms("planning", planning)}{WBG()}"
+    "(\\ |^){synonyms("planning", planning)}(\\ (please|and))*"
+
+rule inform(payments)
+    # "\\\\b{payments}\\\\b"
+    "{rINFORM()} {synonyms("payments", payments)}"
+    "{synonyms("payments", payments)}{WBG()}"
+    "(\\ |^){synonyms("payments", payments)}(\\ (please|and))*"
+
+rule inform(highlights)
+    # "\\\\b{highlights}\\\\b"
+    "{rINFORM()} {synonyms("highlights", highlights)}"
+    "{synonyms("highlights", highlights)}{WBG()}"
+    "(\\ |^){synonyms("highlights", highlights)}(\\ (please|and))*"
+
+
+# All slots are requestable
+
+
+rule request(name)
+    "{rREQUEST()} {slot_synonyms("name")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("name")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("name")}"
+    "{WANT()}.*{slot_synonyms("name")}"
+    "(the )?{slot_synonyms("name")}"
+
+rule request(price)
+    "{rREQUEST()} {slot_synonyms("price")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("price")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("price")}"
+    "{WANT()}.*{slot_synonyms("price")}"
+    "(the )?{slot_synonyms("price")}"
+    "what .*{slot_synonyms("price")}"
+
+rule request(rating)
+    "{rREQUEST()} {slot_synonyms("rating")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("rating")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("rating")}"
+    "{WANT()}.*{slot_synonyms("rating")}"
+    "(the )?{slot_synonyms("rating")}"
+    "who .*{slot_synonyms("rating")}"
+
+rule request(location)
+    "{rREQUEST()} {slot_synonyms("location")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("location")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("location")}"
+    "{WANT()}.*{slot_synonyms("location")}"
+    "(the )?{slot_synonyms("location")}"
+    "who .*{slot_synonyms("location")}"
+
+rule request(hours)
+    "{rREQUEST()} {slot_synonyms("hours")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("hours")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("hours")}"
+    "{WANT()}.*{slot_synonyms("hours")}"
+    "(the )?{slot_synonyms("hours")}"
+    "who .*{slot_synonyms("hours")}"
+
+rule request(website)
+    "{rREQUEST()} {slot_synonyms("website")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("website")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("website")}"
+    "{WANT()}.*{slot_synonyms("website")}"
+    "(the )?{slot_synonyms("website")}"
+    "who .*{slot_synonyms("website")}"
+
+rule request(phone)
+    "{rREQUEST()} {slot_synonyms("phone")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("phone")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("phone")}"
+    "{WANT()}.*{slot_synonyms("phone")}"
+    "(the )?{slot_synonyms("phone")}"
+    "who .*{slot_synonyms("phone")}"
+
+rule request(review)
+    "{rREQUEST()} {slot_synonyms("review")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("review")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("review")}"
+    "{WANT()}.*{slot_synonyms("review")}"
+    "(the )?{slot_synonyms("review")}"
+    "who .*{slot_synonyms("review")}"
+
+rule request(service options)
+    "{rREQUEST()} {slot_synonyms("service options")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("service options")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("service options")}"
+    "{WANT()}.*{slot_synonyms("service options")}"
+    "(the )?{slot_synonyms("service options")}"
+    "who .*{slot_synonyms("service options")}"
+
+rule request(accessibility)
+    "{rREQUEST()} {slot_synonyms("accessibility")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("accessibility")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("accessibility")}"
+    "{WANT()}.*{slot_synonyms("accessibility")}"
+    "(the )?{slot_synonyms("accessibility")}"
+    "who .*{slot_synonyms("accessibility")}"
+
+rule request(offerings)
+    "{rREQUEST()} {slot_synonyms("offerings")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("offerings")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("offerings")}"
+    "{WANT()}.*{slot_synonyms("offerings")}"
+    "(the )?{slot_synonyms("offerings")}"
+    "who .*{slot_synonyms("offerings")}"
+
+rule request(dining options)
+    "{rREQUEST()} {slot_synonyms("dining options")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("dining options")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("dining options")}"
+    "{WANT()}.*{slot_synonyms("dining options")}"
+    "(the )?{slot_synonyms("dining options")}"
+    "who .*{slot_synonyms("dining options")}"
+
+rule request(amenities)
+    "{rREQUEST()} {slot_synonyms("amenities")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("amenities")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("amenities")}"
+    "{WANT()}.*{slot_synonyms("amenities")}"
+    "(the )?{slot_synonyms("amenities")}"
+    "who .*{slot_synonyms("amenities")}"
+
+rule request(atmosphere)
+    "{rREQUEST()} {slot_synonyms("atmosphere")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("atmosphere")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("atmosphere")}"
+    "{WANT()}.*{slot_synonyms("atmosphere")}"
+    "(the )?{slot_synonyms("atmosphere")}"
+    "who .*{slot_synonyms("atmosphere")}"
+
+rule request(crowd)
+    "{rREQUEST()} {slot_synonyms("crowd")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("crowd")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("crowd")}"
+    "{WANT()}.*{slot_synonyms("crowd")}"
+    "(the )?{slot_synonyms("crowd")}"
+    "who .*{slot_synonyms("crowd")}"
+
+rule request(planning)
+    "{rREQUEST()} {slot_synonyms("planning")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("planning")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("planning")}"
+    "{WANT()}.*{slot_synonyms("planning")}"
+    "(the )?{slot_synonyms("planning")}"
+    "who .*{slot_synonyms("planning")}"
+
+rule request(payments)
+    "{rREQUEST()} {slot_synonyms("payments")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("payments")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("payments")}"
+    "{WANT()}.*{slot_synonyms("payments")}"
+    "(the )?{slot_synonyms("payments")}"
+    "who .*{slot_synonyms("payments")}"
+
+rule request(highlights)
+    "{rREQUEST()} {slot_synonyms("highlights")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("highlights")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("highlights")}"
+    "{WANT()}.*{slot_synonyms("highlights")}"
+    "(the )?{slot_synonyms("highlights")}"
+    "who .*{slot_synonyms("highlights")}"
+
+
+# synonyms
+
+function synonyms(slot, value)
+    "{value}"
+
+    add_if slot = "name"
+        if value = "Paul & George"
+            "paul AND() george"
+    add_if slot = "name"
+        if value = "Havana Cafe & Cocktail Stuttgart"
+            "havana cafe AND() georcocktail stuttgart"
+            "havana( cafe)?"
+    add_if slot = "name"
+        if value = "Torhaus Zwanzig BAR & LOUNGE"
+            "torhaus zwanzig BAR AND() LOUNGE"
+            "torhaus( zwanzig)?"
+            "zwanzig"
+    add_if slot = "name"
+        if value = "Jigger & Spoon"
+            "jigger AND() spoon"
+    add_if slot = "name"
+        if value = "Vogue Drinks & More"
+            "vogue drinks AND() more"
+            "vogue( drinks)?"
+    add_if slot = "name"
+        if value = "Erdgeschoss Bar & Bühne"
+            "erdgeschoss bar AND() bühne"
+            "erdgeschoss"    
+    add_if slot = "name"
+        if value = "W13 Bar & Kitchen"
+            "w13 bar AND() kitchen"
+            "w13"   
+    add_if slot = "name"
+        if value = "Wolfram Bar & Terrace"
+            "wolfram bar AND() terrace"
+            "wolfram"
+    add_if slot = "name"
+        if value = "huginn lounge & arts"
+            "huginn lounge AND() arts"
+            "huginn" 
+    add_if slot = "name"
+        if value = "Mr.Shisha Bar & Lounge"
+            "mr.shisha bar AND() lounge"
+            "mr.(s)?shisha"   
+       
+
+function slot_synonyms(slot)
+    "{IMPOSSIBLEREGEX()}"
+
+    if slot = "name"
+        "name"
+        "{domain_vocab()}('s)? name"
+        "name of the {domain_vocab()}"
+        "title"
+        "designation"
+    if slot = "bar"
+        "bar(s)?"
+        "*bar(s)?"
+        "restaurant(s)?"
+        "pub(s)?"
+    if slot = "location"
+        "place"
+        "site"
+        "position"
+        "where"
+    if slot = "price"
+        "cost(s)?"
+        "prices"
+        "pricing"
+        "fee(s)?"
+        "expensive"
+        "cheap"
+    if slot = "rating":
+        "score"
+        "evaluation"
+        "ranking"
+        "stars"
+    if slot = "phone"
+        "(telephone|phone|contact)((\s|\b)number)?"
+        "number"
+    if slot = "hours"
+        "(business|operating|opening)+hours"
+        "schedule"
+        "open"
+        "closed"
+        "availabel"
+        "time"
+    if slot = "website"
+        "(official )?site"
+        "(web )?page"
+        "web"
+        "online( presence)?"
+        "internet"
+    if slot = "review"
+        "(customer|user|guest('s|s')?)?((feedback|review|rating|opinion|comment|experience|evaluation|critique)(s)?)"
+    if slot = "planning"
+        "reserve"
+        "book"
+        "schedule"
+        "secure"
+        "arrange"
+        "confirm"
+        "table"
+    if slot = "payments"
+        "pay"
+        "payment(s)?"
+        "transaction(s)?"
+        "billing"
+        "fee(s)?"
+        "cost(s)?"
+        "purchase(s)?"
+        "cash"
+        "(credit|debit )?card(s)?"
+        "paypal"
+    if slot = "highlights"
+        "highlight(s)?"
+        "standout(s)?"
+        "key point(s)?"
+        "important aspect(s)?"
+        "main attraction(s)?"
+        "significant element(s)?"
+        "special characteristic(s)?"
+        "(life)?( music|performance(s)?)"
+    if slot = "atmosphere"
+        "ambiance"
+        "mood"
+        "vibe"
+        "environment"
+        "surroundings"
+        "aura"
+        "feel"
+        "setting"
+    if slot = "crowd"
+        "audience"
+        "visitor(s)?"
+        "guest(s)?"
+        "customer(s)?"
+        "clientele"
+        "people(s)?"
+        "group(s)?"
+        "LGBTQ+"
+        "Transgender(s)?"
+    if slot = "offerings"
+        "serve(s)?"
+        "offering(s)?"
+        "beverage(s)?"
+        "drink(s)?"
+        "drink option(s)?"
+        "drink menu"
+        "refreshment(s)?"
+        "cocktail(s)?"
+        "beer"
+        "wine"
+        "alcohol"
+        "coffee"
+        "tea"
+        "spirit(s)?"
+        "drink selection"
+        "drink choices"
+        "food"
+    if slot = "dining options"
+        "dining choice(s)?"
+        "food (option(s)?)?"
+        "eat"
+        "meal option(s)?"
+        "menu"
+        "kitchen"
+        "hungry"
+    if slot = "amenities"
+        "facilit(y|ies)"
+        "service(s)?"
+        "wc(s)?"
+        "conveniences(s)?"
+        "feature(s)?"
+        "toilet(s)?"
+        "bathroom(s)?"
+        "restroom(s)"
+        "washroom(s)"
+        "sanitary"
+    if slot = "service options"
+        "outdoor( seating)?"
+        "dine-in"
+        "delivery"
+        "takeaway"
+        "open-air( seating)?"
+        "eat outside"
+        "eat-in"
+        "dine-out"
+        "grab-and-go"
+        "to-go"
+        "carryout"
+    if slot = "accessibility"
+        "availability"
+        "ease of access"
+        "user-friendliness"
+        "entry options"
+        "reachability"
+        "entrance"
+        "wheelchair"
+        "disabled"
+        "stroller"
+   
+        
+    
+
+
+# constants
+
+function AND(): "(and|&)"
+function domain_vocab(): "(bar|pub)"
+function IMPOSSIBLEREGEX(): "^\b$"
+function WHAT(): "(what(\\')?(s)?|which|does|where)(\\ (its|the))*"
+function IT(): "(it\\'*s*|it\\ have|is\\ it\\'*s*|is\\ (the|their))(\\ for)*"
+function CYTM(): "(can\\ you\\ tell\\ me\\ (the|it\\'*s|their))"
+function CIG(): "(can\\ I\\ get\\ (the|it\\'*s|their))"
+function NEGATE(): "((i\\ )*(don\\'?t|do\\ not|does\\ not|does\\'?nt)\\ (care|mind|matter)(\\ (about|what))*(\\ (the|it\\'?s*))*)"
+# Cant create variable lengths with negative lookback... else merge following:
+function DONTCARE(): "(i\\ dont\\ care)"
+function DONTCAREWHAT(): "(i\\ dont\\ care\\ what\\ )"
+function DONTCAREABOUT(): "(i\\ dont\\ care\\ about\\ )"
+function rREQUEST(): "(\\\\b|^|\\ )(?<!{DONTCARE()})({WHAT()}\\ {IT()}|{CYTM()}|{CIG()})"
+function WANT(): "(what\\ about|want|have|need|looking\\ for|used\\ for)(\\ a(n)?)*"
+function WBG(): "(\\ ((would|seems\\ to)\\ be\\ (good|nice)($|[^\\?]$)|seems\\ (good|nice)($|[^\\?]$)))"
+function rINFORM(): "(\\\\b|^|\\ ){WANT()}"
+function rINFORM_DONTCARE(): "{DONTCARE()} ((what|which|about)(\\ (it\\'*s*|the))*)+"
+function rINFORM_DONTWANT(): "(((i\\ )*(don\\'*t\\ want))|it\\ (shouldn\\'*t|should\\ not)\\ (have|be))+"
+# Contextual dontcares: i.e things that should be labelled inform(=dontcare)
+function rCONTEXTUAL_DONTCARE(): "(anything(?!\\ else)|((any$|any\\ kind)|(i\\ )*(don\\'?t|do\\ not)\\ (care|know))($|(?!\\ (a?bout|of|what))|(\\ (a?bout|of|what)\\ (type|kind)(?!\\ of))|\\ a?bout\\ (that|this))|(any(thing)?\\ (is\\ )*(fine|ok\\\\b|okay|will\\ do))($|\\ and|\\ but)|(it )?(doesn\\'?t|does not) matter)+"
