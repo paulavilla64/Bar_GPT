@@ -10,7 +10,9 @@ rule reqalts(): "(\\b|^|\\ )((something|anything)\\ else)|(different(\\ one)*)|(
 rule ack(): "{IMPOSSIBLEREGEX()}"
 rule bad(): "{IMPOSSIBLEREGEX()}"
 
-# user informable slots are name, department and position
+# user informable slots are name, price, rating, location, hours, website, phone, review, 
+# service options, accessibility, offerings, dining options, amenities, atmosphere, crowd,
+# planning, payments and highlights 
 
 rule inform(name)
     "{rINFORM()} {synonyms("name", name)}"
@@ -120,7 +122,9 @@ rule inform(highlights)
     "(\\ |^){synonyms("highlights", highlights)}(\\ (please|and))*"
 
 
-# All slots are requestable
+# All slots are requestable (name, price, rating, location, hours, website, phone, review, 
+# service options, accessibility, offerings, dining options, amenities, atmosphere, crowd,
+# planning, payments and highlights)
 
 
 rule request(name)
@@ -322,16 +326,6 @@ function slot_synonyms(slot)
         "name of the {domain_vocab()}"
         "title"
         "designation"
-    if slot = "bar"
-        "bar(s)?"
-        "*bar(s)?"
-        "restaurant(s)?"
-        "pub(s)?"
-    if slot = "location"
-        "place"
-        "site"
-        "position"
-        "where"
     if slot = "price"
         "cost(s)?"
         "prices"
@@ -344,6 +338,16 @@ function slot_synonyms(slot)
         "evaluation"
         "ranking"
         "stars"
+    if slot = "bar"
+        "bar(s)?"
+        "*bar(s)?"
+        "restaurant(s)?"
+        "pub(s)?"
+    if slot = "location"
+        "place"
+        "site"
+        "position"
+        "where"S
     if slot = "phone"
         "(telephone|phone|contact)((\s|\b)number)?"
         "number"
@@ -390,6 +394,9 @@ function slot_synonyms(slot)
         "significant element(s)?"
         "special characteristic(s)?"
         "(life)?( music|performance(s)?)"
+        "quiz night(s)?"
+        "rooftop seating"
+        "sport(s)?"
     if slot = "atmosphere"
         "ambiance"
         "mood"
@@ -426,7 +433,6 @@ function slot_synonyms(slot)
         "spirit(s)?"
         "drink selection"
         "drink choices"
-        "food"
     if slot = "dining options"
         "dining choice(s)?"
         "food (option(s)?)?"
@@ -453,6 +459,7 @@ function slot_synonyms(slot)
         "takeaway"
         "open-air( seating)?"
         "eat outside"
+        "outside"
         "eat-in"
         "dine-out"
         "grab-and-go"
