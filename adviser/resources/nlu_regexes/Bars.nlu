@@ -499,6 +499,22 @@ function slot_synonyms(slot)
         "wheelchair"
         "disabled"
         "stroller"
+    if slot = "description"
+        "overview"
+        "details"
+        "summary"
+        "information"
+        "explanation"
+        "insight"
+        "impression"
+    if slot = "number of reviews"
+        "review count"
+        "total reviews"
+        "review quantity"
+        "reviews received"
+        "count of reviews"
+        "number of feedback"
+        "feedback count"
    
         
     
