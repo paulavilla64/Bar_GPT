@@ -98,5 +98,18 @@ Timeplan for the next six weeks
   Json to SQLlite data base
   Test NLU
   NLG (also start with policy)
+
+  14.06 meeting:
+  Questions: 
+  Adapt json for InformRules and RequestRules?
+  binary slots?
+  Test NLU?
+  Policy?
+
+  21.06 meeting:
+  Beliefstate erweitern für make a reservation
+  Test NLU
+  Test NLG
+  start with policy
   
 
