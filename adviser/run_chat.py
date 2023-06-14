@@ -86,6 +86,21 @@ def load_weather_domain():
     return weather, [weather_nlu, weather_nlg, weather_bst, weather_policy]
 
 
+def load_bars_domain():
+    from utils.domain.jsonlookupdomain import JSONLookupDomain
+    from services.nlu.nlu import HandcraftedNLU
+    from services.nlg.nlg import HandcraftedNLG
+    from services.policy import HandcraftedPolicy
+    domain = JSONLookupDomain(name='bars',
+                                json_ontology_file='resources/ontologies/Bars.json', 
+                                sqllite_db_file='resources/databases/bars.db', 
+                                display_name='Bars Domain')
+    bars_nlu = HandcraftedNLU(domain=domain)
+    bars_bst = HandcraftedBST(domain=domain)
+    bars_policy = HandcraftedPolicy(domain=domain)
+    bars_nlg = load_nlg(backchannel=False, domain=domain)
+    return domain, [bars_nlu, bars_bst, bars_policy, bars_nlg]
+
 def load_mensa_domain(backchannel: bool = False):
     from examples.webapi.mensa import MensaDomain, MensaNLU
     from services.policy.policy_api import HandcraftedPolicy as PolicyAPI
@@ -126,7 +141,7 @@ def load_qa_domain():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='ADVISER 2.0 Dialog System')
-    parser.add_argument('domains', nargs='+', choices=['lecturers', 'weather', 'mensa', 'qa'],
+    parser.add_argument('domains', nargs='+', choices=['lecturers', 'weather', 'mensa', 'qa', 'bars'],
                         help="Chat domain(s). For multidomain type as list: domain1 domain2 .. \n",
                         default="ImsLecturers")
     parser.add_argument('-g', '--gui', action='store_true', help="Start Webui server")
@@ -190,6 +205,10 @@ if __name__ == "__main__":
         qa_domain, qa_services = load_qa_domain()
         domains.append(qa_domain)
         services.extend(qa_services)
+    if 'bars' in args.domains:
+        bars_domain, bars_services = load_bars_domain()
+        domains.append(bars_domain)
+        services.extend(bars_services)
 
     # load HCI interfaces
     if args.gui:
