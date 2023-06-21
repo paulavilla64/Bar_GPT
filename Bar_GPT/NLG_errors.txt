@@ -1,0 +1,16 @@
+doesn't recognize:
+
+when theres a bars name with "bar" it always gives this back:
+
+There is a bar called BAR. What do you want to know about it?
+
+
+- The bar called BAR "the bar" falls within the "€€" price range..
+- website matches with location and website
+- phone number is always 0
+- hours are not displayed correctly
+- number of reviews correlates with reviews
+
+
+change extracted features so that just the content words are displayed?
+
