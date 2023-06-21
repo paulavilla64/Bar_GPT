@@ -111,5 +111,23 @@ Timeplan for the next six weeks
   Test NLU
   Test NLG
   start with policy
-  
 
+ - online regex checker (request) https://regex101.com/
+ - solely inform has value, not request
+ - policy add booking function (beliefstate)
+ - beliefstate utils
+ - booking function
+    which day?   -> check if the bar is open
+    which timee?    -> check if bar is open
+    would you like a reservation?
+        -> reservation
+        -> booking information
+- tutorial ilias
+- new sys act add to: nlu, policy, nlg, beliefstate, bst.py (beliefstate tracker)
+- new entity in belifstate (bst.py -> beliefstate tracker)
+
+
+28.06.23 (last) meeting:
+testing nlu, NLG
+both should be debugged
+start policy (add new sys act)
