@@ -114,6 +114,7 @@ Timeplan for the next six weeks
 
  - online regex checker (request) https://regex101.com/
  - solely inform has value, not request
+ --> e.g. "I'm looking for a bar with live music" is a requestable and informable...but should just be informable
  - policy add booking function (beliefstate)
  - beliefstate utils
  - booking function
@@ -131,3 +132,6 @@ Timeplan for the next six weeks
 testing nlu, NLG
 both should be debugged
 start policy (add new sys act)
+
+questions:
+ß ? Does it have something to do with the encoding? language is just english?
