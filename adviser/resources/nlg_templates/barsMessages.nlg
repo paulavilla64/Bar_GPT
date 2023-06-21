@@ -23,23 +23,48 @@ template request(highlight): "Are there any specific highlights you would like t
 # Rules for System Inform
 function info(slot, value, name)
 	if slot = "name": "is called \"{value}\"."
+
 	if slot = "price": "falls within the \"{value}\" price range"
-	if slot = "rating": "has a minimum rating of \"{value}\" stars"
+		if value = "~": "does not inform about specific price ranges"
+
+	if slot = "rating": "has a rating of \"{value}\" stars"
+	
 	if slot = "location": "is located at \"{value}\""
 	if slot = "hours": "operates according to the following hours: \"{value}\""
 	if slot = "website": "has a website: \"{value}\""
 	if slot = "phone": "has the following phone number: \"{value}\""
-	if slot = "review": "has received customer reviews and ratings. Here are some of them: \"{value}\""
+
+	if slot = "review": "has received customer reviews. Here are some of them: \"{value}\""
+		if value = "~": "does not have any customer reviews"
+	
 	if slot = "serviceOption": "offers various service options, including \"{value}\""
+
 	if slot = "accessibility": "provides the following accessibility features to accommodate: \"{value}\""
+		if value = "~": "does not inform about any accessibility features to accomodate"
+
 	if slot = "offerings": "offers the following drinks and offerings: \"{value}\""
+		if value = "~": "does not inform about any offerings for drinks or other offerings"
+
 	if slot = "diningOptions": "provides the following dining options: \"{value}\""
+		if value = "~": "does not inform about dining options"
+
 	if slot = "amenities": "has the following amenities and features: \"{value}\""
+
 	if slot = "atmosphere": "has a \"{value}\" atmosphere"
+		if value = "~": "does not inform about any atmospherical details"
+
 	if slot = "crowd": "is suitable for the following: \"{value}\""
-	if slot = "planning": "allows reservations and advance planning"
+		if value = "~": "does not inform about suitable crowds"
+
+	if slot = "planning": "has the following information about reservations: \"{value}\""
+		if value = "~": "does not inform about reservations or planning"
+
 	if slot = "payment": "has the following payment options: \"{value}\""
+		if value = "~": "does not inform about any payment options"
+
 	if slot = "highlight": "offers the following highlights and special features: \"{value}\""
+		if value = "~": "does not offer any highlights or special features."
+
 	if slot = "description": "is described as: \"{value}\""
 	if slot = "numberOfReviews": "has \"{value}\" reviews"
 
