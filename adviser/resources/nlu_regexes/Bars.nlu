@@ -9,6 +9,7 @@ rule repeat(): "(\\b|^|\\ )(repeat((\\ that )|(\\ it))?)|(say((\\ that )|(\\ it)
 rule reqalts(): "(\\b|^|\\ )((something|anything)\\ else)|(different(\\ one)*)|(another\\ one)|(alternatives*)|(other options*)|((don'*t|do not) (want|like)\\ (that|this)(\\ one)*)"
 rule ack(): "{IMPOSSIBLEREGEX()}"
 rule bad(): "{IMPOSSIBLEREGEX()}"
+rule makereservation(): "(\\b|^|\\ )(reservation|booking|table\\sreservation|table\\sbooking)\\b"
 
 # user informable slots are name, price, rating, location, hours, website, phone, review, 
 # service options, accessibility, offerings, dining options, amenities, atmosphere, crowd,
@@ -120,6 +121,12 @@ rule inform(highlight)
     "{rINFORM()} {synonyms("highlight", highlight)}"
     "{synonyms("highlight", highlight)}{WBG()}"
     "(\\ |^){synonyms("highlight", highlight)}(\\ (please|and))*"
+
+rule inform(makereservation)
+    # "\\\\b{reservation}\\\\b"
+    "{rINFORM()} {synonyms("reservation", reservation)}"
+    "{synonyms("reservation", reservation)}{WBG()}"
+    "(\\ |^){synonyms("reservation", reservation)}(\\ (please|and))*"
 
 
 # All slots are requestable (name, price, rating, location, hours, website, phone, review, 
@@ -294,6 +301,14 @@ rule request(reviewFilter)
     "(the )?{slot_synonyms("reviewFilter")}"
     "what .*{slot_synonyms("reviewFilter")}"
 
+rule request(makereservation)
+    "{rREQUEST()} {slot_synonyms("reservation")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("reservation")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("reservation")}"
+    "{WANT()}.*{slot_synonyms("reservation")}"
+    "(the )?{slot_synonyms("reservation")}"
+    "what .*{slot_synonyms("reservation")}"
+
 
 # synonyms
 
@@ -400,8 +415,8 @@ function synonyms(slot, value)
         if value = "Cohibar Stuttgart"
             "cohibar"
     add_if slot = "name"
-        if value = "Dafni`s Bistro-Pub"
-            "dafni(s|'s|`s|´s)"
+        if value = "Dafni’s Bistro-Pub"
+            "dafni(s|'s|`s|´s|’s)" 
             "dafni"
     add_if slot = "name"
         if value = "Detroit Bar"
@@ -733,7 +748,12 @@ function slot_synonyms(slot)
         "count of reviews"
         "number of feedback"
         "feedback count"
-   
+    if slot = "makereservation"
+        "table( reservation| booking)?( request| inquiry| aibailabilty)?"
+        "reservation( request)?"
+        "booking"
+        "appointment"
+        "availability"  
         
     
 
