@@ -135,3 +135,16 @@ start policy (add new sys act)
 
 questions:
 ß ? Does it have something to do with the encoding? language is just english?
+
+- run_bars.py copy from run_chat.py
+- create launch
+- add breakpoints for debugging 
+- add system/ user-act
+- request reservation (can you make me a reservation)
+- inform reservation (what day? what time?)
+- policy needs to decide when to start reservation
+
+- conditions to start "booking"
+
+- test the policy with running the whole system
+- default: starting with the user utterance
