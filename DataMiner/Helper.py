@@ -49,5 +49,6 @@ class GoogleSearchConfig():
 def getConfigurations():
     parser = SafeConfigParser()
     parser.read(Constants.ConfigurationFile)
+    aaa = parser['miner']
     return MinerConfiguration(parser)
     
