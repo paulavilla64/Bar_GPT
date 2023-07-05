@@ -1,7 +1,7 @@
 from services.service import PublishSubscribe
 from utils import SysAct, SysActionType
-from adviser.utils.beliefstate import BeliefState
-from adviser.services.policy.policy_handcrafted import HandcraftedPolicy
+from utils.beliefstate import BeliefState
+from services.policy.policy_handcrafted import HandcraftedPolicy
 from utils.useract import UserActionType
 
 class Policy(HandcraftedPolicy):
@@ -80,14 +80,106 @@ class Policy(HandcraftedPolicy):
             if UserActionType.SelectDomain in beliefstate["user_acts"]:
                 self.dialog_start()
             self.first_turn = False
+
+        #     # handle make a reservation user act
+        # elif UserActionType.MakeReservation in beliefstate["user_acts"]:
+        #     sys_act = SysAct()
+        #     sys_act.type = SysActionType.MakeReservation
+            # Add any necessary values or slots to the sys_act
+            # For example:
+            #sys_act.add_value("makereservation")
+            #sys_act.add_value("party_size")
         # handle domain specific actions
+        # else:
+        #     if SysActionType.MakeReservation in beliefstate["sys_acts"]:
+        #         sys_act = SysAct()
+        #         sys_act.type = SysActionType.ConfirmReservation
+        #         # Add any necessary values or slots to the sys_act
+        #         # For example:
+        #         sys_act.add_value("reservation_confirmed")
+        #         sys_state["reservation_confirmed"] = True
         else:
             sys_act, sys_state = self._next_action(beliefstate)
+        
+            # handle make a reservation user act
+        if UserActionType.MakeReservation in beliefstate["user_acts"]:
+            sys_act = SysAct()
+            sys_act.type = SysActionType.MakeReservation
+            
         if self.logger:
             self.logger.dialog_turn("System Action: " + str(sys_act))
         if "last_act" not in sys_state:
             sys_state["last_act"] = sys_act
         return {'sys_act': sys_act, "sys_state": sys_state}
+    
+    def _next_action(self, beliefstate: BeliefState):
+        """Determines the next system action based on the current belief state and
+           previous action.
+
+           When implementing a new type of policy, this method MUST be rewritten
+
+        Args:
+            beliefstate (BeliefState): BeliefState object; contains all user constraints to date
+            of each possible state
+
+        Return:
+            (SysAct): the next system action
+
+        --LV
+        """
+        sys_state = {}
+        # Assuming this happens only because domain is not actually active --LV
+        if UserActionType.Bad in beliefstate['user_acts'] or beliefstate['requests'] \
+                and not self._get_name(beliefstate):
+            sys_act = SysAct()
+            sys_act.type = SysActionType.Bad
+            return sys_act, {'last_act': sys_act}
+
+        elif UserActionType.RequestAlternatives in beliefstate['user_acts'] \
+                and not self._get_constraints(beliefstate)[0]:
+            sys_act = SysAct()
+            sys_act.type = SysActionType.Bad
+            return sys_act, {'last_act': sys_act}
+
+        elif self.domain.get_primary_key() in beliefstate['informs'] \
+                and not beliefstate['requests']:
+            sys_act = SysAct()
+            sys_act.type = SysActionType.InformByName
+            sys_act.add_value(self.domain.get_primary_key(), self._get_name(beliefstate))
+            return sys_act, {'last_act': sys_act}
+
+            # Handle the "make a reservation" user act
+        elif UserActionType.MakeReservation in beliefstate['user_acts']:
+            beliefstate["sys_acts"].append(SysActionType.MakeReservation)
+            sys_act = SysAct()
+            sys_act.type = SysActionType.MakeReservation
+            # Add any necessary slots or values for the reservation
+            sys_act.add_value("makereservation")
+            #sys_act.add_value("party_size")
+            return sys_act, {'last_act': sys_act}
+        
+        # Otherwise we need to query the db to determine next action
+        results = self._query_db(beliefstate)
+        sys_act = self._raw_action(results, beliefstate)
+
+        # requests are fairly easy, if it's a request, return it directly
+        if sys_act.type == SysActionType.Request:
+            if len(list(sys_act.slot_values.keys())) > 0:
+                sys_state['lastRequestSlot'] = list(sys_act.slot_values.keys())[0]
+
+        # otherwise we need to convert a raw inform into a one with proper slots and values
+        elif sys_act.type == SysActionType.InformByName:
+            self._convert_inform(results, sys_act, beliefstate)
+            # update belief state to reflect the offer we just made
+            values = sys_act.get_values(self.domain.get_primary_key())
+            if values:
+                # belief_state['system']['lastInformedPrimKeyVal'] = values[0]
+                sys_state['lastInformedPrimKeyVal'] = values[0]
+            else:
+                sys_act.add_value(self.domain.get_primary_key(), 'none')
+
+        sys_state['last_act'] = sys_act
+        return (sys_act, sys_state)
 
         
         
