@@ -5,6 +5,7 @@ template welcomemsg(help): "Sorry, I cannot understand you. Please tell me again
 template welcomemsg(more) : "Can I help you with anything else? Maybe a recommendation for a fresh beer in a bar?"
 template bad() : "Sorry, I am a bit confused..please tell me again what you are looking for."
 template closingmsg() : "Thank you, goodbye and cheers!"
+template makereservation(): "Are you interested in making a reservation?"
 
 # System Requests
 
@@ -19,6 +20,8 @@ template request(atmosphere): "What type of atmosphere are you looking for in a 
 template request(planning): "Are you interested in making a reservation?"
 template request(payment): "Do you have any specific preferences for payment options at the bar (card/ cash/ payypal/...)?"
 template request(highlight): "Are there any specific highlights you would like the bar to have (live music/ sports/ rooftop seating/...)?"
+template request(makereservation): "On which day and time would you like to reserve a table?"
+
 
 # Rules for System Inform
 function info(slot, value, name)
@@ -30,8 +33,11 @@ function info(slot, value, name)
 	if slot = "rating": "has a rating of \"{value}\" stars"
 	
 	if slot = "location": "is located at \"{value}\""
+
 	if slot = "hours": "operates according to the following hours: \"{value}\""
+
 	if slot = "website": "has a website: \"{value}\""
+
 	if slot = "phone": "has the following phone number: \"{value}\""
 
 	if slot = "review": "has received customer reviews. Here are some of them: \"{value}\""
@@ -58,7 +64,7 @@ function info(slot, value, name)
 
 	if slot = "planning": "has the following information about reservations: \"{value}\""
 		if value = "~": "does not inform about reservations or planning"
-
+	
 	if slot = "payment": "has the following payment options: \"{value}\""
 		if value = "~": "does not inform about any payment options"
 
@@ -66,7 +72,11 @@ function info(slot, value, name)
 		if value = "~": "does not offer any highlights or special features."
 
 	if slot = "description": "is described as: \"{value}\""
+
 	if slot = "numberOfReviews": "has \"{value}\" reviews"
+
+	# the user can make a reservation if the restaurant is open at that time
+	if slot = "makereservation": "I can reserve a table for you! On which day and time would you like to reserve a table?"
 
 
 # -------------------------Only Name Slot-----------------------------------#
