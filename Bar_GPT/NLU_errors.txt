@@ -1,66 +1,29 @@
-Where values are None:
-
-Connection to tilde/separator?
-
 >>accept debit cards
-{'user_acts': [UserAct("accept debit cards", UserActionType.Request, payment, None, 1.0)]}
-
->>has live music
-{'user_acts': [UserAct("has live music", UserActionType.Request, highlight, None, 1.0)]}
-
->>it should have great bar food
-{'user_acts': [UserAct("it should have great bar food", UserActionType.Request, diningOptions, None, 1.0), UserAct("it should have great bar food", UserActionType.Inform, name, BAR, 1.0)]}
-
->>has karaoke
-Uncaught exception
-
->>has quiz night
-{'user_acts': [UserAct("has quiz night", UserActionType.Request, highlight, None, 1.0)]}
-
->>it should have bar games
-{'user_acts': [UserAct("it should have bar games", UserActionType.Inform, name, BAR, 1.0)]}
-
->>takeaway
-{'user_acts': [UserAct("takeaway", UserActionType.Request, serviceOption, None, 1.0)]}
+{'user_acts': [UserAct("accept debit cards", UserActionType.Request, accessibility, None, 1.0), UserAct("accept debit cards", UserActionType.Request, payment, None, 1.0)]}
 =================
->>Takeaway
-{'user_acts': [UserAct("Takeaway", UserActionType.Request, serviceOption, None, 1.0)]}
-=================
->>Dine-in
-{'user_acts': [UserAct("Dine-in", UserActionType.Request, serviceOption, None, 1.0)]}
 
->>it should have delivery
-{'user_acts': [UserAct("it should have delivery", UserActionType.Request, serviceOption, None, 1.0)]}
 
-=================
 >>accept reservation
-Uncaught exception
+{'user_acts': [UserAct("accept reservation", UserActionType.MakeReservation, None, None, 1.0)]}
+--> To which user act should this belong to?
 
->>the atmosphere should be upmarket
-Uncaught exception
-
->>it should have toilets
-{'user_acts': [UserAct("it should have toilets", UserActionType.Request, amenities, None, 1.0)]}
 
 >>dogs should be allowed
-Uncaught exception
+{'user_acts': []}
+=================
 
 >>there should be Free Wi-Fi
-Uncaught exception
+{'user_acts': []}
+=================
 
 >>it serves wine
 {'user_acts': [UserAct("it serves wine", UserActionType.Request, offerings, None, 1.0)]}
-=================
+--> should be informable
 
->>has wheelchair-accesible entrance
-{'user_acts': [UserAct("has wheelchair-accesible entrance", UserActionType.Request, accessibility, None, 1.0)]}
-=================
 
->>does it have takeaway?
-{'user_acts': [UserAct("does it have takeaway?", UserActionType.Request, serviceOption, None, 1.0)]}
-=================
+>>I'm looking for a bar with live music
+{'user_acts': [UserAct("I'm looking for a bar with live music", UserActionType.Request, highlight, None, 1.0)]}
+--> should be just informable
 
->>has outdoor seating
-{'user_acts': [UserAct("has outdoor seating", UserActionType.Request, serviceOption, None, 1.0), UserAct("has outdoor seating", UserActionType.Request, diningOptions, None, 1.0)]}
-
+add synonym for takeaway: "take-away"
 
