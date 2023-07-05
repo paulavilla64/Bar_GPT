@@ -1,11 +1,10 @@
 # ---------------NEW RULES - BARGPT MESSAGES-------------------------
 
-template welcomemsg(): "Welcome to BarGPT in Stuttgart! How may I help you?"
+template welcomemsg(): "Welcome to BarGPT in Stuttgart! What is the name of the bar you are looking for?"
 template welcomemsg(help): "Sorry, I cannot understand you. Please tell me again what you are looking for."
 template welcomemsg(more) : "Can I help you with anything else? Maybe a recommendation for a fresh beer in a bar?"
 template bad() : "Sorry, I am a bit confused..please tell me again what you are looking for."
 template closingmsg() : "Thank you, goodbye and cheers!"
-template makereservation(): "Are you interested in making a reservation?"
 
 # System Requests
 
@@ -20,7 +19,6 @@ template request(atmosphere): "What type of atmosphere are you looking for in a 
 template request(planning): "Are you interested in making a reservation?"
 template request(payment): "Do you have any specific preferences for payment options at the bar (card/ cash/ payypal/...)?"
 template request(highlight): "Are there any specific highlights you would like the bar to have (live music/ sports/ rooftop seating/...)?"
-template request(makereservation): "On which day and time would you like to reserve a table?"
 
 
 # Rules for System Inform
@@ -74,9 +72,6 @@ function info(slot, value, name)
 	if slot = "description": "is described as: \"{value}\""
 
 	if slot = "numberOfReviews": "has \"{value}\" reviews"
-
-	# the user can make a reservation if the restaurant is open at that time
-	if slot = "makereservation": "I can reserve a table for you! On which day and time would you like to reserve a table?"
 
 
 # -------------------------Only Name Slot-----------------------------------#
@@ -147,3 +142,11 @@ function info_or_dontcare_list(slot, value_list)
 function info_or_dontcare(value, slot)
 	"which {info(slot, value, "none")}"
 	special_case value = "dontcare": "you don't care"
+
+# ---------------------------System MakeReservation------------------------------#
+
+template makereservation(): "For which day and time would you like to make a reservation?"
+
+template resnotpossible(name): "I'm sorry. Unfortunately, {name} is closed at that time. For which other day and time would you like to make a reservation?"
+
+template confirmreservation(name): "I booked a table for you at {name} for your demanded day and time. Have fun!"
