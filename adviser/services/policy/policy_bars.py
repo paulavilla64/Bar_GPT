@@ -4,6 +4,18 @@ from utils.beliefstate import BeliefState
 from services.policy.policy_handcrafted import HandcraftedPolicy
 from utils.useract import UserActionType
 
+# Define the utility function to extract day, start_time, and end_time from hours_string
+def extract_hours_slot(hours_string):
+    day, time_range = hours_string.split('\t ')
+    start_time, end_time = time_range.split(' - ')
+    return day, start_time, end_time
+
+def check_reservation_availability(day, start_time, end_time):
+    # Check if the bar is open on the specified day and during the specified time
+    # Your implementation here
+    return True  # Replace this with your actual logic to determine reservation availability
+
+
 class Policy(HandcraftedPolicy):
     def __init__(self, domain, logger, max_turns):
         super().__init__(domain, logger, max_turns)
@@ -81,23 +93,6 @@ class Policy(HandcraftedPolicy):
                 self.dialog_start()
             self.first_turn = False
 
-        #     # handle make a reservation user act
-        # elif UserActionType.MakeReservation in beliefstate["user_acts"]:
-        #     sys_act = SysAct()
-        #     sys_act.type = SysActionType.MakeReservation
-            # Add any necessary values or slots to the sys_act
-            # For example:
-            #sys_act.add_value("makereservation")
-            #sys_act.add_value("party_size")
-        # handle domain specific actions
-        # else:
-        #     if SysActionType.MakeReservation in beliefstate["sys_acts"]:
-        #         sys_act = SysAct()
-        #         sys_act.type = SysActionType.ConfirmReservation
-        #         # Add any necessary values or slots to the sys_act
-        #         # For example:
-        #         sys_act.add_value("reservation_confirmed")
-        #         sys_state["reservation_confirmed"] = True
         else:
             sys_act, sys_state = self._next_action(beliefstate)
         
@@ -105,7 +100,19 @@ class Policy(HandcraftedPolicy):
         if UserActionType.MakeReservation in beliefstate["user_acts"]:
             sys_act = SysAct()
             sys_act.type = SysActionType.MakeReservation
-            
+
+            # check if a reservation is possible on that day and time
+            # hours_slot_value = beliefstate["informs"]["hours"] 
+            # day, start_time, end_time = extract_hours_slot(hours_slot_value)
+            # reservation_is_possible = check_reservation_availability(day, start_time, end_time)
+
+            # if reservation_is_possible:
+            #     sys_act = SysAct()
+            #     sys_act.type = SysActionType.ConfirmReservation
+            # else:
+            #     sys_act = SysAct()
+            #     sys_act.type = SysActionType.ReservationNotPossible
+
         if self.logger:
             self.logger.dialog_turn("System Action: " + str(sys_act))
         if "last_act" not in sys_state:
