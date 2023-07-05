@@ -38,6 +38,7 @@ class UserActionType(Enum):
     Bad = 'bad'
     Confirm = 'confirm'
     SelectDomain = 'selectdomain'
+    MakeReservation = 'makereservation'
 
 
 class UserAct(object):
