@@ -123,10 +123,10 @@ rule inform(highlight)
     "(\\ |^){synonyms("highlight", highlight)}(\\ (please|and))*"
 
 rule inform(makereservation)
-    # "\\\\b{reservation}\\\\b"
-    "{rINFORM()} {synonyms("reservation", reservation)}"
-    "{synonyms("reservation", reservation)}{WBG()}"
-    "(\\ |^){synonyms("reservation", reservation)}(\\ (please|and))*"
+    # "\\\\b{makereservation}\\\\b"
+    "{rINFORM()} {synonyms("makereservation", makereservation)}"
+    "{synonyms("makereservation", makereservation)}{WBG()}"
+    "(\\ |^){synonyms("makereservation", makereservation)}(\\ (please|and))*"
 
 
 # All slots are requestable (name, price, rating, location, hours, website, phone, review, 
@@ -302,12 +302,12 @@ rule request(reviewFilter)
     "what .*{slot_synonyms("reviewFilter")}"
 
 rule request(makereservation)
-    "{rREQUEST()} {slot_synonyms("reservation")}"
-    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("reservation")}"
-    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("reservation")}"
-    "{WANT()}.*{slot_synonyms("reservation")}"
-    "(the )?{slot_synonyms("reservation")}"
-    "what .*{slot_synonyms("reservation")}"
+    "{rREQUEST()} {slot_synonyms("makereservation")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("makereservation")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("makereservation")}"
+    "{WANT()}.*{slot_synonyms("makereservation")}"
+    "(the )?{slot_synonyms("makereservation")}"
+    "what .*{slot_synonyms("makereservation")}"
 
 
 # synonyms
@@ -739,7 +739,8 @@ function slot_synonyms(slot)
         "explanation"
         "insight"
         "impression"
-    if slot = "number of reviews"
+    if slot = "numberOfReviews"
+        "numberOfReviews"
         "number of reviews"
         "review count"
         "total reviews"
@@ -749,7 +750,8 @@ function slot_synonyms(slot)
         "number of feedback"
         "feedback count"
     if slot = "makereservation"
-        "table( reservation| booking)?( request| inquiry| aibailabilty)?"
+        "makereservation"
+        "table( reservation| booking)?( request| inquiry| availability)?"
         "reservation( request)?"
         "booking"
         "appointment"
