@@ -37,6 +37,8 @@ class SysActionType(Enum):
     Bye = 'closingmsg'
     ConfirmRequest = 'confreq'
     MakeReservation = 'makereservation'
+    ReservationNotPossible = 'resnotpossible'
+    ConfirmReservation = 'confirmreservation'
 
 
 class SysAct(object):
