@@ -17,4 +17,4 @@
 #
 ###############################################################################
 
-from .policy_handcrafted import HandcraftedPolicy
+from .policy_bars import Policy
