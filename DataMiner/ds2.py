@@ -38,9 +38,12 @@ def processAbout(browser,data):
 
 	for ittr in (range(2,30,3)):
 		try:
-			container = find_element(By.XPATH,f'//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[3]/div[{ittr}]',browser)
+			container = find_element(By.XPATH,f'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[{ittr}]',browser)
 			#containerPath = f'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[{ittr}]'
-			headingElement = find_element(By.XPATH,f'./h2',container) 
+			try:
+				headingElement = find_element(By.XPATH,f'./p/span/span',container) 
+			except:
+				headingElement = find_element(By.XPATH,f'./h2',container) 
 			heading = headingElement.text
 
 			listi = []
@@ -56,6 +59,8 @@ def processAbout(browser,data):
 					break
 			dict[heading] = listi
 		except Exception as ex2:
+
+			print(ex2)
 			if(ittr < 3):
 				continue
 			else:
@@ -64,33 +69,21 @@ def processAbout(browser,data):
 
 def processInfor(browser,data):
 #	print('info')
-	description = find_element(By.XPATH,'//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]/div[6]/button/div[2]/div[1]/div[1]',browser)
+	description = find_element(By.XPATH,'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[6]/button/div[2]/div[1]/div[1]',browser)
 #	print(description.accessible_name)
 #	print(description.text)
 	data['HIGHLIGHT'] = description.text
 	moreinfo = []
 	for itrr in range(3,10,1):
 		try:
-			ele = find_element(By.XPATH,f'//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]/div[9]/div[{itrr}]',browser)
-			values = ele.text.lower()
+			ele = find_element(By.XPATH,f'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[9]/div[{itrr}]',browser)
 #			print(ele.text)
-			if('close' in values or 'open' in values):
-				ele.click()
-				time.sleep(2)
-				timings = {}
-				for it in range(1,8,1):
-					dayElement = find_element(By.XPATH,f'./div[2]/div/table/tbody/tr[{it}]/td[1]/div',ele)
-					timeElement = find_element(By.XPATH,f'./div[2]/div/table/tbody/tr[{it}]/td[2]/ul/li',ele)
-					timings[dayElement.text] = timeElement.text
-				moreinfo.append(timings)
 			moreinfo.append(ele.text)
-		except Exception as ex:
-			print(ex)
+		except Exception  as ex:
 #			print('not found')
+			print(ex)
 			break
 	data['moreInfo'] = moreinfo
-
-
 def find_element(how,path,driver):
 	try:
 		return driver.find_element(how,path)
@@ -120,12 +113,12 @@ def processReviews(browser,data):
 	except:
 		reviewlement = find_element("xpath",'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div/div/button[3]',browser)
 	reviewelement.click()
-	numberOfReviews = find_element(By.XPATH,'//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[3]/div[1]/div/div[2]/div[2]',browser)
+	numberOfReviews = find_element(By.XPATH,'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[1]/div/div[2]/div[2]',browser)
 	#print(numberOfReviews.text)
 	reviews['number of reviews'] = numberOfReviews.text
 
 	allFilter = []
-	reviewFilters = find_element(By.XPATH,'//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[3]/div[9]',browser)
+	reviewFilters = find_element(By.XPATH,'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[9]',browser)
 	for itr in range(1,10,1):
 		try:
 			reviewFilter = find_element(By.XPATH,f'./div[{itr}]/button/span/span',reviewFilters)
@@ -138,7 +131,7 @@ def processReviews(browser,data):
 	texts = []
 	for itr in range(1,n_reivews,3):
 		try:
-			reviewTextContainer = find_element(By.XPATH,f'//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[3]/div[10]/div[{itr}]',browser)
+			reviewTextContainer = find_element(By.XPATH,f'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[10]/div[{itr}]',browser)
 			reviw = find_element(By.XPATH,'./div/div/div[4]/div[2]/div/span[1]',reviewTextContainer)
 			#print(reviw.text)
 			texts.append(reviw.text)
@@ -182,8 +175,10 @@ def extractPriceRating(browser,data,config):
 def processResult(browser,config):
 	try:
 		data = extractInformation(browser,config)
-	except:
+	except Exception as ex:
+		print (ex)
 		data = extractInformation(browser,config)
+	print(data)
 	outputData.append(data)
    
 def getChromeDriver(config):
@@ -205,7 +200,7 @@ def getChromeDriver(config):
 def processElement(browser,i,config):
 	searchResult = find_element(By.XPATH, f'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div[{i}]/div/a',browser)
 	searchResult.click()
-#	time.sleep(6) # change this
+	time.sleep(6) # change this
 	processResult(browser,config)
 
 
@@ -242,16 +237,16 @@ def mineData(browser,config):
 	browser.find_element("id",config.googleConfig.acceptConditionsButtonId).click()
 
 	#chantge languge
-	time.sleep(1)
+	time.sleep(2)
 	eng = browser.find_element("xpath",'//*[@id="SIvCob"]/a')
 	eng.click()
-	time.sleep(1)
+	time.sleep(2)
 	# Search in Search Bar
 	searchBox = browser.find_element("id",config.googleConfig.searchBarId)
 	searchBox.send_keys(config.searchQuery)
-	time.sleep(1)
+	time.sleep(2)
 	searchBox.send_keys(Keys.RETURN)
-	time.sleep(1)
+	time.sleep(2)
 	# More Options    - TBD replace this with "maps" button because sometimes this fails when the page gives no more results button
 	#ele = browser.find_element("xpath",'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]')
 
@@ -263,15 +258,15 @@ def mineData(browser,config):
 	# Process Elements on each Search page
 #	infinite_scroll(browser)
 #	for page in tqdm(range (0,config.numberOfPagesToSearch,1)):
-	for ittr in tqdm(range(3,config.numberOfSearchPerPage,1)):
+	for ittr in tqdm(range(3,config.numberOfSearchPerPage,2)):
 		try:			
 			processElement(browser,ittr,config.googleConfig)
 		except Exception as ex:
 			try:
+				print(f"ExceptionRaised: {ex}")
 				processElement(browser,ittr,config.googleConfig)
-				#print(f"ExceptionRaised: {ex}")
 			except Exception as ex2:
-				#print(f"ExceptionRaised2: {ex2}")
+				print(f"ExceptionRaised2: {ex2}")
 				continue
 				raise Exception("some error happened!!") # Handle Error - TBD
 		# Next Page
