@@ -28,24 +28,30 @@ function info(slot, value, name)
 	if slot = "name": "is called \"{value}\"."
 
 	if slot = "price": "falls within the \"{value}\" price range"
-		if value = "~": "does not inform about specific price ranges"
+		if value = "~": "does not inform about specific price ranges."
 
 	if slot = "rating": "has a rating of \"{value}\" stars"
+		if value = "~": "does not inform about their ratings."
 	
 	if slot = "location": "is located at \"{value}\""
+		if value = "~": "does not inform about their location."
 
 	if slot = "hours": "operates according to the following hours: \"{value}\""
+		if value = "~": "does not inform about their opening times."
 
 	if slot = "bookingConfirmation": "The booking is confirmed at: \"{value}\""
 
 	if slot = "website": "has a website: \"{value}\""
+		if value = "~": "does not inform about their website."
 
 	if slot = "phone": "has the following phone number: \"{value}\""
+		if value = "~": "does not inform about their phone number."
 
 	if slot = "review": "has received customer reviews. Here are some of them: \"{value}\""
 		if value = "~": "does not have any customer reviews"
 	
 	if slot = "serviceOption": "offers various service options, including \"{value}\""
+		if value = "~": "does not inform about their service options."
 
 	if slot = "accessibility": "provides the following accessibility features to accommodate: \"{value}\""
 		if value = "~": "does not inform about any accessibility features to accomodate"
@@ -57,6 +63,7 @@ function info(slot, value, name)
 		if value = "~": "does not inform about dining options"
 
 	if slot = "amenities": "has the following amenities and features: \"{value}\""
+		if value = "~": "does not inform about their amenities and features."
 
 	if slot = "atmosphere": "has a \"{value}\" atmosphere"
 		if value = "~": "does not inform about any atmospherical details"
@@ -74,8 +81,10 @@ function info(slot, value, name)
 		if value = "~": "does not offer any highlights or special features."
 
 	if slot = "description": "is described as: \"{value}\""
+		if value = "~": "does not have a description."
 
 	if slot = "numberOfReviews": "has \"{value}\" reviews"
+		if value = "~": "does not inform about their number of reviews."
 
 	# the user can make a reservation if the restaurant is open at that time
 	if slot = "makereservation": "I can reserve a table for you! On which day and time would you like to reserve a table?"
