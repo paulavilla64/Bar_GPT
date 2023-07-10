@@ -5,7 +5,7 @@ template welcomemsg(help): "Sorry, I cannot understand you. Please tell me again
 template welcomemsg(more) : "Can I help you with anything else? Maybe a recommendation for a fresh beer in a bar?"
 template bad() : "Sorry, I am a bit confused..please tell me again what you are looking for."
 template closingmsg() : "Thank you, goodbye and cheers!"
-template makereservation(): "Are you interested in making a reservation?"
+template makereservation(): "I can reserve a table for you! On which day and time would you like to book a table?"
 
 # System Requests
 
@@ -20,7 +20,7 @@ template request(atmosphere): "What type of atmosphere are you looking for in a 
 template request(planning): "Are you interested in making a reservation?"
 template request(payment): "Do you have any specific preferences for payment options at the bar (card/ cash/ payypal/...)?"
 template request(highlight): "Are there any specific highlights you would like the bar to have (live music/ sports/ rooftop seating/...)?"
-template request(makereservation): "On which day and time would you like to reserve a table?"
+template request(makereservation): "I can reserve a table for you! On which day and time would you like to book a table?"
 
 
 # Rules for System Inform
