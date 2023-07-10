@@ -94,6 +94,9 @@ function info(slot, value, name)
 template confreq(name, hours)
 	" Booking confimed for {name} at {hours} "
 
+template declinereq(name, hours)
+	"Unfortunately, {name} is closed at {hours}. For which other day and time would you like to make a reservation?"
+
 template inform_byname(name)
 	"There is a bar called {name}. What do you want to know about it?"
 

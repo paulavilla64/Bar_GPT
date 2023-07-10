@@ -3,6 +3,8 @@ from utils import SysAct, SysActionType
 from utils.beliefstate import BeliefState
 from services.policy.policy_handcrafted import HandcraftedPolicy
 from utils.useract import UserActionType
+import json
+
 
 class Policy(HandcraftedPolicy):
     def __init__(self, domain, logger, max_turns):
@@ -132,14 +134,58 @@ class Policy(HandcraftedPolicy):
 
             # result from database
             results = self._query_db(beliefstate)
+            print(f"This is the results {results}")
+            print(type(results))
 
             #user_input
             user_input = beliefstate['reservation_query']
+            print(f"This is the user input {user_input}")
+            print(type(user_input))
 
+            # Extracting the dictionary from the list
+            hours_dict = json.loads(results[0]['hours'])
 
+            # Converting keys to lowercase
+            hours_dict = {key.lower(): value for key, value in hours_dict.items()}
 
+            
             sys_act = SysAct()
-            sys_act.type = SysActionType.ConfirmRequest
+
+            if "monday" in user_input:
+                if hours_dict["monday"] == "Closed":
+                    sys_act.type = SysActionType.DeclineRequest
+                else:            
+                    sys_act.type = SysActionType.ConfirmRequest
+            if "tuesday" in user_input:
+                if hours_dict["tuesday"] == "Closed":
+                    sys_act.type = SysActionType.DeclineRequest
+                else:            
+                    sys_act.type = SysActionType.ConfirmRequest
+            if "wednesday" in user_input:
+                if hours_dict["wednesday"] == "Closed":
+                    sys_act.type = SysActionType.DeclineRequest
+                else:            
+                    sys_act.type = SysActionType.ConfirmRequest
+            if "thursday" in user_input:
+                if hours_dict["thursday"] == "Closed":
+                    sys_act.type = SysActionType.DeclineRequest
+                else:            
+                    sys_act.type = SysActionType.ConfirmRequest
+            if "friday" in user_input:
+                if hours_dict["friday"] == "Closed":
+                    sys_act.type = SysActionType.DeclineRequest
+                else:            
+                    sys_act.type = SysActionType.ConfirmRequest
+            if "saturday" in user_input:
+                if hours_dict["saturday"] == "Closed":
+                    sys_act.type = SysActionType.DeclineRequest
+                else:            
+                    sys_act.type = SysActionType.ConfirmRequest
+            if "sunday" in user_input:
+                if hours_dict["sunday"] == "Closed":
+                    sys_act.type = SysActionType.DeclineRequest
+                else:            
+                    sys_act.type = SysActionType.ConfirmRequest
 
             sys_act.add_value('hours', user_input)
             name = self._get_name(beliefstate)
