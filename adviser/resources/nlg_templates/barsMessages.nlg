@@ -36,6 +36,8 @@ function info(slot, value, name)
 
 	if slot = "hours": "operates according to the following hours: \"{value}\""
 
+	if slot = "bookingConfirmation": "The booking is confirmed at: \"{value}\""
+
 	if slot = "website": "has a website: \"{value}\""
 
 	if slot = "phone": "has the following phone number: \"{value}\""
@@ -80,6 +82,8 @@ function info(slot, value, name)
 
 
 # -------------------------Only Name Slot-----------------------------------#
+template confreq(name, hours)
+	" Booking confimed for {name} at {hours} "
 
 template inform_byname(name)
 	"There is a bar called {name}. What do you want to know about it?"

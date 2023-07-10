@@ -52,12 +52,13 @@ class HandcraftedBST(Service):
 
         """
         # save last turn to memory
+
         self.bs.start_new_turn()
         if user_acts:
             self._reset_informs(user_acts)
             self._reset_requests()
             self.bs["user_acts"] = self._get_all_usr_action_types(user_acts)
-
+# @karan - do something so that the user utterance from user_acts variable is carried forward and not lost like in the above line / step
             self._handle_user_acts(user_acts)
 
             num_entries, discriminable = self.bs.get_num_dbmatches()
@@ -149,3 +150,7 @@ class HandcraftedBST(Service):
                 # This way it is clear that the user is no longer asking about that one item
                 if self.domain.get_primary_key() in self.bs['informs']:
                     del self.bs['informs'][self.domain.get_primary_key()]
+            elif act.type == UserActionType.MakeReservation:
+                # set some flag to true
+                self.bs['makereservation'] = True
+                

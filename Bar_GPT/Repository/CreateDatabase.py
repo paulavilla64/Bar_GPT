@@ -1,21 +1,21 @@
 import os
 import json
 import sqlite3
-#import Bar_GPT.utils.Helpers
-#from adviser.Bar_GPT.utils.Helpers import Helpers
 
 class CreateDatabase:
     def __init__(self) -> None:
         self.fileLocation = None
         self.databaseLocation = None
+        self.fileName = "bars_data/bars"
     def create(self,filePath=''):
-        filePath = '/Users/karan/Downloads/bars.json'
-        Helpers.formatData(filePath=filePath)
+        filePath = self.fileName+'.json'
+        Helpers.formatData(self.fileName)
         connection = sqlite3.connect('adviser/resources/databases/bars.db')
         cursor = connection.cursor()
+        cursor.execute('Drop Table Bars')
         cursor.execute('Create Table if not exists Bars (name text ,price text ,rating text  ,location text ,hours text ,website text ,phone text ,review text ,serviceOption text ,accessibility text ,offerings text ,diningOptions text ,amenities text ,atmosphere text ,crowd text ,planning text ,payment text ,highlight text ,description text ,numberOfReviews text ,reviewFilter text )')
 
-        filename = '/Users/karan/Downloads/barsnew.json'
+        filename = self.fileName+'new.json'
         bars = json.load(open(filename))
         columns = ['name','price','rating','location','hours','website','phone','review','serviceOption','accessibility','offerings','diningOptions','amenities','atmosphere','crowd','planning','payment','highlight','description','numberOfReviews','reviewFilter']
         for row in bars:
@@ -27,48 +27,93 @@ class CreateDatabase:
         connection.close()
 class Helpers:
     @staticmethod
-    def formatData(filePath):
+    def formatData(file):
         defaultValue = '~'
         completeDict = {}
-#        filename = '/Users/karan/Downloads/bars.json'
-        bars = json.load(open(filePath))
+ 
+        bars = json.load(open(file+'.json'))
         for bar in bars:
             outputdict = {}
-            outputdict['name'] = (bar.get('name')or defaultValue )
-            outputdict['price'] = (bar.get('price')  or defaultValue  )
-            outputdict['rating'] = (bar.get('rating')  or defaultValue   )
-            outputdict['description'] = (bar.get('HIGHLIGHT')  or defaultValue )  
-            moreinfo = (bar.get('moreInfo')   or defaultValue   )
-            outputdict['location'] = (moreinfo[0]or defaultValue)
-            outputdict['hours'] = (moreinfo[1]or defaultValue)
-            outputdict['website'] = (moreinfo[2]or defaultValue)
-            outputdict['phone'] = Helpers.getPhonenumber(moreinfo)
-            outputdict['accessibility'] = "~".join(bar.get('about').get('Accessibility')or defaultValue)     
-            outputdict['serviceOption'] = "~".join(bar.get('about').get('Service options') or defaultValue )
-            outputdict['offerings'] = "~".join(bar.get('about').get('Offerings') or defaultValue    )
-            outputdict['amenities'] = "~".join(bar.get('about').get('Amenities') or defaultValue   )
-            outputdict['atmosphere'] = "~".join(bar.get('about').get('Atmosphere') or defaultValue  )   
-            outputdict['crowd'] = "~".join(bar.get('about').get('Crowd')   or defaultValue )
-            outputdict['diningOptions'] = "~".join(bar.get('about').get("Dining options")or defaultValue)
-            outputdict['payment'] = "~".join(bar.get('about').get('Payments')  or defaultValue   )
-            outputdict['highlight'] = "~".join(bar.get('about').get('Highlights')or defaultValue)
-            outputdict['numberOfReviews'] = (bar.get('about').get('reviews').get('number of reviews')or defaultValue)
-            outputdict['reviewFilter'] = "~".join(bar.get('about').get('reviews').get('filters') or defaultValue ) 
-            outputdict['review'] = "~".join(bar.get('about').get('reviews').get('review text')or defaultValue)
-            outputdict['planning'] = "~".join(bar.get('about').get('Planning')or defaultValue)
+            outputdict['name'] =  Helpers.getValue(bar,'name')
+            outputdict['price'] = Helpers.getValue(bar,'price') 
+            outputdict['rating'] = Helpers.getValue(bar,'rating') 
+            outputdict['description'] = Helpers.getValue(bar,'HIGHLIGHT')  
+            
+            moreinfo =  Helpers.getValue(bar,'moreInfo')  
+            outputdict =  Helpers.getMoreInfo(moreinfo,outputdict)
+ 
+            about = Helpers.getValue(bar,'about')
+            outputdict['accessibility'] = "~".join(Helpers.getValue(about,'Accessibility'))
+            outputdict['serviceOption'] = "~".join(Helpers.getValue(about,'Service options'))
+            outputdict['offerings'] = "~".join(Helpers.getValue(about,'Offerings'))
+            outputdict['amenities'] = "~".join(Helpers.getValue(about,'Amenities'))
+            outputdict['atmosphere'] = "~".join(Helpers.getValue(about,'Atmosphere'))
+            outputdict['crowd'] = "~".join(Helpers.getValue(about,'Crowd'))
+            outputdict['diningOptions'] = "~".join(Helpers.getValue(about,'Dining options'))
+            outputdict['payment'] = "~".join(Helpers.getValue(about,'Payments'))
+            outputdict['highlight'] = "~".join(Helpers.getValue(about,'Highlights'))
+            outputdict['planning'] = "~".join(Helpers.getValue(about,'Planning'))
+            
+            reviews = Helpers.getValue(about,'reviews')
+            outputdict['numberOfReviews'] = "~".join(Helpers.getValue(reviews,'number of reviews'))
+            outputdict['reviewFilter'] = "~".join(Helpers.getValue(reviews,'filters'))
+            outputdict['review'] = "~".join(Helpers.getValue(reviews,'review text'))
+
             completeDict[outputdict['name']]= outputdict
-        with open('/Users/karan/Downloads/barsnew.json', 'w') as file:
+        with open(file+'new.json', 'w') as file:
                 json.dump(completeDict, file)
     @staticmethod
-    def getPhonenumber(moreinfoDict:dict):
-        print('getting phone number')
+    def getPhonenumber(info,outputDict):
         try:
-            return str(int(moreinfoDict[3].strip()))
+            value = str(int(info.replace(" ", "")))
+            outputDict['phone'] = value
+            return outputDict
         except:
-            try:
-                  return str(int(moreinfoDict[4].strip))
-            except:
-                  return str(00)
+            return outputDict
+
+
+    @staticmethod
+    def getValue(dictionary,searchTerm):
+        defaultValue = '~'
+        try:
+            value = dictionary.get(searchTerm) 
+            if value == None:
+                return defaultValue
+            else:
+                return value
+        except:
+            return defaultValue
+    
+    @staticmethod
+    def getIndexValue(list,index):
+        defaultValue = '~'
+        try:
+            return list[index]
+        except:
+            return defaultValue
+    @staticmethod
+    def getMoreInfo(moreInfo,outputDict):
+        defaultValue = '~'
+        print(moreInfo)
+        for index,info in enumerate(moreInfo):
+            if(index == 0):
+                outputDict['location'] = info
+            elif('.' in info):
+                outputDict['website'] = info
+            elif(outputDict.get('hours') == None and 'Sunday' in info):                
+                outputDict['hours'] = json.dumps(info)
+            else:
+                outputDict = Helpers.getPhonenumber(info,outputDict)
+        if(outputDict.get('location')==None):
+            outputDict['location'] = defaultValue
+        if(outputDict.get('website')==None):
+            outputDict['website'] = defaultValue
+        if(outputDict.get('hours')==None):
+            outputDict['hours'] = defaultValue
+        if(outputDict.get('phone')==None):
+            outputDict['phone'] = str(00)
+        
+        return outputDict
 
 cc = CreateDatabase()
 cc.create()

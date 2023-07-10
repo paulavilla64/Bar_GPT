@@ -149,7 +149,11 @@ class HandcraftedNLU(Service):
             user_utterance = user_utterance.strip()
             self._match_general_act(user_utterance)
             self._match_domain_specific_act(user_utterance)
-
+        # if not first turn check
+        if(type(self.sys_act_info['last_act'])!= type(None) ):
+            if(self.sys_act_info['last_act'].type == SysActionType.MakeReservation):
+                print("creating reservation")
+                self._add_request(user_utterance, 'hours') # 'hours', 'hours'
         self._solve_informable_values()
 
 
@@ -228,7 +232,14 @@ class HandcraftedNLU(Service):
                             value = 'true' if user_act_type == UserActionType.Affirm else 'false'
                             # Adding user inform act
                             self._add_inform(user_utterance, slot, value)
-
+#                    elif self.sys_act_info['last_act'].type == SysActionType.InformByName:
+#                        self.req_everything = True
+#                        user_act_type == 'dontcare'
+#                        self._add_request(user_utterance, slot)
+#                        for slot in self.sys_act_info['last_act'].slot_values:                            
+                            # Adding user inform act
+#                            self._add_inform(user_utterance, slot, value=user_act_type)
+#                        self._add_inform(user_utterance, slot, value=user_act_type)
                     # Check if Deny happens after System Request more, then trigger bye
                     elif self.sys_act_info['last_act'].type == SysActionType.RequestMore \
                             and user_act_type == UserActionType.Deny:

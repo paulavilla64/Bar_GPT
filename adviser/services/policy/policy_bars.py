@@ -49,7 +49,6 @@ class Policy(HandcraftedPolicy):
 
         # removes hello and thanks if there are also domain specific actions
         self._remove_gen_actions(beliefstate)
-
         if UserActionType.Bad in beliefstate["user_acts"]:
             sys_act = SysAct()
             sys_act.type = SysActionType.Bad
@@ -82,13 +81,13 @@ class Policy(HandcraftedPolicy):
             self.first_turn = False
 
         #     # handle make a reservation user act
-        # elif UserActionType.MakeReservation in beliefstate["user_acts"]:
-        #     sys_act = SysAct()
-        #     sys_act.type = SysActionType.MakeReservation
-            # Add any necessary values or slots to the sys_act
-            # For example:
-            #sys_act.add_value("makereservation")
-            #sys_act.add_value("party_size")
+        elif UserActionType.MakeReservation in beliefstate["user_acts"]:
+            sys_act = SysAct()
+            sys_act.type = SysActionType.MakeReservation  # @karan - change this name to system asking for reservation / reservatiion mode
+#            Add any necessary values or slots to the sys_act
+#            For example:
+#            sys_act.add_value("makereservation")
+#            sys_act.add_value("party_size")
         # handle domain specific actions
         # else:
         #     if SysActionType.MakeReservation in beliefstate["sys_acts"]:
@@ -102,9 +101,9 @@ class Policy(HandcraftedPolicy):
             sys_act, sys_state = self._next_action(beliefstate)
         
             # handle make a reservation user act
-        if UserActionType.MakeReservation in beliefstate["user_acts"]:
-            sys_act = SysAct()
-            sys_act.type = SysActionType.MakeReservation
+        # if UserActionType.MakeReservation in beliefstate["user_acts"]:
+        #     sys_act = SysAct()
+        #     sys_act.type = SysActionType.MakeReservation
             
         if self.logger:
             self.logger.dialog_turn("System Action: " + str(sys_act))
@@ -129,7 +128,25 @@ class Policy(HandcraftedPolicy):
         """
         sys_state = {}
         # Assuming this happens only because domain is not actually active --LV
-        if UserActionType.Bad in beliefstate['user_acts'] or beliefstate['requests'] \
+        if(beliefstate['makereservation']):
+            print("booking taking place.....")
+            results = self._query_db(beliefstate)
+            sys_act = SysAct()
+            sys_act.type = SysActionType.ConfirmRequest
+            # check stuff
+# add this line after adding to template 
+            sys_act.add_value('hours', '1200pm')
+            name = self._get_name(beliefstate)
+            sys_act.add_value(self.domain_key, name)
+
+            sys_state['last_act'] = sys_act
+            return (sys_act, sys_state)
+
+            # get hours from database
+            # call function  which checks if booking possibel
+            # if booking possible create sys_act which says booking done
+            # else create sys act which says booking not possible 
+        elif UserActionType.Bad in beliefstate['user_acts'] or beliefstate['requests'] \
                 and not self._get_name(beliefstate):
             sys_act = SysAct()
             sys_act.type = SysActionType.Bad
@@ -141,22 +158,28 @@ class Policy(HandcraftedPolicy):
             sys_act.type = SysActionType.Bad
             return sys_act, {'last_act': sys_act}
 
+        # elif UserActionType.MakeReservation in beliefstate['user_acts']:
+        #     beliefstate["sys_acts"].append(SysActionType.MakeReservation)
+        #     sys_act = SysAct()
+        #     sys_act.type = SysActionType.MakeReservation
+        #     # Add any necessary slots or values for the reservation
+        #     sys_act.add_value("makereservation")
+        #     #sys_act.add_value("party_size")
+        #     return sys_act, {'last_act': sys_act}
+
         elif self.domain.get_primary_key() in beliefstate['informs'] \
                 and not beliefstate['requests']:
             sys_act = SysAct()
             sys_act.type = SysActionType.InformByName
             sys_act.add_value(self.domain.get_primary_key(), self._get_name(beliefstate))
             return sys_act, {'last_act': sys_act}
+        # Check if UserActionType.Booking(perform booking) in belifstate request
+        # if yes
+            # create system act with Booking or booking mode or sometyhign
+            # systemact . add value check timings ( maybe set inform to get timings) and confirm booking
 
             # Handle the "make a reservation" user act
-        elif UserActionType.MakeReservation in beliefstate['user_acts']:
-            beliefstate["sys_acts"].append(SysActionType.MakeReservation)
-            sys_act = SysAct()
-            sys_act.type = SysActionType.MakeReservation
-            # Add any necessary slots or values for the reservation
-            sys_act.add_value("makereservation")
-            #sys_act.add_value("party_size")
-            return sys_act, {'last_act': sys_act}
+        
         
         # Otherwise we need to query the db to determine next action
         results = self._query_db(beliefstate)
