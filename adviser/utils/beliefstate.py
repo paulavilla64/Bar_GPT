@@ -109,7 +109,8 @@ class BeliefState:
                         "requests": {},
                         "num_matches": 0,
                         "discriminable": True,
-                        "makereservation": False,}
+                        "makereservation": False,
+                        "reservation_query":""}
 
         return belief_state
 

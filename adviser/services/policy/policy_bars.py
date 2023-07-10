@@ -129,13 +129,19 @@ class Policy(HandcraftedPolicy):
         sys_state = {}
         # Assuming this happens only because domain is not actually active --LV
         if(beliefstate['makereservation']):
-            print("booking taking place.....")
+
+            # result from database
             results = self._query_db(beliefstate)
+
+            #user_input
+            user_input = beliefstate['reservation_query']
+
+
+
             sys_act = SysAct()
             sys_act.type = SysActionType.ConfirmRequest
-            # check stuff
-# add this line after adding to template 
-            sys_act.add_value('hours', '1200pm')
+
+            sys_act.add_value('hours', user_input)
             name = self._get_name(beliefstate)
             sys_act.add_value(self.domain_key, name)
 

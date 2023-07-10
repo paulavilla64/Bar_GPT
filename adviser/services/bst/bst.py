@@ -58,6 +58,7 @@ class HandcraftedBST(Service):
             self._reset_informs(user_acts)
             self._reset_requests()
             self.bs["user_acts"] = self._get_all_usr_action_types(user_acts)
+            self.bs['reservation_query'] = user_acts[0].text
 # @karan - do something so that the user utterance from user_acts variable is carried forward and not lost like in the above line / step
             self._handle_user_acts(user_acts)
 
