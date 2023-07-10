@@ -34,7 +34,7 @@ class HandcraftedBST(Service):
         Service.__init__(self, domain=domain)
         self.logger = logger
         self.bs = BeliefState(domain)
-
+        self.turns = 0
     @PublishSubscribe(sub_topics=["user_acts"], pub_topics=["beliefstate"])
     def update_bst(self, user_acts: List[UserAct] = None) \
             -> dict(beliefstate=BeliefState):
@@ -154,4 +154,10 @@ class HandcraftedBST(Service):
             elif act.type == UserActionType.MakeReservation:
                 # set some flag to true
                 self.bs['makereservation'] = True
-                
+                self.turns = len(self.bs._history)
+            try:
+                if(len(self.bs._history) > self.turns + 1):
+                    self.bs['makereservation'] = False
+            except Exception as ex:
+                print(ex)    
+
