@@ -401,7 +401,7 @@ function synonyms(slot, value)
     add_if slot = "name"
         if value = "Café Faust"
             "(cafeAE() )?faust"
-        add_if slot = "name"
+    add_if slot = "name"
         if value = "Café K-16"
             "(cafeAE() )?k-16"
             "k16"
