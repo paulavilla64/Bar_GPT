@@ -147,13 +147,14 @@ class HandcraftedNLU(Service):
         self.slots_requested, self.slots_informed = set(), set()
         if user_utterance is not None:
             user_utterance = user_utterance.strip()
-            self._match_general_act(user_utterance)
-            self._match_domain_specific_act(user_utterance)
-        # if not first turn check
-        if(type(self.sys_act_info['last_act'])!= type(None) ):
-            if(self.sys_act_info['last_act'].type == SysActionType.MakeReservation):
-                print("creating reservation")
+            if(type(self.sys_act_info['last_act'])!= type(None)  and self.sys_act_info['last_act'].type == SysActionType.MakeReservation):
                 self._add_request(user_utterance, 'hours') # 'hours', 'hours'
+            elif(type(self.sys_act_info['last_act'])!= type(None)  and self.sys_act_info['last_act'].type == SysActionType.DeclineRequest):
+                self._add_request(f"requestingAgain:{user_utterance}", 'hours') # 'hours', 'hours'                    
+            else:
+                self._match_general_act(user_utterance)
+                self._match_domain_specific_act(user_utterance)
+        # if not first turn check        
         self._solve_informable_values()
 
 
