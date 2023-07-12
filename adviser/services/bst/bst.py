@@ -58,7 +58,8 @@ class HandcraftedBST(Service):
             self._reset_informs(user_acts)
             self._reset_requests()
             self.bs["user_acts"] = self._get_all_usr_action_types(user_acts)
-            self.bs['reservation_query'] = user_acts[0].text
+            self.user_utterance = user_acts[0].text
+            self.bs['reservation_query'] = self.user_utterance
 # @karan - do something so that the user utterance from user_acts variable is carried forward and not lost like in the above line / step
             self._handle_user_acts(user_acts)
 
@@ -158,6 +159,8 @@ class HandcraftedBST(Service):
             try:
                 if(len(self.bs._history) > self.turns + 1):
                     self.bs['makereservation'] = False
+                if('requestingAgain:' in self.bs["reservation_query"]):
+                    self.bs['makereservation'] = True
+                    self.bs['reservation_query'] = self.bs["reservation_query"].replace("requestingAgain:","")
             except Exception as ex:
                 print(ex)    
-
