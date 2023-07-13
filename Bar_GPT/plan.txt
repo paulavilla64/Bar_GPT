@@ -148,3 +148,13 @@ questions:
 
 - test the policy with running the whole system
 - default: starting with the user utterance
+
+Extracting opening times: for some bars there are no opening times shown (even though they have them in Google Maps)
+Update NLU with possible questions for make a reservation
+implement logic if the user writes something the bot doesnt understand
+implement closing times (hours)
+Unfortunately, Holzmaler is closed at monday 2pm. For which other day and time would you like to make a reservation?
+--> here booking mode still has to be turned on
+delete bar
+Opening times for e.g. cafes in the morning
+If the user asks first for a time where the bar is closed the hours[1] doesnt exist
