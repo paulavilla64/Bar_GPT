@@ -82,36 +82,68 @@ class Policy(HandcraftedPolicy):
                 self.dialog_start()
             self.first_turn = False
 
-        #     # handle make a reservation user act
+            # handle make a reservation user act
         elif UserActionType.MakeReservation in beliefstate["user_acts"]:
             sys_act = SysAct()
             sys_act.type = SysActionType.MakeReservation  # @karan - change this name to system asking for reservation / reservatiion mode
-#            Add any necessary values or slots to the sys_act
-#            For example:
-#            sys_act.add_value("makereservation")
-#            sys_act.add_value("party_size")
-        # handle domain specific actions
-        # else:
-        #     if SysActionType.MakeReservation in beliefstate["sys_acts"]:
-        #         sys_act = SysAct()
-        #         sys_act.type = SysActionType.ConfirmReservation
-        #         # Add any necessary values or slots to the sys_act
-        #         # For example:
-        #         sys_act.add_value("reservation_confirmed")
-        #         sys_state["reservation_confirmed"] = True
         else:
             sys_act, sys_state = self._next_action(beliefstate)
-        
-            # handle make a reservation user act
-        # if UserActionType.MakeReservation in beliefstate["user_acts"]:
-        #     sys_act = SysAct()
-        #     sys_act.type = SysActionType.MakeReservation
             
         if self.logger:
             self.logger.dialog_turn("System Action: " + str(sys_act))
         if "last_act" not in sys_state:
             sys_state["last_act"] = sys_act
         return {'sys_act': sys_act, "sys_state": sys_state}
+    
+    # check if the time is given in am or pm
+    def check_am_and_pm(time):
+        int_time = 0
+        if "am" in time:
+            int_time = int(time.replace("am", "").strip()) + 24
+        elif "pm" in time:
+            int_time = int(time.replace("pm", "").strip()) + 12
+        return int_time
+
+    
+    def check_reservation_availability(user_input, opening_hours):
+        sys_act = SysAct()
+        # Convert user input to lowercase for case-insensitive matching
+        user_input = user_input.lower()
+
+        # Extract the requested day and time from the user input
+        requested_day, requested_time = user_input.split()
+        print(requested_day, requested_time)
+
+        # Extracting the dictionary from the list
+        hours_dict = json.loads(opening_hours[0]['hours'])
+
+        # Converting keys to lowercase
+        hours_dict = {key.lower(): value for key, value in hours_dict.items()}
+        hours_index = hours_dict[requested_day].split(" - ")
+        print(hours_index)
+        starting_hours = Policy.check_am_and_pm(hours_index[0])
+        print(starting_hours)
+        closing_hours = Policy.check_am_and_pm(hours_index[1])
+        user_time = Policy.check_am_and_pm(requested_time)
+        print(user_time)
+        print(f"{starting_hours} {closing_hours} {user_time}")
+        # Check if the requested day and time match the opening hours
+        if requested_day in hours_dict:
+            if hours_dict[requested_day] == "Closed":
+                sys_act.type = SysActionType.DeclineRequest
+
+            elif user_time >= starting_hours and user_time <= closing_hours:
+                
+                sys_act.type = SysActionType.ConfirmRequest
+
+            else:
+                sys_act.type = SysActionType.DeclineRequest
+
+        else:
+            sys_act.type = SysActionType.DeclineRequest
+
+        return sys_act
+
     
     def _next_action(self, beliefstate: BeliefState):
         """Determines the next system action based on the current belief state and
@@ -132,60 +164,18 @@ class Policy(HandcraftedPolicy):
         # Assuming this happens only because domain is not actually active --LV
         if(beliefstate['makereservation']):
 
-            # result from database
-            results = self._query_db(beliefstate)
-            print(f"This is the results {results}")
-            print(type(results))
+            # opening times from database
+            sys_act = SysAct()
+            opening_hours = self._query_db(beliefstate)
+            # print(f"This are the opening hours {opening_hours}")
+            # print(type(opening_hours))
 
             #user_input
             user_input = beliefstate['reservation_query']
-            print(f"This is the user input {user_input}")
-            print(type(user_input))
+            # print(f"This is the user input {user_input}")
+            # print(type(user_input))
 
-            # Extracting the dictionary from the list
-            hours_dict = json.loads(results[0]['hours'])
-
-            # Converting keys to lowercase
-            hours_dict = {key.lower(): value for key, value in hours_dict.items()}
-
-            
-            sys_act = SysAct()
-
-            if "monday" in user_input:
-                if hours_dict["monday"] == "Closed":
-                    sys_act.type = SysActionType.DeclineRequest
-                else:            
-                    sys_act.type = SysActionType.ConfirmRequest
-            if "tuesday" in user_input:
-                if hours_dict["tuesday"] == "Closed":
-                    sys_act.type = SysActionType.DeclineRequest
-                else:            
-                    sys_act.type = SysActionType.ConfirmRequest
-            if "wednesday" in user_input:
-                if hours_dict["wednesday"] == "Closed":
-                    sys_act.type = SysActionType.DeclineRequest
-                else:            
-                    sys_act.type = SysActionType.ConfirmRequest
-            if "thursday" in user_input:
-                if hours_dict["thursday"] == "Closed":
-                    sys_act.type = SysActionType.DeclineRequest
-                else:            
-                    sys_act.type = SysActionType.ConfirmRequest
-            if "friday" in user_input:
-                if hours_dict["friday"] == "Closed":
-                    sys_act.type = SysActionType.DeclineRequest
-                else:            
-                    sys_act.type = SysActionType.ConfirmRequest
-            if "saturday" in user_input:
-                if hours_dict["saturday"] == "Closed":
-                    sys_act.type = SysActionType.DeclineRequest
-                else:            
-                    sys_act.type = SysActionType.ConfirmRequest
-            if "sunday" in user_input:
-                if hours_dict["sunday"] == "Closed":
-                    sys_act.type = SysActionType.DeclineRequest
-                else:            
-                    sys_act.type = SysActionType.ConfirmRequest
+            sys_act = Policy.check_reservation_availability(user_input, opening_hours)
 
             sys_act.add_value('hours', user_input)
             name = self._get_name(beliefstate)
@@ -209,15 +199,6 @@ class Policy(HandcraftedPolicy):
             sys_act = SysAct()
             sys_act.type = SysActionType.Bad
             return sys_act, {'last_act': sys_act}
-
-        # elif UserActionType.MakeReservation in beliefstate['user_acts']:
-        #     beliefstate["sys_acts"].append(SysActionType.MakeReservation)
-        #     sys_act = SysAct()
-        #     sys_act.type = SysActionType.MakeReservation
-        #     # Add any necessary slots or values for the reservation
-        #     sys_act.add_value("makereservation")
-        #     #sys_act.add_value("party_size")
-        #     return sys_act, {'last_act': sys_act}
 
         elif self.domain.get_primary_key() in beliefstate['informs'] \
                 and not beliefstate['requests']:
