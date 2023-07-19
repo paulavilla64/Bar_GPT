@@ -6,6 +6,7 @@ template welcomemsg(more) : "Can I help you with anything else? Maybe a recommen
 template bad() : "Sorry, I am a bit confused..please tell me again what you are looking for."
 template closingmsg() : "Thank you, goodbye and cheers!"
 template makereservation(): "I can reserve a table for you! On which day and time would you like to book a table?"
+template suggest(name): "Here is a list of bars: {name}"
 
 # System Requests
 
@@ -124,6 +125,9 @@ template inform_alternatives(name, *slots)
 	
 	special_case name = "none"
 		"There is no other bar which also {for_entry(slots, "info", ", ", " and ", name)}."
+
+template suggest(name, *slots)
+	"There is a list of bars: {name} {for_entry(slots, "info", ", it ", " and it ", name)}"
 
 
 # ----------------------------System Confirm----------------------------------#
