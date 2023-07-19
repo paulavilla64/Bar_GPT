@@ -39,6 +39,7 @@ class UserActionType(Enum):
     Confirm = 'confirm'
     SelectDomain = 'selectdomain'
     MakeReservation = 'makereservation'
+    Suggestion = 'suggest'
 
 
 class UserAct(object):

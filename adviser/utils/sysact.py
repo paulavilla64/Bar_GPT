@@ -38,6 +38,8 @@ class SysActionType(Enum):
     ConfirmRequest = 'confreq'
     DeclineRequest = 'declinereq'
     MakeReservation = 'makereservation'
+    Suggestion = 'suggest'      #remove
+
 
 
 class SysAct(object):

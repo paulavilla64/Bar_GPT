@@ -86,6 +86,10 @@ class Policy(HandcraftedPolicy):
         elif UserActionType.MakeReservation in beliefstate["user_acts"]:
             sys_act = SysAct()
             sys_act.type = SysActionType.MakeReservation  # @karan - change this name to system asking for reservation / reservatiion mode
+
+        elif UserActionType.Suggestion in beliefstate["user_acts"]:
+            sys_act = SysAct()
+            sys_act.type = SysActionType.Suggestion
         else:
             sys_act, sys_state = self._next_action(beliefstate)
             
@@ -99,7 +103,11 @@ class Policy(HandcraftedPolicy):
     def check_am_and_pm(time):
         int_time = 0
         if "am" in time:
-            int_time = int(time.replace("am", "").strip()) + 24
+            int_time = int(time.replace("am", "").strip())
+            if int_time < 12 and int_time >=6:
+                int_time = int_time
+            else:
+                int_time = int_time + 24
         elif "pm" in time:
             int_time = int(time.replace("pm", "").strip()) + 12
         return int_time
@@ -115,8 +123,19 @@ class Policy(HandcraftedPolicy):
         print(requested_day, requested_time)
 
         # Extracting the dictionary from the list
-        hours_dict = json.loads(opening_hours[0]['hours'])
+        try:
+            hours_dict = json.loads(opening_hours[0]['hours'])
+            # Converting keys to lowercase
+            hours_dict = {key.lower(): value for key, value in hours_dict.items()}
+        except:
+            sys_act.type = SysActionType.DeclineRequest
+            return sys_act
 
+        if requested_day in hours_dict:
+            if hours_dict[requested_day] == 'Closed':
+                sys_act.type = SysActionType.DeclineRequest
+                return sys_act
+            
         # Converting keys to lowercase
         hours_dict = {key.lower(): value for key, value in hours_dict.items()}
         hours_index = hours_dict[requested_day].split(" - ")
@@ -131,6 +150,7 @@ class Policy(HandcraftedPolicy):
         if requested_day in hours_dict:
             if hours_dict[requested_day] == "Closed":
                 sys_act.type = SysActionType.DeclineRequest
+                
 
             elif user_time >= starting_hours and user_time <= closing_hours:
                 
