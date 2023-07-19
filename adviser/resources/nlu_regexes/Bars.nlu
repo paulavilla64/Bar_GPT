@@ -10,6 +10,7 @@ rule reqalts(): "(\\b|^|\\ )((something|anything)\\ else)|(different(\\ one)*)|(
 rule ack(): "{IMPOSSIBLEREGEX()}"
 rule bad(): "{IMPOSSIBLEREGEX()}"
 rule makereservation(): "(\\b|^|\\ )(reservation|booking|table\\sreservation|table\\sbooking)\\b"
+rule suggest(): "(\\b|^|\\ )(recommend|suggest|propose|advise|give me|any|what about|how about)\\b"
 
 # user informable slots are name, price, rating, location, hours, website, phone, review, 
 # service options, accessibility, offerings, dining options, amenities, atmosphere, crowd,
@@ -127,6 +128,7 @@ rule inform(makereservation)
     "{rINFORM()} {synonyms("makereservation", makereservation)}"
     "{synonyms("makereservation", makereservation)}{WBG()}"
     "(\\ |^){synonyms("makereservation", makereservation)}(\\ (please|and))*"
+
 
 
 # All slots are requestable (name, price, rating, location, hours, website, phone, review, 
