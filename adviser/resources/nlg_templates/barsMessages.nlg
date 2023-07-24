@@ -6,7 +6,7 @@ template welcomemsg(more) : "Can I help you with anything else? Maybe a recommen
 template bad() : "Sorry, I am a bit confused..please tell me again what you are looking for."
 template closingmsg() : "Thank you, goodbye and cheers!"
 template makereservation(): "I can reserve a table for you! On which day and time would you like to book a table?"
-template suggest(name): "Here is a list of bars: {name}"
+template suggest(): "Here is a list of bars: .... (add names)"
 
 # System Requests
 
@@ -22,6 +22,7 @@ template request(planning): "Are you interested in making a reservation?"
 template request(payment): "Do you have any specific preferences for payment options at the bar (card/ cash/ payypal/...)?"
 template request(highlight): "Are there any specific highlights you would like the bar to have (live music/ sports/ rooftop seating/...)?"
 template request(makereservation): "I can reserve a table for you! On which day and time would you like to book a table?"
+template request(suggest): "Here is a list of bars: "
 
 
 # Rules for System Inform
@@ -89,6 +90,9 @@ function info(slot, value, name)
 
 	# the user can make a reservation if the restaurant is open at that time
 	if slot = "makereservation": "I can reserve a table for you! On which day and time would you like to reserve a table?"
+
+	# the user can make a reservation if the restaurant is open at that time
+	if slot = "suggest": "Here are a list of suggestions "
 
 
 # -------------------------Only Name Slot-----------------------------------#

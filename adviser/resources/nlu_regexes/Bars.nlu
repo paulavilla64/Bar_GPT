@@ -129,7 +129,11 @@ rule inform(makereservation)
     "{synonyms("makereservation", makereservation)}{WBG()}"
     "(\\ |^){synonyms("makereservation", makereservation)}(\\ (please|and))*"
 
-
+rule inform(suggest)
+    # "\\\\b{makereservation}\\\\b"
+    "{rINFORM()} {synonyms("suggest", suggest)}"
+    "{synonyms("suggest", suggest)}{WBG()}"
+    "(\\ |^){synonyms("suggest", suggest)}(\\ (please|and))*"
 
 # All slots are requestable (name, price, rating, location, hours, website, phone, review, 
 # service options, accessibility, offerings, dining options, amenities, atmosphere, crowd,
@@ -310,6 +314,15 @@ rule request(makereservation)
     "{WANT()}.*{slot_synonyms("makereservation")}"
     "(the )?{slot_synonyms("makereservation")}"
     "what .*{slot_synonyms("makereservation")}"
+
+
+rule request(suggest)
+    "{rREQUEST()} {slot_synonyms("suggest")}"
+    "(?<!{DONTCAREWHAT()})(?<!want ){IT()} {slot_synonyms("suggest")}"
+    "(?<!{DONTCARE()}){WHAT()} {slot_synonyms("suggest")}"
+    "{WANT()}.*{slot_synonyms("suggest")}"
+    "(the )?{slot_synonyms("suggest")}"
+    "what .*{slot_synonyms("suggest")}"
 
 
 # synonyms
