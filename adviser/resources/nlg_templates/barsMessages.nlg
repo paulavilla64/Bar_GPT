@@ -99,6 +99,9 @@ function info(slot, value, name)
 template confreq(name, hours)
 	" Booking confimed for {name} at {hours} "
 
+template returnSuggestion(names)
+	" These are some of the bars which match your interests...  {names}   Which one would you like to know more about?"
+
 template declinereq(name, hours)
 	"Unfortunately, {name} is closed at {hours}. For which other day and time would you like to make a reservation?"
 

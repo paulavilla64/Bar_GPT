@@ -38,7 +38,7 @@ class SysActionType(Enum):
     ConfirmRequest = 'confreq'
     DeclineRequest = 'declinereq'
     MakeReservation = 'makereservation'
-    Suggestion = 'suggest'      #remove
+    RetunSuggestion = 'returnSuggestion'      
 
 
 

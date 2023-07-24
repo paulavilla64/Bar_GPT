@@ -110,7 +110,9 @@ class BeliefState:
                         "num_matches": 0,
                         "discriminable": True,
                         "makereservation": False,
-                        "reservation_query":""}
+                        "reservation_query":"",
+                        "suggestion_slot":"",
+                        "suggestion_query":""}
 
         return belief_state
 

@@ -60,13 +60,13 @@ class HandcraftedBST(Service):
             self.bs["user_acts"] = self._get_all_usr_action_types(user_acts)
             self.user_utterance = user_acts[0].text
             self.bs['reservation_query'] = self.user_utterance
-# @karan - do something so that the user utterance from user_acts variable is carried forward and not lost like in the above line / step
+            self.bs['suggestion_slot'] = ""
             self._handle_user_acts(user_acts)
 
             num_entries, discriminable = self.bs.get_num_dbmatches()
             self.bs["num_matches"] = num_entries
             self.bs["discriminable"] = discriminable
-
+# @karan add something with the utterance ( act.slot vlue which needs to be filtered)
         return {'beliefstate': self.bs}
 
     def dialog_start(self):
@@ -135,6 +135,11 @@ class HandcraftedBST(Service):
 
         # Handle user acts
         for act in user_acts:
+            if(act.type == UserActionType.Suggestion):
+                for acts in user_acts:
+                    if(acts.slot!=None):
+                        self.bs['suggestion_slot'] = self.bs['suggestion_slot'] +"~"+ acts.slot
+                print("do something here ") # @karan make changes
             if act.type == UserActionType.Request:
                 self.bs['requests'][act.slot] = act.score
             elif act.type == UserActionType.Inform:

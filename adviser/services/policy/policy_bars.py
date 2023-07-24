@@ -88,8 +88,27 @@ class Policy(HandcraftedPolicy):
             sys_act.type = SysActionType.MakeReservation  # @karan - change this name to system asking for reservation / reservatiion mode
 
         elif UserActionType.Suggestion in beliefstate["user_acts"]:
-            sys_act = SysAct()
-            sys_act.type = SysActionType.Suggestion
+            suggestion_slots = set(beliefstate['suggestion_slot'].split("~"))
+            suggestion_slots.discard("")
+            suggestion_slots.discard(" ")
+            suggestion_query = set(beliefstate['reservation_query'].split(" "))
+#            suggestion_slot = 'offerings'
+#            suggestion_query = 'beer'
+            beliefstate['informs'] = {}
+            db_data = self._query_db(beliefstate)
+            # filter data
+            bar_names = []
+            print(db_data)
+            for dic in db_data:
+                for suggestion_slot in suggestion_slots:
+                    for query in suggestion_query:
+                        if(query in dic[suggestion_slot]):
+                            bar_names.append(dic['name'])
+
+            sys_act = SysAct() # make some change here to get data from db ... filter data and return new system act with list of bars
+            sys_act.type = SysActionType.RetunSuggestion
+
+            sys_act.add_value('names', '\n\n' + '\n'.join(list(set(bar_names))) + '\n\n\n')  
         else:
             sys_act, sys_state = self._next_action(beliefstate)
             
