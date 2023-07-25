@@ -98,7 +98,6 @@ class Policy(HandcraftedPolicy):
             db_data = self._query_db(beliefstate)
             # filter data
             bar_names = []
-            print(db_data)
             for dic in db_data:
                 for suggestion_slot in suggestion_slots:
                     for query in suggestion_query:
