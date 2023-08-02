@@ -75,69 +75,24 @@ def load_nlg(backchannel: bool, domain = None):
         nlg = HandcraftedNLG(domain=domain)
     return nlg
 
-def load_weather_domain():
-    from examples.webapi.weather import WeatherNLU, WeatherNLG, WeatherDomain
-    from services.policy.policy_api import HandcraftedPolicy as PolicyAPI
-    weather = WeatherDomain()
-    weather_nlu = WeatherNLU(domain=weather)
-    weather_nlg = WeatherNLG(domain=weather)
-    weather_bst = HandcraftedBST(domain=weather)
-    weather_policy = PolicyAPI(domain=weather)
-    return weather, [weather_nlu, weather_nlg, weather_bst, weather_policy]
-
 
 def load_bars_domain():
     from utils.domain.jsonlookupdomain import JSONLookupDomain
     from services.nlu.nlu import HandcraftedNLU
     from services.nlg.nlg import HandcraftedNLG
-    from services.policy import HandcraftedPolicy
+    from services.policy import Policy
     domain = JSONLookupDomain(name='bars',
                                 json_ontology_file='resources/ontologies/Bars.json', 
                                 sqllite_db_file='resources/databases/bars.db', 
                                 display_name='Bars Domain')
     bars_nlu = HandcraftedNLU(domain=domain)
     bars_bst = HandcraftedBST(domain=domain)
-    bars_policy = HandcraftedPolicy(domain=domain)
+    bars_logger = DiasysLogger()
+    max_turns = 100
+    bars_policy = Policy(domain=domain, logger=bars_logger, max_turns=max_turns)
     bars_nlg = load_nlg(backchannel=False, domain=domain)
     return domain, [bars_nlu, bars_bst, bars_policy, bars_nlg]
 
-def load_mensa_domain(backchannel: bool = False):
-    from examples.webapi.mensa import MensaDomain, MensaNLU
-    from services.policy.policy_api import HandcraftedPolicy as PolicyAPI
-    mensa = MensaDomain()
-    mensa_nlu = MensaNLU(domain=mensa)
-    mensa_bst = HandcraftedBST(domain=mensa)
-    mensa_policy = PolicyAPI(domain=mensa)
-    mensa_nlg = load_nlg(backchannel=backchannel, domain=mensa)
-    return mensa, [mensa_nlu, mensa_bst, mensa_policy, mensa_nlg]
-
-
-def load_lecturers_domain(backchannel: bool = False):
-    from utils.domain.jsonlookupdomain import JSONLookupDomain
-    from services.nlu.nlu import HandcraftedNLU
-    from services.nlg.nlg import HandcraftedNLG
-    from services.policy import HandcraftedPolicy
-    domain = JSONLookupDomain('ImsLecturers', display_name="Lecturers")
-    lect_nlu = HandcraftedNLU(domain=domain)
-    lect_bst = HandcraftedBST(domain=domain)
-    lect_policy = HandcraftedPolicy(domain=domain)
-    lect_nlg = load_nlg(backchannel=backchannel, domain=domain)
-    return domain, [lect_nlu, lect_bst, lect_policy, lect_nlg]
-
-def load_qa_domain():
-    from examples.qa.worldknowledge.semanticparser import QuestionParser
-    from examples.qa.worldknowledge.domain import WorldKnowledgeDomain
-    from examples.qa.worldknowledge.policyqa import QaPolicy
-    from examples.qa.worldknowledge.multinlg import MultiNLG
-    from services.service import DialogSystem
-    from utils.domain.jsonlookupdomain import JSONLookupDomain
-    from utils.logger import DiasysLogger, LogLevel
-
-    domain = WorldKnowledgeDomain()
-    qa_nlu = QuestionParser(domain=domain)
-    qa_policy = QaPolicy(domain=domain)
-    qa_nlg = MultiNLG(domain=domain)
-    return domain, [qa_nlu, qa_policy, qa_nlg]
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='ADVISER 2.0 Dialog System')
@@ -189,22 +144,6 @@ if __name__ == "__main__":
                           logfile_basename="full_log")
 
     # load domain specific services
-    if 'lecturers' in args.domains:
-        l_domain, l_services = load_lecturers_domain(backchannel=args.bc)
-        domains.append(l_domain)
-        services.extend(l_services)
-    if 'weather' in args.domains:
-        w_domain, w_services = load_weather_domain()
-        domains.append(w_domain)
-        services.extend(w_services)
-    if 'mensa' in args.domains:
-        m_domain, m_services = load_mensa_domain(backchannel=args.bc)
-        domains.append(m_domain)
-        services.extend(m_services)
-    if 'qa' in args.domains:
-        qa_domain, qa_services = load_qa_domain()
-        domains.append(qa_domain)
-        services.extend(qa_services)
     if 'bars' in args.domains:
         bars_domain, bars_services = load_bars_domain()
         domains.append(bars_domain)

@@ -1,0 +1,29 @@
+>>accept debit cards
+{'user_acts': [UserAct("accept debit cards", UserActionType.Request, accessibility, None, 1.0), UserAct("accept debit cards", UserActionType.Request, payment, None, 1.0)]}
+=================
+
+
+>>accept reservation
+{'user_acts': [UserAct("accept reservation", UserActionType.MakeReservation, None, None, 1.0)]}
+--> To which user act should this belong to?
+
+
+>>dogs should be allowed
+{'user_acts': []}
+=================
+
+>>there should be Free Wi-Fi
+{'user_acts': []}
+=================
+
+>>it serves wine
+{'user_acts': [UserAct("it serves wine", UserActionType.Request, offerings, None, 1.0)]}
+--> should be informable
+
+
+>>I'm looking for a bar with live music
+{'user_acts': [UserAct("I'm looking for a bar with live music", UserActionType.Request, highlight, None, 1.0)]}
+--> should be just informable
+
+add synonym for takeaway: "take-away"
+

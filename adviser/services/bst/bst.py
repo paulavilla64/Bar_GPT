@@ -34,7 +34,7 @@ class HandcraftedBST(Service):
         Service.__init__(self, domain=domain)
         self.logger = logger
         self.bs = BeliefState(domain)
-
+        self.turns = 0
     @PublishSubscribe(sub_topics=["user_acts"], pub_topics=["beliefstate"])
     def update_bst(self, user_acts: List[UserAct] = None) \
             -> dict(beliefstate=BeliefState):
@@ -52,18 +52,21 @@ class HandcraftedBST(Service):
 
         """
         # save last turn to memory
+
         self.bs.start_new_turn()
         if user_acts:
             self._reset_informs(user_acts)
             self._reset_requests()
             self.bs["user_acts"] = self._get_all_usr_action_types(user_acts)
-
+            self.user_utterance = user_acts[0].text
+            self.bs['reservation_query'] = self.user_utterance
+            self.bs['suggestion_slot'] = ""
             self._handle_user_acts(user_acts)
 
             num_entries, discriminable = self.bs.get_num_dbmatches()
             self.bs["num_matches"] = num_entries
             self.bs["discriminable"] = discriminable
-
+# @karan add something with the utterance ( act.slot vlue which needs to be filtered)
         return {'beliefstate': self.bs}
 
     def dialog_start(self):
@@ -132,6 +135,11 @@ class HandcraftedBST(Service):
 
         # Handle user acts
         for act in user_acts:
+
+            if(act.type == UserActionType.Suggestion):
+                for acts in user_acts:
+                    if(acts.slot!=None):
+                        self.bs['suggestion_slot'] = self.bs['suggestion_slot'] +"~"+ acts.slot
             if act.type == UserActionType.Request:
                 self.bs['requests'][act.slot] = act.score
             elif act.type == UserActionType.Inform:
@@ -149,3 +157,15 @@ class HandcraftedBST(Service):
                 # This way it is clear that the user is no longer asking about that one item
                 if self.domain.get_primary_key() in self.bs['informs']:
                     del self.bs['informs'][self.domain.get_primary_key()]
+            elif act.type == UserActionType.MakeReservation:
+                # set some flag to true
+                self.bs['makereservation'] = True
+                self.turns = len(self.bs._history)
+            try:
+                if(len(self.bs._history) > self.turns + 1):
+                    self.bs['makereservation'] = False
+                if('requestingAgain:' in self.bs["reservation_query"]):
+                    self.bs['makereservation'] = True
+                    self.bs['reservation_query'] = self.bs["reservation_query"].replace("requestingAgain:","")
+            except Exception as ex:
+                print(ex)    

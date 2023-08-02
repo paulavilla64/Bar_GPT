@@ -36,6 +36,10 @@ class SysActionType(Enum):
     Bad = 'bad'
     Bye = 'closingmsg'
     ConfirmRequest = 'confreq'
+    DeclineRequest = 'declinereq'
+    MakeReservation = 'makereservation'
+    RetunSuggestion = 'returnSuggestion'      
+
 
 
 class SysAct(object):

@@ -1,0 +1,176 @@
+# ---------------NEW RULES - BARGPT MESSAGES-------------------------
+
+template welcomemsg(): "Welcome to BarGPT in Stuttgart! How may I help you?"
+template welcomemsg(help): "Sorry, I cannot understand you. Please tell me again what you are looking for."
+template welcomemsg(more) : "Can I help you with anything else? Maybe a recommendation for a fresh beer in a bar?"
+template bad() : "Sorry, I am a bit confused..please tell me again what you are looking for."
+template closingmsg() : "Thank you, goodbye and cheers!"
+template makereservation(): "I can reserve a table for you! On which day and time would you like to book a table?"
+template suggest(): "Here is a list of bars: .... (add names)"
+
+# System Requests
+
+template request(name): "What's the name of the bar you're looking for?"
+template request(price): "What is your preferred price range for the bar? (Please provide the amount in dollar signs)"
+template request(rating): "What minimum rating should the bar have? (Please provide the number of stars)"
+template request(hours): "Do you have any specific preferences for the bar's operating hours?"
+template request(serviceOption): "What kind of service are you looking for (takeaway/ delivery/ outside/ dine-in/...)? "
+template request(offerings): "What kind of drinks do you prefer?"
+template request(diningOptions): "Are you also hungry?"
+template request(atmosphere): "What type of atmosphere are you looking for in a bar (cozy/ casual/...)?"
+template request(planning): "Are you interested in making a reservation?"
+template request(payment): "Do you have any specific preferences for payment options at the bar (card/ cash/ payypal/...)?"
+template request(highlight): "Are there any specific highlights you would like the bar to have (live music/ sports/ rooftop seating/...)?"
+template request(makereservation): "I can reserve a table for you! On which day and time would you like to book a table?"
+template request(suggest): "Here is a list of bars: "
+
+
+# Rules for System Inform
+function info(slot, value, name)
+	if slot = "name": "is called \"{value}\"."
+
+	if slot = "price": "falls within the \"{value}\" price range"
+		if value = "~": "does not inform about specific price ranges."
+
+	if slot = "rating": "has a rating of \"{value}\" stars"
+		if value = "~": "does not inform about their ratings."
+	
+	if slot = "location": "is located at \"{value}\""
+		if value = "~": "does not inform about their location."
+
+	if slot = "hours": "operates according to the following hours: \"{value}\""
+		if value = "~": "does not inform about their opening times."
+
+	if slot = "bookingConfirmation": "The booking is confirmed at: \"{value}\""
+
+	if slot = "website": "has a website: \"{value}\""
+		if value = "~": "does not inform about their website."
+
+	if slot = "phone": "has the following phone number: \"{value}\""
+		if value = "~": "does not inform about their phone number."
+
+	if slot = "review": "has received customer reviews. Here are some of them: \"{value}\""
+		if value = "~": "does not have any customer reviews"
+	
+	if slot = "serviceOption": "offers various service options, including \"{value}\""
+		if value = "~": "does not inform about their service options."
+
+	if slot = "accessibility": "provides the following accessibility features to accommodate: \"{value}\""
+		if value = "~": "does not inform about any accessibility features to accomodate"
+
+	if slot = "offerings": "offers the following drinks and offerings: \"{value}\""
+		if value = "~": "does not inform about any offerings for drinks or other offerings"
+
+	if slot = "diningOptions": "provides the following dining options: \"{value}\""
+		if value = "~": "does not inform about dining options"
+
+	if slot = "amenities": "has the following amenities and features: \"{value}\""
+		if value = "~": "does not inform about their amenities and features."
+
+	if slot = "atmosphere": "has a \"{value}\" atmosphere"
+		if value = "~": "does not inform about any atmospherical details"
+
+	if slot = "crowd": "is suitable for the following: \"{value}\""
+		if value = "~": "does not inform about suitable crowds"
+
+	if slot = "planning": "has the following information about reservations: \"{value}\""
+		if value = "~": "does not inform about reservations or planning"
+	
+	if slot = "payment": "has the following payment options: \"{value}\""
+		if value = "~": "does not inform about any payment options"
+
+	if slot = "highlight": "offers the following highlights and special features: \"{value}\""
+		if value = "~": "does not offer any highlights or special features."
+
+	if slot = "description": "is described as: \"{value}\""
+		if value = "~": "does not have a description."
+
+	if slot = "numberOfReviews": "has \"{value}\" reviews"
+		if value = "~": "does not inform about their number of reviews."
+
+	# the user can make a reservation if the restaurant is open at that time
+	if slot = "makereservation": "I can reserve a table for you! On which day and time would you like to reserve a table?"
+
+	# the user can make a reservation if the restaurant is open at that time
+	if slot = "suggest": "Here are a list of suggestions "
+
+
+# -------------------------Only Name Slot-----------------------------------#
+template confreq(name, hours)
+	" Booking confimed for {name} at {hours} "
+
+template returnSuggestion(names)
+	" These are some of the bars which match your interests...  {names}   Which one would you like to know more about?"
+
+template declinereq(name, hours)
+	"Unfortunately, {name} is closed at {hours}. For which other day and time would you like to make a reservation?"
+
+template inform_byname(name)
+	"There is a bar called {name}. What do you want to know about it?"
+
+	special_case name = "none"
+		"I’m sorry, I could not find this bar."
+
+
+template inform_alternatives(name)
+	"There is another bar called {name}. What do you want to know about it?"
+
+	special_case name = "none"
+		"I'm sorry, I couldn't find another bar."
+
+
+#------------------------ Name Slot + Slots----------------------------------#
+
+template inform_byname(name, *slots)
+	"The bar called {name} {for_entry(slots, "info", ", it ", " and it ", name)}"
+	
+	special_case name = "none"
+		"There is no such bar which {for_entry(slots, "info", ", ", " and ", name)}."
+
+template inform_alternatives(name, *slots)
+	"The bar {name} also {for_entry(slots, "info", ", it ", " and it ", name)}."
+	
+	special_case name = "none"
+		"There is no other bar which also {for_entry(slots, "info", ", ", " and ", name)}."
+
+template suggest(name, *slots)
+	"There is a list of bars: {name} {for_entry(slots, "info", ", it ", " and it ", name)}"
+
+
+# ----------------------------System Confirm----------------------------------#
+
+template confirm()
+	"Please tell me more about the bar you are looking for."
+template confirm(name, *slots)
+	if name = "none"
+		"Let me confirm, you are looking for a bar which {for_entry(slots, "info", ", ", " and ", name)}, right?"
+template confirm(*slots)
+	"Let me confirm, you are looking for a bar which {for_entry(slots, "info", ", ", " and ", "none")}, right?"
+
+
+# ---------------------------System RequestMore------------------------------#
+
+template reqmore()
+	"Can I help you with anything else?"
+
+template reqmore(name)
+	if name = "dontcare"
+		"Would you like me to look for a random bar in Stuttgart?"
+template reqmore(price)
+	if price = "dontcare"
+		"Would you like me to look for a bar with any price category?"
+template reqmore(rating)
+	if rating = "dontcare"
+		"Would you like me to look for a bar associated with any rating?"
+
+# ---------------------------System Select----------------------------------#
+
+template select(*slot)
+	"Sorry, would you like to have a bar {for_entry(slot, "info_or_dontcare_list", "", "")}?"
+
+function info_or_dontcare_list(slot, value_list)
+	"{for(value_list, "info_or_dontcare", ", ", " or ", slot)}"
+
+function info_or_dontcare(value, slot)
+	"which {info(slot, value, "none")}"
+	special_case value = "dontcare": "you don't care"

@@ -1,0 +1,160 @@
+Timeplan for the next six weeks
+
+### TO DO ####
+24.05 meet with Lindsey at her office
+- discuss time plan
+- which output should our dialogue system give (what should it be able to do?)?
+- which other features do we want to extract from bars?
+
+    Define the Scope and Requirements: [31.5.]
+        Determine the specific goals and objectives of the dialogue system.
+        Identify the target audience and their needs.
+        Define the features and functionalities you want to include, such as reservation management, 
+        menu recommendations, opening hours, etc.
+        
+        ## Requestables / Informables
+        - Can ask at the beginning if you want to stay home or go out
+        - Stay home options - Netflix/ read a book
+        (- enter ingridents to suggest a recipie)
+        - occasion
+            - work
+            - chill
+            - date
+            - party
+           
+        - Bar options
+        - Type of Drink
+        - Special Drink
+        - Food Options
+        - Rating
+        - Ambiance
+            - Event
+            - Music
+            - Cozy
+            - Chill
+            - Quite
+            - Loud
+        - Major attraction
+        - Type of bar
+        (- Age Group)
+        - Access 
+        - Services
+        - Payment
+        - Reservation possibility
+        - (Distance from location / region of location - south north center east west)
+        - Location
+        - Opening times
+        - Website
+        - Phone number
+        - Rush hour
+        - Reviews
+
+    Data Collection: [31.5.]
+        Gather relevant data about bars in Stuttgart, such as their names, locations, opening hours, 
+        contact information, menus, customer reviews, and any other information you want to 
+        incorporate into your system.
+        # DataMiner
+            - Used to scrap data from google maps using Selenium and Chromium Driver
+
+        ## Bars.json
+            - This file contains the output from the mining of data
+
+    Design the Dialogue Flow: [31.5.]
+        Define the structure and flow of the conversation.
+        Determine the possible user intents and corresponding system responses.
+        Identify key dialogue scenarios, such as making a reservation, requesting information, 
+        or suggesting a bar based on preferences.
+
+    Natural Language Understanding (NLU): [7.6.]
+        Implement an NLU module to understand user inputs.
+        Intent classification
+        Slot filling
+
+    Natural Language Generation (NLG): [14.6.]
+        Implement an NLG component to generate human-like responses.
+        Template based approach or machine learning???
+
+    Dialogue Management (Belief state and Policy): [21.6.]
+        Design a dialogue management system to handle the flow of the conversation.
+        Implement a belief state tracker to keep track of the dialogue context.
+        Create dialogue policies to determine the system's responses based on the current dialogue 
+        state.
+
+    Testing: [28.6]
+        Test the system thoroughly to ensure it handles various user inputs and scenarios effectively.
+        Detect errors and remove bugs
+        Add synonyms for every single bar
+
+  Databank 
+  Ontology
+  Dialogue Flow
+  Github
+  NLU (testing with pass through from exercises)
+
+
+  07.06 meet Lindsey:
+  Questions:
+  What should we do about the synonyms?
+  Json to SQLlite data base
+  Test NLU
+  NLG (also start with policy)
+
+  14.06 meeting:
+  Questions: 
+  Adapt json for InformRules and RequestRules?
+  binary slots?
+  Test NLU?
+  Policy?
+
+  21.06 meeting:
+  Beliefstate erweitern für make a reservation
+  Test NLU
+  Test NLG
+  start with policy
+
+ - online regex checker (request) https://regex101.com/
+ - solely inform has value, not request
+ --> e.g. "I'm looking for a bar with live music" is a requestable and informable...but should just be informable
+ - policy add booking function (beliefstate)
+ - beliefstate utils
+ - booking function
+    which day?   -> check if the bar is open
+    which timee?    -> check if bar is open
+    would you like a reservation?
+        -> reservation
+        -> booking information
+- tutorial ilias
+- new sys act add to: nlu, policy, nlg, beliefstate, bst.py (beliefstate tracker)
+- new entity in belifstate (bst.py -> beliefstate tracker)
+
+
+28.06.23 (last) meeting:
+testing nlu, NLG
+both should be debugged
+start policy (add new sys act)
+
+questions:
+ß ? Does it have something to do with the encoding? language is just english?
+
+- run_bars.py copy from run_chat.py
+- create launch
+- add breakpoints for debugging 
+- add system/ user-act
+- request reservation (can you make me a reservation)
+- inform reservation (what day? what time?)
+- policy needs to decide when to start reservation
+
+- conditions to start "booking"
+
+- test the policy with running the whole system
+- default: starting with the user utterance
+
+Extracting opening times: for some bars there are no opening times shown (even though they have them in Google Maps)
+Update NLU with possible questions for make a reservation
+implement logic if the user writes something the bot doesnt understand
+implement closing times (hours)
+Unfortunately, Holzmaler is closed at monday 2pm. For which other day and time would you like to make a reservation?
+--> here booking mode still has to be turned on
+delete bar
+Opening times for e.g. cafes in the morning
+If the user asks first for a time where the bar is closed the hours[1] doesnt exist

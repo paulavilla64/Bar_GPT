@@ -168,7 +168,7 @@
         */
         var sys_msg = '<div class="speech-bubble-system">'
         msg_list.forEach((msg) => {
-            sys_msg += `<div class="system">
+            sys_msg += `<div style="white-space: pre-line;" class="system">
 				${JSON.parse(msg.content).msg}
                 </div>
             `;
