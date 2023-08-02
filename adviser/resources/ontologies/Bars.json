@@ -461,7 +461,8 @@
         "atmosphere",
         "planning",
         "payment",
-        "highlight"
+        "highlight",
+        "location"
     ], 
     "keyword": "bars"
 }

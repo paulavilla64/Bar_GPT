@@ -135,11 +135,11 @@ class HandcraftedBST(Service):
 
         # Handle user acts
         for act in user_acts:
+
             if(act.type == UserActionType.Suggestion):
                 for acts in user_acts:
                     if(acts.slot!=None):
                         self.bs['suggestion_slot'] = self.bs['suggestion_slot'] +"~"+ acts.slot
-                print("do something here ") # @karan make changes
             if act.type == UserActionType.Request:
                 self.bs['requests'][act.slot] = act.score
             elif act.type == UserActionType.Inform:
