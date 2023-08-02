@@ -1,65 +1,65 @@
-# BarGPT
+![grafik](https://github.com/paulavilla64/Bar_GPT/assets/131253209/6629ad77-40b8-4b92-8e5f-335efbd035b0)# BarGPT
 Spoken Dialogue System Project for Bars in Stuttgart
-
-# DataMiner
-- Used to scrap data from google maps using Selenium and Chromium Driver
-
-## Bars.json
-- This file contains the output from the mining of data
 
 ## Requirements 
 
 - python 3.9+
-- selenium python package
-- chromiumDriver (path to be changed based on Mac or Windows) 
+- run "pip freeze" to get a file with all the required packages. Install all required packages with "pip install <package name>"
 
 ## Run
 
-- Navigate to root folder of the project
-- use command "python DataMiner/DataScrapper.py" to run the code
+- use command "python run_chat_bars.py bars" to run the code
 
-## Bugs
-- Sometimes the on running a google search, the search page may not load the button to view more options which can lead upto complete failure of the script
-  - can run the script again to fix it 
-- Sometimes the loading of the page is super slow which can lead to timeout between scrapping the data from the page resulting in empty results. 
-  - good internet connection might help here
+## Future Work
+- Real reservations
+- Expanding to multiple domains (restaurants, nightlife clubs, tourist highlights)
+- Adaption to different cities
 
-## Roadmap
-- Need to add more data fields to scrap.
-  - Right now gets only the "Name", "Rating" and "Price" for the place
 
 
 # Dialogue System
 
 ## Requestables / Informables
-- Can ask at the beginning if you want to stay home or go out
-- Stay home options
-  - enter ingridents to suggest a recipie
-  - occasion
-    - work
-    - chill
-    - date
-    - party
-  - How many people ?   
-- Outing options
-  - Type of Drink
-  - Special Drink
-  - Food Options
-  - Rating
-  - Ambiance
-    - Event
-    - Music
-    - Cozy
-    - Chill
-    - Quite
-    - Loud
-  - Major attraction
-  - Type of bar
-  - Age Group
-  - Distance from location / region of location - south north center east west
-  - Location
-  - Opening times
-  - Website
-  - Phone number
-  - Rush hour
-  - Reviews
+  
+Information about Bars
+
+- Enter the name of the bar and ask for:
+  •	Location
+  •	Telephone number
+  •	Opening hours
+  •	Website
+  •	Description
+  •	Price category
+  •	Rating
+  •	Reviews from other guests
+  •	Planning (Accepts/ required reservations)
+  •	Payment
+  •	Highlight 
+  •	Atmosphere
+  •	Crowd
+  •	Offerings
+  •	Dining options
+  •	Amenities
+  •	Service option
+  •	Accessibility
+
+
+Suggestions about
+
+- Use the keyword "suggest" in your request and ask for bars which offer the following features:
+  •	Payment (e.g., suggest bars where you can pay with card)
+  •	Highlight (e.g., suggest bars with live music/ where you can watch sports)
+  •	Location (e.g., suggest bars around south/ center)
+  •	Price (e.g., suggest bars which are expensive/ cheap/ average)
+  •	Rating (e.g., suggest bars with good, bad, average rating)
+  •	Hours (e.g., suggest bars which are open after midnight)
+  •	Service option (e.g., suggest bars with outdoor seating, takeaway)
+  •	Offerings (e.g., suggest bars which serve cocktails, wine)
+  •	Planning (e.g., suggest bars which require/ accept reservations)
+  •	Multiple suggestions from different fields (e.g., suggest a bar located around west + good rating + cheap)
+
+Making reservation
+
+- Choose a bar, ask system to make a reservation, enter the desired day and time, system checks if the bar is open, if yes --> reservation is confirmed
+
+
