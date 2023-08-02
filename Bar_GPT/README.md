@@ -1,4 +1,4 @@
-![grafik](https://github.com/paulavilla64/Bar_GPT/assets/131253209/6629ad77-40b8-4b92-8e5f-335efbd035b0)# BarGPT
+## BarGPT
 Spoken Dialogue System Project for Bars in Stuttgart
 
 ## Requirements 
@@ -17,7 +17,7 @@ Spoken Dialogue System Project for Bars in Stuttgart
 
 
 
-# Dialogue System
+## Dialogue System
 
 ## Requestables / Informables
   
